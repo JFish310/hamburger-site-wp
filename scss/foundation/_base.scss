@@ -1,0 +1,28 @@
+html {
+    font-size: 62.5%;
+  }
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.7;   // 行の高さ
+    font-weight: 400;   // フォントの太さ（基本400）
+    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    // vertical-align: bottom;
+}
+
+a{
+    text-decoration: none;
+    color: $color--title-color;
+}
+
+li{
+    list-style-type: none;
+}
+
+fieldset{
+    border:none;
+}
