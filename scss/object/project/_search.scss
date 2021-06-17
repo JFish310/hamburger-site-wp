@@ -1,0 +1,42 @@
+.p-search{
+    // position: relative;
+    // width: 80%;
+    // margin: 40px 3%;
+    // input{
+    //     // border-style: solid;
+    //     padding-left: 40px;
+    //     border: 1.5px solid $color--text-main;  /* 枠線 */
+    // }
+    /* 検索--入力エリア-- */
+    input[type="search"]{
+        //font: 15px/24px sans-serif;
+	    // box-sizing: border-box;
+        background: $color--background--search;
+        width: 396px;
+        height: 46px;
+        margin: 8px 0;
+        padding: 0.3em;
+        // transition: 0.3s;
+        border: 1px solid $color--text-main;    // 枠線指定（太さ・スタイル・色）
+        border-radius: 0.5em;                   /* 角丸 */
+        // outline: none;
+    }
+
+    /* 検索ボタン */
+    input[type="submit"]{
+        width: 136px;
+        height: 46px;
+        // padding: 10px 52px;
+        padding: 0.3em;
+        background: $color--background--menu-pc;
+        color: $color--text-main;
+        border: 1px solid $color--text-main;    // 枠線指定（太さ・スタイル・色）
+        border-radius: 0.5em;                   /* 角丸 */
+        cursor: pointer;
+        // outline: none;
+        // appearance: none;
+        font-size: 1.6rem;
+        // font-weight: 600;
+        // display: block;
+    }
+}

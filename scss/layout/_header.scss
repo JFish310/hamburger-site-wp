@@ -1,23 +1,24 @@
 /* ヘッダー全般 */
 .l-header{
-    // width: 80%;
-    // height: 217px;
+    width: 80%;
+    height: 217px;
     //padding: 0 15px;
     // @include breakpoint( breakpoint_large ){
     //     padding: 0 120px;
     // }
     background-color: $color--background--header;
     color: $color--text-main;
-    // display: flex;
-    // justify-content: space-between;  // 各アイテムを均等に配置し、最初のアイテムは先頭に寄せ、最後のアイテムは末尾に寄せる
-    // align-items: center;
+    display: flex;
+    justify-content: space-between;  // 各アイテムを均等に配置し、最初のアイテムは先頭に寄せ、最後のアイテムは末尾に寄せる
+    align-items: center;
 
     // border-bottom: 1px solid $color--title-color;   /* 境界線に白いのボーダー */
     // position: fixed;    // ヘッダーの固定
     
-    // > h1{
-    //     font-size: 2.6rem;
-    // }
+    > h1{
+        // font-size: 2.6rem;
+        margin-left: 65px;
+    }
 
     // /* メニュー */
     //  &__menu{
@@ -38,10 +39,11 @@
     //         left: auto;
     //     }
     // }
-    // /* ハンバーガーメニューボタン */
-    // .p-hamburger{
-    //     @include breakpoint ( breakpoint_large ){
-    //         display: none;
-    //     }
-    // }
+    /* ハンバーガーメニューボタン */
+    .p-menu{
+        display: none;
+        @include breakpoint ( breakpoint_middle ){
+            display: block;
+        }
+    }
 }

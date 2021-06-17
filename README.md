@@ -9,3 +9,5 @@ RaiseTech WP副業コース最終課題
 M+ FONTSについて
 http://mplus-webfonts.osdn.jp/
 
+検索バーのinput要素のアイコン表示について参照サイト
+https://www.tsukimi.net/submit-button_font-awesome.html

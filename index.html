@@ -13,16 +13,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- M+ FONTSの読み込み -->
     <link rel="stylesheet" href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css">
+    <!-- Font Awesome の読み込み -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
     <header class="l-header">
         <h1>Hamburger</h1>
-        <input type="text" name="search" id="#search">
-        <input type="button" value="検索">
+        <form class="p-search" id="#search">
+            <input type="search" name="search" placeholder="&#xf002;" class="fas">
+            <!-- <input type="text" name="search" id="#search" value="&#xf002;" class="fas"> -->
+            <!-- <i class="fas fa-search"></i> -->
+            <!-- <input type="submit" value="検索" class="c-button"> -->
+            <input type="submit" value="検索">
+        </form>
 
         <button class="p-menu">Menu</button>
     </header><!-- /.l-header -->
-    <article class="l-sidebar">
+    <article class="l-sidebar"><!-- <article>タグは、内容が単体で完結するセクションであることを示す際に使用 -->
         <nav class="p-gnavi"><h2>Menu</h2>
             <ul class="p-gnavi__menu">
                 <li class="p-gnavi__menu_list"><h3><a href="#">バーガー</a></h3>
@@ -56,7 +63,7 @@
                 </li>
             </ul>
         </nav>
-    </asidebar>
+    </article><!-- /.l-sidebar -->
 
     <main class="p-main">
         <article id="top" class="p-main__first-view">
