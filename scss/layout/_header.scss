@@ -1,6 +1,7 @@
 /* ヘッダー全般 */
 .l-header{
     width: 80%;
+    max-width: 1280px;      // ←ここはラッパーとか作ってコンテンツまるっとのほうがいいかもしれん
     height: 217px;
     //padding: 0 15px;
     // @include breakpoint( breakpoint_large ){
