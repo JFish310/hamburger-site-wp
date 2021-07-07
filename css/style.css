@@ -65,33 +65,64 @@ PCファーストなら、max-width
 
 参照URL
 https://daib-log.com/responsive/
+2021.05
 ----------------------------------------------------------*/
+/* モバイルファースト */
 /* ヘッダー全般 */
 .l-header {
-  width: 80%;
-  max-width: 1280px;
+  width: 100%;
   height: 217px;
   background-color: #FFF7EF;
   color: #707070;
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* 親要素に指定 */
+  flex-direction: column;
+  /* 積み重なるように配置する */
   /* ハンバーガーメニューボタン */
 }
 
+@media (min-width: 1025px) {
+  .l-header {
+    width: 80%;
+    max-width: 1280px;
+  }
+}
+
+.l-header .c-button--menu {
+  padding: 14px 16px;
+  text-align: right;
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+}
+
+@media (min-width: 834px) {
+  .l-header .c-button--menu {
+    padding: 18px　26px;
+  }
+}
+
 .l-header > h1 {
-  margin-left: 65px;
+  margin: auto;
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+}
+
+@media (min-width: 1025px) {
+  .l-header > h1 {
+    margin-left: 65px;
+  }
 }
 
 .l-header .p-menu {
-  display: none;
-  /* PC基準--tablet-- */
-  /* PC基準--SmartPhone-- */
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
 }
 
-@media (max-width: 835px) {
+@media (min-width: 834px) {
   .l-header .p-menu {
-    display: block;
+    display: none;
   }
 }
 
@@ -100,6 +131,18 @@ https://daib-log.com/responsive/
   width: 20%;
   background-color: #F2EDE9;
   color: #707070;
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+}
+
+.l-sidebar h2 {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .l-sidebar h2 {
+    display: block;
+  }
 }
 
 .l-footer {
@@ -133,23 +176,47 @@ https://daib-log.com/responsive/
   padding-left: 12.5%;
   background-color: #F2EDE9;
   color: #707070;
+  display: none;
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
 }
 
 .p-gnavi > h2 {
   font-size: 3.4rem;
-  margin-bottom: 40px;
+}
+
+@media (min-width: 834px) {
+  .p-gnavi {
+    display: block;
+  }
 }
 
 .p-gnavi .p-gnavi__main-menu {
-  text-align: left;
-  margin-bottom: 40px;
-  /* PC基準--tablet-- */
-  /* PC基準--SmartPhone-- */
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
 }
 
-.p-gnavi .p-gnavi__main-menu li {
-  /* PC基準--tablet-- */
-  /* PC基準--SmartPhone-- */
+@media (min-width: 834px) {
+  .p-gnavi .p-gnavi__main-menu {
+    margin-top: 40px;
+    display: block;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}
+
+.p-gnavi .p-gnavi__main-menu__list {
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+}
+
+@media (min-width: 1025px) {
+  .p-gnavi .p-gnavi__main-menu__list {
+    margin-bottom: 0;
+  }
+  .p-gnavi .p-gnavi__main-menu__list:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .p-gnavi .p-gnavi__sub-menu__list {

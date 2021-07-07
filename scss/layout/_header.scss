@@ -1,24 +1,41 @@
 /* ヘッダー全般 */
 .l-header{
-    width: 80%;
-    max-width: 1280px;      // ←ここはラッパーとか作ってコンテンツまるっとのほうがいいかもしれん
-    height: 217px;
-    //padding: 0 15px;
-    // @include breakpoint( breakpoint_large ){
-    //     padding: 0 120px;
-    // }
+    width: 100%;
+    height: 217px;      // %のほうがいいのかな？
     background-color: $color--background--header;
     color: $color--text-main;
-    display: flex;
-    justify-content: space-between;  // 各アイテムを均等に配置し、最初のアイテムは先頭に寄せ、最後のアイテムは末尾に寄せる
-    align-items: center;
+    @include breakpoint( breakpoint_large ){
+        width: 80%;
+        max-width: 1280px;      // ←ここはラッパーとか作ってコンテンツまるっとのほうがいいかもしれん
+        //padding: 0 120px;
+    }
+    display: flex;              /* 親要素に指定 */
+    flex-direction: column;     /* 積み重なるように配置する */
+    // justify-content: center;    /* 水平方向の指定 */
+    // align-items: center;        /* 垂直方向の指定 */
+
+    .c-button--menu{
+        padding: 14px 16px;     // 上下、左右
+        // margin-right: 0;
+        text-align: right;      // 右寄せ
+        @include breakpoint( breakpoint_middle ){
+            padding: 18px　26px;    // 上下、左右
+        }
+    }
+
+
+    // justify-content: space-between;  // 各アイテムを均等に配置し、最初のアイテムは先頭に寄せ、最後のアイテムは末尾に寄せる
+    // align-items: center;
 
     // border-bottom: 1px solid $color--title-color;   /* 境界線に白いのボーダー */
     // position: fixed;    // ヘッダーの固定
     
     > h1{
+        margin: auto;
         // font-size: 2.6rem;
-        margin-left: 65px;
+        @include breakpoint( breakpoint_large ){
+            margin-left: 65px;
+        }
     }
 
     // /* メニュー */
@@ -42,9 +59,9 @@
     // }
     /* ハンバーガーメニューボタン */
     .p-menu{
-        display: none;
         @include breakpoint ( breakpoint_middle ){
-            display: block;
+            // display: block;
+            display: none;
         }
     }
 }

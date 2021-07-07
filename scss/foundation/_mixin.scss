@@ -37,28 +37,20 @@ PCファーストなら、max-width
 
 参照URL
 https://daib-log.com/responsive/
+2021.05
 ----------------------------------------------------------*/
-
+/* モバイルファースト */
 @mixin breakpoint( $breakpoint ) {
-
-	// /* PC基準--PC-- */ 
-	// @if $breakpoint == breakpoint_large{
-	// 	@media ( max-width : 1025px ){
-	// 		@content;
-	// 	}
-	// }
-
-	/* PC基準--tablet-- */ 
-	@if $breakpoint == breakpoint_middle{
-	  	@media ( max-width : 835px ){
-	    	@content;
-	  	}
-	}
-
-	/* PC基準--SmartPhone-- */
-	@if $breakpoint == breakpoint_small{
-	  	@media( max-width: 599px ){
+	/* SP基準--PC-- */ 
+	@if $breakpoint == breakpoint_large{
+		@media ( min-width : 1025px ){
 			@content;
-	  	}
+		}
+	}
+	/* SP基準--tablet-- */ 
+	@if $breakpoint == breakpoint_middle{
+		@media ( min-width : 834px ){
+			@content;
+		}
 	}
 }

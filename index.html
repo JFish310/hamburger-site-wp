@@ -17,90 +17,92 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
-    <header class="l-header">
-        <h1>Hamburger</h1>
-        <form class="p-search" id="#search">
-            <input type="search" name="search" placeholder="&#xf002;" class="fas">
-            <!-- <input type="text" name="search" id="#search" value="&#xf002;" class="fas"> -->
-            <!-- <i class="fas fa-search"></i> -->
-            <!-- <input type="submit" value="検索" class="c-button"> -->
-            <input type="submit" value="検索">
-        </form>
+    <div class="l-container">
+        <header class="l-header">
+            <button type="button" class="c-button--menu">Menu</button>
+            <h1>Hamburger</h1>
+            <form class="p-search" id="#search">
+                <input type="search" name="search" placeholder="&#xf002;" class="fas">
+                <!-- <input type="text" name="search" id="#search" value="&#xf002;" class="fas"> -->
+                <!-- <i class="fas fa-search"></i> -->
+                <!-- <input type="submit" value="検索" class="c-button"> -->
+                <input type="submit" value="検索">
+            </form>
+        </header><!-- /.l-header -->
 
-        <button class="p-menu">Menu</button>
-    </header><!-- /.l-header -->
-    <article class="l-sidebar"><!-- <article>タグは、内容が単体で完結するセクションであることを示す際に使用 -->
-        <nav class="p-gnavi"><h2>Menu</h2>
-            <ul class="p-gnavi__main-menu">
-                <li class="p-gnavi__main-menu__list"><h3>バーガー</h3>
-                    <ul class="p-gnavi__sub-menu">
-                        <li class="p-gnavi__sub-menu__list"><a href="#">ハンバーガー</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">チーズバーガー</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">テリヤキバーガー</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">アボカドバーガー</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">フィッシュバーガー</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">ベーコンバーガー</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">チキンバーガー</a></li>
-                    </ul>
-                </li>
-                <li class="p-gnavi__main-menu__list"><h3>サイド</h3>
-                    <ul class="p-gnavi__sub-menu">
-                        <li class="p-gnavi__sub-menu__list"><a href="#">ポテト</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">サラダ</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">ナゲット</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">コーン</a></li>
-                    </ul>
-                </li>
-                <li class="p-gnavi__main-menu__list"><h3>ドリンク</h3>
-                    <ul class="p-gnavi__sub-menu">
-                        <li class="p-gnavi__sub-menu__list"><a href="#">コーラ</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">ファンタ</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">オレンジ</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">アップル</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">紅茶（Ice/Hot）</a></li>
-                        <li class="p-gnavi__sub-menu__list"><a href="#">コーヒー（Ice/Hot）</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </article><!-- /.l-sidebar -->
-
-    <main class="p-main">
-        <article id="top" class="p-main__first-view">
-            <h2>ダミーサイト</h2>
-        </article><!-- /.p-main__first-view -->
-        <section class="p-place">
-            <ul>
-                <li class="p-place__take-out">
-                    <h2>Take Out</h2>
-                    <dl class="c-dl--level2">
-                        <dt><h3>小見出しが入ります</h3></dt>
-                        <dd>テキストが入ります。テキストが入ります。</dd>
-                    </dl>
-                    <dl class="c-dl--level2">
-                        <dt><h3>小見出しが入ります</h3></dt>
-                        <dd>テキストが入ります。テキストが入ります。</dd>
-                    </dl>
-                </li>
-                <li class="p-place__eat-in">
-                    <h2>Eat In</h2>
-                    <dl class="c-dl--level2">
-                        <dt><h3>小見出しが入ります</h3></dt>
-                        <dd>テキストが入ります。テキストが入ります。</dd>
-                    </dl>
-                    <dl class="c-dl--level2">
-                        <dt><h3>小見出しが入ります</h3></dt>
-                        <dd>テキストが入ります。テキストが入ります。</dd>
-                    </dl>
-                </li>
-            </ul>
-        </section>
-        <section class="p-access">
-            <h2 class="">見出しが入ります</h2>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
-        </section>
-    </main>
-    <!-- /.p-main -->
+        <main class="p-main">
+            <article id="top" class="p-main__first-view">
+                <h2>ダミーサイト</h2>
+            </article><!-- /.p-main__first-view -->
+            <section class="p-place">
+                <ul>
+                    <li class="p-place__take-out">
+                        <h2>Take Out</h2>
+                        <dl class="c-dl--level2">
+                            <dt><h3>小見出しが入ります</h3></dt>
+                            <dd>テキストが入ります。テキストが入ります。</dd>
+                        </dl>
+                        <dl class="c-dl--level2">
+                            <dt><h3>小見出しが入ります</h3></dt>
+                            <dd>テキストが入ります。テキストが入ります。</dd>
+                        </dl>
+                    </li>
+                    <li class="p-place__eat-in">
+                        <h2>Eat In</h2>
+                        <dl class="c-dl--level2">
+                            <dt><h3>小見出しが入ります</h3></dt>
+                            <dd>テキストが入ります。テキストが入ります。</dd>
+                        </dl>
+                        <dl class="c-dl--level2">
+                            <dt><h3>小見出しが入ります</h3></dt>
+                            <dd>テキストが入ります。テキストが入ります。</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section class="p-access">
+                <h2 class="">見出しが入ります</h2>
+                <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            </section>
+        </main><!-- /.p-main -->
+        <!-- <article class="l-sidebar"><article>タグは、内容が単体で完結するセクションであることを示す際に使用 -->
+        <aside class="l-sidebar"><!-- <aside>タグは、メインコンテンツとは直接関係のない、複数ページ共通のコンテンツ用の要素 -->
+            <nav class="p-gnavi"><h2>Menu</h2>
+                <ul class="p-gnavi__main-menu">
+                    <li class="p-gnavi__main-menu__list"><h3>バーガー</h3>
+                        <ul class="p-gnavi__sub-menu">
+                            <li class="p-gnavi__sub-menu__list"><a href="#">ハンバーガー</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">チーズバーガー</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">テリヤキバーガー</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">アボカドバーガー</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">フィッシュバーガー</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">ベーコンバーガー</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">チキンバーガー</a></li>
+                        </ul>
+                    </li>
+                    <li class="p-gnavi__main-menu__list"><h3>サイド</h3>
+                        <ul class="p-gnavi__sub-menu">
+                            <li class="p-gnavi__sub-menu__list"><a href="#">ポテト</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">サラダ</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">ナゲット</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">コーン</a></li>
+                        </ul>
+                    </li>
+                    <li class="p-gnavi__main-menu__list"><h3>ドリンク</h3>
+                        <ul class="p-gnavi__sub-menu">
+                            <li class="p-gnavi__sub-menu__list"><a href="#">コーラ</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">ファンタ</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">オレンジ</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">アップル</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">紅茶（Ice/Hot）</a></li>
+                            <li class="p-gnavi__sub-menu__list"><a href="#">コーヒー（Ice/Hot）</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        <!-- </article> -->
+        </aside><!-- /.l-sidebar -->
+    </div><!-- /.l-container -->
 
     <footer class="l-footer">
         <p>ショップ情報｜ヒストリー</p>

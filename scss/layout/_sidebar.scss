@@ -4,6 +4,14 @@
     // height: 217px;
     background-color: $color--background--menu-pc;
     color: $color--text-main;
-    
+    h2{
+        display: none;
+    }
+    @include breakpoint( breakpoint_large ){
+        h2{
+            display: block;
+        }
+    }
+
 
 }
