@@ -105,6 +105,7 @@ https://daib-log.com/responsive/
 
 .l-header > h1 {
   margin: auto;
+  margin-top: 54px;
   /* SP基準--PC-- */
   /* SP基準--tablet-- */
 }
@@ -226,23 +227,27 @@ https://daib-log.com/responsive/
 }
 
 .p-search {
+  width: 80%;
+  margin: auto;
   /* 検索--入力エリア-- */
   /* 検索ボタン */
 }
 
 .p-search input[type="search"] {
-  background: #fff;
-  width: 396px;
+  width: 72%;
+  max-width: 546px;
   height: 46px;
   margin: 8px 0;
   padding: 0.3em;
+  background: #fff;
   border: 1px solid #707070;
   border-radius: 0.5em;
   /* 角丸 */
 }
 
 .p-search input[type="submit"] {
-  width: 136px;
+  width: 25%;
+  max-width: 136px;
   height: 46px;
   padding: 0.3em;
   background: #F2EDE9;
