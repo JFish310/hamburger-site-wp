@@ -13,8 +13,9 @@
         width: 72%;
         max-width: 546px;
         height: 46px;
-        margin: 8px 0;
-        padding: 0.3em;
+        // margin: 8px 0;
+        // padding: 11px 0.3rem;
+        padding: 11px 16px;
         //font: 15px/24px sans-serif;
 	    // box-sizing: border-box;
         background: $color--background--search;
@@ -22,6 +23,7 @@
         border: 1px solid $color--text-main;    // 枠線指定（太さ・スタイル・色）
         border-radius: 0.5em;                   /* 角丸 */
         // outline: none;
+        vertical-align: top;        // 入力フォームとボタンのズレ解消
     }
 
     /* 検索ボタン */
@@ -41,5 +43,6 @@
         font-size: 1.6rem;
         // font-weight: 600;
         // display: block;
+        vertical-align: top;        // 入力フォームとボタンのズレ解消（念のためこちらでも設定）
     }
 }

@@ -27,6 +27,15 @@ CSS Grid Layout を極める！（基礎編）
 https://qiita.com/kura07/items/e633b35e33e43240d363
 
 
+検索バーの入力フォームとボタンが揃わない
+---->>>     入力フォームに「vertical-align : top;」の設定
+            一応、検索ボタンにも設定する
+
+
+
+
+
+
 
 #命名規則（FLOCSSに帰属）
 
