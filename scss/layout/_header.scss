@@ -31,8 +31,8 @@
     // position: fixed;    // ヘッダーの固定
     
     > h1{
-        margin: auto;
-        margin-top: 54px;
+        margin: 0 auto;     // 上下0, 左右中央寄せ
+        // margin-top: 54px;
         // font-size: 2.6rem;
         @include breakpoint( breakpoint_large ){
             margin-left: 65px;

@@ -104,8 +104,7 @@ https://daib-log.com/responsive/
 }
 
 .l-header > h1 {
-  margin: auto;
-  margin-top: 54px;
+  margin: 0 auto;
   /* SP基準--PC-- */
   /* SP基準--tablet-- */
 }
@@ -170,6 +169,74 @@ https://daib-log.com/responsive/
   font-size: 1.4rem;
 }
 
+.p-search {
+  width: 80%;
+  margin: auto;
+  /* 検索--入力エリア-- */
+  /* 検索ボタン */
+}
+
+.p-search input[type="search"] {
+  width: 72%;
+  max-width: 546px;
+  height: 46px;
+  padding: 11px 16px;
+  background: #fff;
+  border: 1px solid #707070;
+  border-radius: 0.5em;
+  /* 角丸 */
+  vertical-align: top;
+}
+
+.p-search input[type="submit"] {
+  width: 25%;
+  max-width: 136px;
+  height: 46px;
+  padding: 0.3em;
+  background: #F2EDE9;
+  color: #707070;
+  border: 1px solid #707070;
+  border-radius: 0.5em;
+  /* 角丸 */
+  cursor: pointer;
+  font-size: 1.6rem;
+  vertical-align: top;
+}
+
+.p-first-view {
+  width: 100%;
+  height: 285px;
+  background-image: url(/img/front/first-view--small.jpg);
+  background-position: center;
+  background-size: cover;
+  /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
+  display: flex;
+  /* 親要素に指定 */
+  align-items: center;
+  /* 垂直方向の指定 */
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+}
+
+@media (min-width: 834px) {
+  .p-first-view {
+    background-image: url(/img/front/first-view--large.jpg);
+  }
+}
+
+.p-first-view h2 {
+  color: #fff;
+  padding-left: 25px;
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+}
+
+@media (min-width: 834px) {
+  .p-first-view h2 {
+    padding-left: 86px;
+  }
+}
+
 .p-gnavi {
   width: 100%;
   height: 100%;
@@ -226,36 +293,66 @@ https://daib-log.com/responsive/
   font-size: 2rem;
 }
 
-.p-search {
-  width: 80%;
-  margin: auto;
-  /* 検索--入力エリア-- */
-  /* 検索ボタン */
+.p-place {
+  /* Take Out */
+  /* Eat In */
 }
 
-.p-search input[type="search"] {
-  width: 72%;
-  max-width: 546px;
-  height: 46px;
-  margin: 8px 0;
-  padding: 0.3em;
-  background: #fff;
-  border: 1px solid #707070;
-  border-radius: 0.5em;
-  /* 角丸 */
+.p-place ul {
+  padding: 20px;
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
 }
 
-.p-search input[type="submit"] {
-  width: 25%;
-  max-width: 136px;
-  height: 46px;
-  padding: 0.3em;
-  background: #F2EDE9;
-  color: #707070;
-  border: 1px solid #707070;
-  border-radius: 0.5em;
-  /* 角丸 */
-  cursor: pointer;
-  font-size: 1.6rem;
+@media (min-width: 834px) {
+  .p-place ul {
+    padding: 40px;
+  }
+}
+
+.p-place h2 {
+  color: #fff;
+  padding-top: 25px;
+  padding-left: 10px;
+}
+
+.p-place__take-out {
+  background-image: url(/img/front/take-out.jpg);
+  background-size: cover;
+  /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
+  height: 642px;
+}
+
+.p-place__eat-in {
+  margin-top: 20px;
+  background-image: url(/img/front/eat-in.jpg);
+  background-size: cover;
+  /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
+  height: 642px;
+}
+
+.p-access {
+  width: 100%;
+  height: 690px;
+  background-image: url(/img/front/map--small.jpg);
+  background-size: cover;
+  /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+}
+
+@media (min-width: 834px) {
+  .p-access {
+    background-image: url(/img/front/map--large.jpg);
+  }
+}
+
+.p-access dl {
+  padding: 40px;
+  color: #fff;
+}
+
+.p-access h2 {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
