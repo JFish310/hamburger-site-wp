@@ -169,6 +169,41 @@ https://daib-log.com/responsive/
   font-size: 1.4rem;
 }
 
+.c-box {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 0;
+  padding: 20px 10px;
+}
+
+.c-box__title {
+  margin-bottom: 0.4em;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/*
+    背景の設定
+*/
+.c-background--mask::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.c-dl--level1 {
+  margin-top: 10px;
+  color: #3C2A10;
+  /* レスポンシブ対応 */
+}
+
+.c-dl--level1 dd {
+  margin-top: 25px;
+  font-size: 1.6rem;
+}
+
 .p-search {
   width: 80%;
   margin: auto;
@@ -321,6 +356,21 @@ https://daib-log.com/responsive/
   background-size: cover;
   /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
   height: 642px;
+}
+
+.p-place__take-out .l-container__box {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 95%;
+}
+
+.p-place__take-out .l-container__box > :first-child {
+  margin-top: 0;
+}
+
+.p-place__take-out .l-container__box .c-box {
+  width: 100%;
+  height: 163px;
 }
 
 .p-place__eat-in {

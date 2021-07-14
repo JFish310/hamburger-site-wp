@@ -1,0 +1,31 @@
+.c-dl--level1{
+    margin-top: 10px;
+    color: $color--card-text;
+    
+    // dt{
+    //     margin-bottom: 20px;
+    // }
+    dd{
+        margin-top: 25px;
+        font-size: 1.6rem;
+        // margin-bottom: 40px;
+    }
+    /* レスポンシブ対応 */
+    // @include breakpoint( breakpoint_large ){
+    //     margin-bottom: 0px;
+    //     dd{
+    //         margin-bottom: 0px;
+    //     }
+    // }
+}
+
+// .c-dl--level2{
+//     width: 320px;
+//     dt{
+//         height: 200px;
+//     }
+//     dd{
+//         padding: 30px 35px;
+//         font-size: 1.3rem;
+//     }
+// }

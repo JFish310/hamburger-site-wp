@@ -1,0 +1,20 @@
+.c-box {
+	display: inline-block;
+	// background: $color--background--mask-box;
+    background: rgba($color--background--mask-box, 0.7);
+	// border: 2px solid $box-border-color;
+	border-radius: 0;   // 角あり
+	// padding: 0.8em;
+	padding: 20px 10px;
+    // width: 80%;
+
+	// > :first-child {
+	// 	margin-top: 0;
+	// }
+}
+
+.c-box__title {
+	margin-bottom: 0.4em;
+	font-size: 2.2rem;
+	font-weight: 700;
+}
