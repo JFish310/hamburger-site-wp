@@ -7,9 +7,30 @@
     @include breakpoint( breakpoint_middle ) {
         background-image: url(/img/front/map--large.jpg);
     }
-    dl{
+    .l-mask{
+        background: rgba($color--background--mask-access, 0.4);
+        height: 100%;
+    }
+    .c-dl--{
         padding: 40px;
         color: $color--text-sub;
+        background: rgba($color--background--mask-access, 0.4);
+        dt{
+            .c-border{
+                width: 15%;
+                margin-top: 20px;
+            }            
+        }
+        dd{
+            margin-top: 20px;
+        }
+        @include breakpoint( breakpoint_middle ) {
+            height: 100%;
+        }
+        @include breakpoint( breakpoint_large ) {
+            height: 100%;
+            width: 61%;
+        }
     }
     h2{
         color: $color--text-sub;

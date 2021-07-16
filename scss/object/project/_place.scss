@@ -4,31 +4,96 @@
         @include breakpoint( breakpoint_middle ){
             padding: 40px;
         }
+
+        display: flex;              /* 親要素に指定 */
+        flex-direction: column;     /* 積み重なるように配置する */
+        justify-content: center;    /* 水平方向の指定 */
+        align-items: center;        /* 垂直方向の指定 */
+        /* レスポンシブ対応 */
+        @include breakpoint( breakpoint_middle ){
+            flex-direction: row;		/* 横並び */
+            // align-items: flex-end;		/* 下揃え */
+        }
+        h2{
+            color: $color--text-sub;
+            margin-top: 10px;
+            // padding-top: 25px;
+            // padding-left: 10px;
+        }
+        .c-border{
+            margin-top: 20px;
+            // line-height: 50px;
+        }
     }
-    h2{
-        color: $color--text-sub;
-        padding-top: 25px;
-        padding-left: 10px;
-    }
+    
     /* Take Out */
     &__take-out{
         background-image: url(/img/front/take-out.jpg);
         // background-position: center;
         background-size: cover;         /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
         height: 642px;
+        max-width: 357px;
+
+        padding: 5%;
+        @include breakpoint( breakpoint_middle ){
+            padding: 2%;
+        }
+
+        display: flex;              /* 親要素に指定 */
+        flex-direction: column;     /* 積み重なるように配置する */
+
+        .l-container__box{
+            // margin: auto auto 10px auto;    // 下寄せ、margin-bottomは10px
+            margin-top: auto;    // 下寄せ、margin-bottomは10px
+            width: 100%;
+
+            // 最初の子要素には余白なし
+            > :first-child {
+                margin-top: 0;
+            }
+
+            // 「小見出しが入ります」のboxのサイズ指定
+            .c-box{
+                width: 100%;
+                height: 163px;
+            }
+        }
     }
 
 
     /* Eat In */
     &__eat-in{
         margin-top: 20px;   // Take Outとの余白指定
+        @include breakpoint( breakpoint_middle ){
+            margin-top: 0px;   // リセット
+            margin-left: 4%;
+        }
         background-image: url(/img/front/eat-in.jpg);
         // background-position: center;
         background-size: cover;         /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
         height: 642px;
+        max-width: 357px;
+
+        padding: 5%;
+        @include breakpoint( breakpoint_middle ){
+            padding: 2%;
+        }
+
+        display: flex;              /* 親要素に指定 */
+        flex-direction: column;     /* 積み重なるように配置する */
+
+        .l-container__box{
+            margin-top: auto;    // 下寄せ、margin-bottomは10px
+            width: 100%;
+            // 最初の子要素には余白なし
+            > :first-child {
+                margin-top: 0;
+            }
+            // 「小見出しが入ります」のboxのサイズ指定
+            .c-box{
+                width: 100%;
+                height: 163px;
+            }
+        }
     }
-
-
-
-
 }

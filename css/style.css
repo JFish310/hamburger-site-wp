@@ -169,6 +169,17 @@ https://daib-log.com/responsive/
   font-size: 1.4rem;
 }
 
+.c-border {
+  border-width: 3px 0px 0px 0px;
+  /* 線の太さ */
+  width: 9%;
+  /* 線の長さ（ここでは親要素に対しての割合） */
+  border-style: solid;
+  /* 線種 */
+  border-color: #fff;
+  /* 太さ、線種、色 */
+}
+
 .c-box {
   display: inline-block;
   background: rgba(255, 255, 255, 0.7);
@@ -337,6 +348,17 @@ https://daib-log.com/responsive/
   padding: 20px;
   /* SP基準--PC-- */
   /* SP基準--tablet-- */
+  display: flex;
+  /* 親要素に指定 */
+  flex-direction: column;
+  /* 積み重なるように配置する */
+  justify-content: center;
+  /* 水平方向の指定 */
+  align-items: center;
+  /* 垂直方向の指定 */
+  /* レスポンシブ対応 */
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
 }
 
 @media (min-width: 834px) {
@@ -345,10 +367,20 @@ https://daib-log.com/responsive/
   }
 }
 
-.p-place h2 {
+@media (min-width: 834px) {
+  .p-place ul {
+    flex-direction: row;
+    /* 横並び */
+  }
+}
+
+.p-place ul h2 {
   color: #fff;
-  padding-top: 25px;
-  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.p-place ul .c-border {
+  margin-top: 20px;
 }
 
 .p-place__take-out {
@@ -356,12 +388,25 @@ https://daib-log.com/responsive/
   background-size: cover;
   /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
   height: 642px;
+  max-width: 357px;
+  padding: 5%;
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+  display: flex;
+  /* 親要素に指定 */
+  flex-direction: column;
+  /* 積み重なるように配置する */
+}
+
+@media (min-width: 834px) {
+  .p-place__take-out {
+    padding: 2%;
+  }
 }
 
 .p-place__take-out .l-container__box {
-  margin: auto;
-  margin-bottom: 10px;
-  width: 95%;
+  margin-top: auto;
+  width: 100%;
 }
 
 .p-place__take-out .l-container__box > :first-child {
@@ -375,10 +420,47 @@ https://daib-log.com/responsive/
 
 .p-place__eat-in {
   margin-top: 20px;
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
   background-image: url(/img/front/eat-in.jpg);
   background-size: cover;
   /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
   height: 642px;
+  max-width: 357px;
+  padding: 5%;
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+  display: flex;
+  /* 親要素に指定 */
+  flex-direction: column;
+  /* 積み重なるように配置する */
+}
+
+@media (min-width: 834px) {
+  .p-place__eat-in {
+    margin-top: 0px;
+    margin-left: 4%;
+  }
+}
+
+@media (min-width: 834px) {
+  .p-place__eat-in {
+    padding: 2%;
+  }
+}
+
+.p-place__eat-in .l-container__box {
+  margin-top: auto;
+  width: 100%;
+}
+
+.p-place__eat-in .l-container__box > :first-child {
+  margin-top: 0;
+}
+
+.p-place__eat-in .l-container__box .c-box {
+  width: 100%;
+  height: 163px;
 }
 
 .p-access {
@@ -397,9 +479,41 @@ https://daib-log.com/responsive/
   }
 }
 
-.p-access dl {
+.p-access .l-mask {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+
+.p-access .c-dl-- {
   padding: 40px;
   color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+}
+
+.p-access .c-dl-- dt .c-border {
+  width: 15%;
+  margin-top: 20px;
+}
+
+.p-access .c-dl-- dd {
+  margin-top: 20px;
+}
+
+@media (min-width: 834px) {
+  .p-access .c-dl-- {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .p-access .c-dl-- {
+    height: 100%;
+    width: 61%;
+  }
 }
 
 .p-access h2 {

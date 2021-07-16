@@ -31,6 +31,13 @@ https://qiita.com/kura07/items/e633b35e33e43240d363
 ---->>>     入力フォームに「vertical-align : top;」の設定
             一応、検索ボタンにも設定する
 
+【CSS】背景のみ透過させて表示する方法
+https://www.design-memo.com/coding/css-rgba-opacity
+
+
+罫線について（1本だけ線を引くCSS）
+https://www.nishishi.com/css/line-border-hr.html
+https://html-coding.co.jp/annex/dictionary/html/hr/
 
 
 
