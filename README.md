@@ -33,6 +33,8 @@ https://qiita.com/kura07/items/e633b35e33e43240d363
 
 【CSS】背景のみ透過させて表示する方法
 https://www.design-memo.com/coding/css-rgba-opacity
+---->>> https://eguweb.jp/css/overlay-transparent-black-colors
+https://techacademy.jp/magazine/29811
 
 
 罫線について（1本だけ線を引くCSS）

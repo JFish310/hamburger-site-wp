@@ -1,7 +1,7 @@
 .c-border{
     border-width: 3px 0px 0px 0px;      /* 線の太さ */
-    width: 9%;                          /* 線の長さ（ここでは親要素に対しての割合） */
+    width: 34px;                          /* 線の長さ（ここでは親要素に対しての割合） */
     border-style: solid;                /* 線種 */
-    border-color: $color--card-title;   /* 太さ、線種、色 */
+    border-color: $color--card-title;   /* 色 */
     // border: 2px solid $color--card-title;   /* 太さ、線種、色 */
 }

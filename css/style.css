@@ -172,12 +172,12 @@ https://daib-log.com/responsive/
 .c-border {
   border-width: 3px 0px 0px 0px;
   /* 線の太さ */
-  width: 9%;
+  width: 34px;
   /* 線の長さ（ここでは親要素に対しての割合） */
   border-style: solid;
   /* 線種 */
   border-color: #fff;
-  /* 太さ、線種、色 */
+  /* 色 */
 }
 
 .c-box {
@@ -464,6 +464,7 @@ https://daib-log.com/responsive/
 }
 
 .p-access {
+  position: relative;
   width: 100%;
   height: 690px;
   background-image: url(/img/front/map--small.jpg);
@@ -479,28 +480,58 @@ https://daib-log.com/responsive/
   }
 }
 
-.p-access .l-mask {
+.p-access::before {
+  content: "";
   background: rgba(0, 0, 0, 0.4);
-  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.p-access::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 60%;
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+}
+
+@media (min-width: 834px) {
+  .p-access::after {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .p-access::after {
+    width: 61%;
+    height: 100%;
+  }
 }
 
 .p-access .c-dl-- {
   padding: 40px;
   color: #fff;
-  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 1;
   /* SP基準--PC-- */
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
   /* SP基準--tablet-- */
-}
-
-.p-access .c-dl-- dt .c-border {
-  width: 15%;
-  margin-top: 20px;
 }
 
 .p-access .c-dl-- dd {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 @media (min-width: 834px) {
@@ -518,5 +549,14 @@ https://daib-log.com/responsive/
 
 .p-access h2 {
   color: #fff;
+  /* 罫線を疑似要素で */
+}
+
+.p-access h2::after {
+  content: "";
+  display: block;
+  border-bottom: solid #fff 2px;
+  width: 75px;
+  margin-top: 25px;
 }
 /*# sourceMappingURL=style.css.map */

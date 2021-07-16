@@ -1,4 +1,5 @@
 .p-access{
+    position: relative; // なぜ必要かわからない
     width: 100%;
     height: 690px;
     background-image: url(/img/front/map--small.jpg);
@@ -7,22 +8,119 @@
     @include breakpoint( breakpoint_middle ) {
         background-image: url(/img/front/map--large.jpg);
     }
-    .l-mask{
+
+    // 地図全体にかかる薄いレイヤーの疑似要素
+    &::before {
+        content: "";
+        // background-color: $color--background--mask-access;
+        // opacity: 0.3;
         background: rgba($color--background--mask-access, 0.4);
-        height: 100%;
+        position: absolute; // なぜ必要かわからない
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        // display:inline-block;
+        // z-index: 1;
+        // width: 60%;
+        // height: 60%;
+        // @include breakpoint( breakpoint_middle ) {
+        //     // position: absolute;
+        //     width: 100%;
+        //     // top: 0;
+        //     // left: 0;
+        // }
+        // @include breakpoint( breakpoint_large ) {
+        //     // position: absolute;
+        //     height: 100%;
+        //     width: 61%;
+        //     // top: 0;
+        //     // left: 0;
+        // }
     }
+    // 主に文字の部分にかかる濃いレイヤー
+    &::after {
+        content: "";
+        // background-color: $color--background--mask-access;
+        // opacity: 0.3;
+        background: rgba($color--background--mask-access, 0.4);
+        position: absolute; // なぜ必要かわからない
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 60%;
+        @include breakpoint( breakpoint_middle ) {
+            // position: absolute;
+            width: 100%;
+            height: 100%;
+            // top: 0;
+            // left: 0;
+        }
+        @include breakpoint( breakpoint_large ) {
+            // position: absolute;
+            width: 61%;
+            height: 100%;
+            // top: 0;
+            // left: 0;
+        }
+    }
+
+
+
+
+    // .l-mask{
+        // background: rgba($color--background--mask-access, 0.4);
+        // height: 100%;
+
+
+        // &::before {
+        //     content: "";
+        //     // background-color: $color--background--mask-access;
+        //     // opacity: 0.3;
+        //     background: rgba($color--background--mask-access, 0.4);
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     // display:inline-block;
+        //     // z-index: 1;
+        //     // width: 60%;
+        //     height: 60%;
+        //     @include breakpoint( breakpoint_middle ) {
+        //         // position: absolute;
+        //         width: 100%;
+        //         // top: 0;
+        //         // left: 0;
+        //     }
+        //     @include breakpoint( breakpoint_large ) {
+        //         // position: absolute;
+        //         height: 100%;
+        //         width: 61%;
+        //         // top: 0;
+        //         // left: 0;
+        //     }
+        // }
+
+
+
+
+    // }
     .c-dl--{
         padding: 40px;
         color: $color--text-sub;
-        background: rgba($color--background--mask-access, 0.4);
-        dt{
-            .c-border{
-                width: 15%;
-                margin-top: 20px;
-            }            
-        }
+        position: absolute;
+        z-index: 1;
+        // background: rgba($color--background--mask-access, 0.4);
+        // dt{
+        //     .c-border{
+        //         width: 15%;
+        //         margin-top: 20px;
+        //     }            
+        // }
         dd{
-            margin-top: 20px;
+            margin-top: 25px;
         }
         @include breakpoint( breakpoint_middle ) {
             height: 100%;
@@ -34,6 +132,16 @@
     }
     h2{
         color: $color--text-sub;
+        // position: relative;
+        // z-index: 1;
         // padding: 40px;
+        /* 罫線を疑似要素で */
+        &::after{
+            content: "";
+            display: block;                             // ブロックが積みあがる
+            border-bottom: solid $color--text-sub 2px;  // 線種、色、太さ
+            width: 75px;                                // 線の長さ
+            margin-top: 25px;                           // タイトルとの余白
+        }
     }
 }
