@@ -13,8 +13,6 @@ RaiseTech WP副業コース最終課題
 
 
 
-
-
 ----学習参考サイトや、考察、メモ----
 
 M+ FONTSについて
@@ -41,7 +39,7 @@ https://techacademy.jp/magazine/29811
 https://www.nishishi.com/css/line-border-hr.html
 https://html-coding.co.jp/annex/dictionary/html/hr/
 
-
+***
 
 
 
@@ -79,7 +77,7 @@ layout-list
 margin-bottom: 0;
 margin-topで余白の調整をする。
 ※要素の下に、何が来るかわからないから、下につく方が、上と調整する。
-
+***
 
 
 
