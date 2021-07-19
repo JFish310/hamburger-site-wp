@@ -1,0 +1,27 @@
+.l-container{
+    @include breakpoint( breakpoint_large ){
+        display: grid;
+        grid-template-columns: 1fr 19%;
+        .l-header{
+            grid-row: 1;
+            grid-column: 1;
+        }
+        .p-first-view{
+            grid-row: 2;
+            grid-column: 1;
+        }
+        .p-place{
+            grid-row: 3;
+            grid-column: 1;
+        }
+        .p-access{
+            grid-row: 4;
+            grid-column: 1;
+        }
+        .l-sidebar{
+            grid-row: 1 / 5;
+            grid-column: 2;
+        }
+        
+    }
+}

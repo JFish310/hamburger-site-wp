@@ -1,38 +1,54 @@
 .p-gnavi{
     width: 100%;
-    height: 100%;
+    // height: 100%;
+    height: 1826px;
     padding-top: 12.5%;
     padding-left: 12.5%;
     background-color: $color--background--menu-pc;
     color: $color--text-main;
     > h2{
         font-size: 3.4rem;
-        margin-bottom: 40px;
+        @include breakpoint ( breakpoint_large ){
+            display: none;
+        }
+    }
+    display: none;
+    @include breakpoint ( breakpoint_large ){
+        display: block;
     }
     // &__main-menu{
     .p-gnavi__main-menu{
-        // display: block;
         // position: absolute;   /* 絶対位置 */
         // top: 50%;
         // left: 50%;
         // transform: translate(-50%,-50%);
-        text-align: left;
-        margin-bottom: 40px;
-        @include breakpoint ( breakpoint_large ){
-            // メニューの横並び
-            display: flex;
-            // 以下、リセット
-            position: relative;
-            top: auto;
-            left: auto;
-            transform: none;
+        // text-align: left;
+        // margin-bottom: 40px;
+        @include breakpoint ( breakpoint_middle ){
+            margin-top: 40px;   // h2との余白
+            display: block;
+            text-align: left;
+            margin-bottom: 40px;
+
+            // // メニューの横並び
+            // display: flex;
+            // // 以下、リセット
+            // position: relative;
+            // top: auto;
+            // left: auto;
+            // transform: none;
         }
-        li{
+        // li{
+        &__list{
+            margin-top: 38px;
+            &:first-of-type{
+                margin-top: 212px;
+            }
             // margin-right: 0;
             // margin-bottom: 40px;
             @include breakpoint ( breakpoint_large ){
-                // メニューの右側に余白
-                margin-left: 65px;
+                // メニューの左側に余白
+                // margin-left: 18%;
                 margin-bottom: 0;
                 &:last-of-type{
                     margin-right: 0;
@@ -41,10 +57,12 @@
         }
     }
     .p-gnavi__sub-menu{
-
+        margin-top: 40px;   // main-menuとの余白設定
         &__list{
-            margin-left: 17.7%;
-            margin-bottom: 40px;
+            margin-top: 22px;
+            // margin-left: 17.7%;
+            margin-left: 20px;
+            // margin-bottom: 40px;
             font-size: 2rem;
         }
     }
