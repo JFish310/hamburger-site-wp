@@ -23,10 +23,20 @@ http://mplus-webfonts.osdn.jp/
 https://www.tsukimi.net/submit-button_font-awesome.html  
 
 CSS Grid Layoutについて
-https://qiita.com/kura07/items/e633b35e33e43240d363  
-https://qiita.com/kura07/items/486c19045aab8090d6d9  
-https://coliss.com/articles/build-websites/operation/css/learn-css-grid-in-5-minutes.html  
-https://webdesign-trends.net/entry/11086#Grid_LayoutFlexbox　　
+    CSS Grid Layout を極める！（基礎編）
+    https://qiita.com/kura07/items/e633b35e33e43240d363  
+
+    CSS Grid Layout を極める！（場面別編）  
+    https://qiita.com/kura07/items/486c19045aab8090d6d9  
+
+    5分で完璧に分かる！CSS Gridの基本的な使い方を解説  
+    https://coliss.com/articles/build-websites/operation/css/learn-css-grid-in-5-minutes.html  
+
+    ---->>> 一番分かりやすいCSS Grid Layoutの使い方ガイド  
+    https://webdesign-trends.net/entry/11086#Grid_LayoutFlexbox  
+
+    CSS Gridレイアウト入門：「fr」でのサイズ指定  
+    https://hacknote.jp/archives/26960/  
 
 
 
