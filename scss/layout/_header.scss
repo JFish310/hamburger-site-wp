@@ -14,13 +14,15 @@
         // max-width: 1280px;      // ←ここはラッパーとか作ってコンテンツまるっとのほうがいいかもしれん
         //padding: 0 120px;
         flex-direction: row;    // 横並び
+        justify-content: flex-end;
         // .p-search{
         //     flex-direction: row;    // 横並び
         //     // justify-content: flex-end;
         // }
     }
     .c-button--menu{
-        padding: 14px 16px;     // 上下、左右
+        font-weight: 700;       // bold
+        // padding: 14px 16px;     // 上下、左右
         // margin-right: 0;
         text-align: right;      // 右寄せ
         @include breakpoint( breakpoint_middle ){
@@ -40,6 +42,7 @@
     // position: fixed;    // ヘッダーの固定
     
     > h1{
+        font-weight: 700;   // bold
         margin: 0 auto;     // 上下0, 左右中央寄せ
         // margin-top: 54px;
         // font-size: 2.6rem;
@@ -79,6 +82,10 @@
 
     /* 検索バー */
     .p-search{
+        width: 85%;
+        @include breakpoint ( breakpoint_middle ){
+            width: 65%;
+        }
         @include breakpoint ( breakpoint_large ){
             // padding: 60px;
             // align-items: center;        /* 垂直方向の指定 */

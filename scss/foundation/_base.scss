@@ -6,7 +6,8 @@ body{
     font-size: 2.0rem;
     //line-height: 1.7;   // 行の高さ
     font-weight: 400;   // フォントの太さ（基本400）
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'M+ 1m', sans-serif; // M PLUS 1p
+    max-width: 1380px;
 }
 
 img{

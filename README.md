@@ -19,6 +19,9 @@
 M+ FONTSについて  
 http://mplus-webfonts.osdn.jp/  
 
+font-weightについて  
+https://yumanoblog.com/xd-css/　　
+
 検索バーのinput要素のアイコン表示について参照サイト  
 https://www.tsukimi.net/submit-button_font-awesome.html  
 

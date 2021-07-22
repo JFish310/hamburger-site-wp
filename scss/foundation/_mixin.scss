@@ -41,15 +41,15 @@ https://daib-log.com/responsive/
 ----------------------------------------------------------*/
 /* モバイルファースト */
 @mixin breakpoint( $breakpoint ) {
-	/* SP基準--PC-- */ 
-	@if $breakpoint == breakpoint_large{
-		@media ( min-width : 1025px ){
+	/* SP基準--tablet-- */ 
+	@if $breakpoint == breakpoint_middle{
+		@media ( min-width : 835px ){
 			@content;
 		}
 	}
-	/* SP基準--tablet-- */ 
-	@if $breakpoint == breakpoint_middle{
-		@media ( min-width : 834px ){
+	/* SP基準--PC-- */ 
+	@if $breakpoint == breakpoint_large{
+		@media ( min-width : 1025px ){
 			@content;
 		}
 	}
