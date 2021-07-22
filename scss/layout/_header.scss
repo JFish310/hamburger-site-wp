@@ -6,80 +6,40 @@
     color: $color--text-main;
     display: flex;              /* 親要素に指定 */
     flex-direction: column;     /* 積み重なるように配置する */
-    // justify-content: center;    /* 水平方向の指定 */
-    // align-items: center;        /* 垂直方向の指定 */
-
     @include breakpoint( breakpoint_large ){
-        // width: 80%;
         // max-width: 1280px;      // ←ここはラッパーとか作ってコンテンツまるっとのほうがいいかもしれん
-        //padding: 0 120px;
         flex-direction: row;    // 横並び
-        justify-content: flex-end;
-        // .p-search{
-        //     flex-direction: row;    // 横並び
-        //     // justify-content: flex-end;
-        // }
+        height: 20vh;           // 画面に対しての割合（217/1080=20%）
     }
+    /* メニューボタン */
     .c-button--menu{
-        font-weight: 700;       // bold
-        // padding: 14px 16px;     // 上下、左右
-        // margin-right: 0;
-        text-align: right;      // 右寄せ
+        // width: 51px;
+        font-weight: 700;           // bold
+        padding: 14px 0px;          // 上下、左右
+        margin: 0 16px 0 auto;      // 右寄せ、右の余白の指定
         @include breakpoint( breakpoint_middle ){
-            padding: 18px　26px;    // 上下、左右
+            // width: 86px;
+            font-size: 3.4rem;
+            padding-bottom: 0px;    // h1との余白を詰める
+            margin-right: 26px;     // 右の余白指定
         }
         // メニューボタンは非常時
         @include breakpoint( breakpoint_large ){
             display: none;
         }
     }
-
-
-    // justify-content: space-between;  // 各アイテムを均等に配置し、最初のアイテムは先頭に寄せ、最後のアイテムは末尾に寄せる
-    // align-items: center;
-
-    // border-bottom: 1px solid $color--title-color;   /* 境界線に白いのボーダー */
-    // position: fixed;    // ヘッダーの固定
-    
-    > h1{
+    /* タイトル */
+    h1{
         font-weight: 700;   // bold
         margin: 0 auto;     // 上下0, 左右中央寄せ
         // margin-top: 54px;
         // font-size: 2.6rem;
         @include breakpoint( breakpoint_large ){
-            margin: auto;       // リセット
-            margin-left: 65px;  // margin設定
-
+            margin: auto;           // リセット
+            // margin-left: 65px;      // margin設定
+            margin-left: 4%;
         }
     }
-
-    // /* メニュー */
-    //  &__menu{
-    //     display: none;      /* 領域そのものを生成しない */
-    //     width: 100vw;       /* ビューポートが 600px だとしたら、画像の幅は 60px になる */
-    //     height: 100vh;      /* ビューポート　高さ */
-    //     position: fixed;    /* 絶対位置、スクロールしても位置は固定されたまま */
-    //     top: 0;             /* 上0 */
-    //     left: 0;            /* 左0 */
-
-    //     @include breakpoint ( breakpoint_large ){
-    //         // 全部リセット
-    //         display: block; // divだから初期値はblock？横並びの指定はp-naviで。
-    //         width: auto;
-    //         height: auto;
-    //         position: relative;
-    //         top: auto;
-    //         left: auto;
-    //     }
-    // }
-    /* ハンバーガーメニューボタン */
-    .p-menu{
-        @include breakpoint ( breakpoint_middle ){
-            // display: block;
-            display: none;
-        }
-    }
-
     /* 検索バー */
     .p-search{
         width: 85%;
@@ -87,10 +47,10 @@
             width: 65%;
         }
         @include breakpoint ( breakpoint_large ){
-            // padding: 60px;
-            // align-items: center;        /* 垂直方向の指定 */
+            width: 35%;
+            margin: auto;       // リセット
+            // margin-right: 30px;  // margin設定
+            margin-right: 2%;   // margin設定
         }
-        // margin-left: auto;
-        // margin-right: 30px;
     }
 }
