@@ -43,7 +43,7 @@ https://daib-log.com/responsive/
 @mixin breakpoint( $breakpoint ) {
 	/* SP基準--tablet-- */ 
 	@if $breakpoint == breakpoint_middle{
-		@media ( min-width : 835px ){
+		@media ( min-width : 834px ){
 			@content;
 		}
 	}

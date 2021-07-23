@@ -20,7 +20,7 @@ M+ FONTSについて
 http://mplus-webfonts.osdn.jp/  
 
 font-weightについて  
-https://yumanoblog.com/xd-css/　　
+https://yumanoblog.com/xd-css/  
 
 検索バーのinput要素のアイコン表示について参照サイト  
 https://www.tsukimi.net/submit-button_font-awesome.html  
@@ -99,6 +99,8 @@ layout-list
 margin-bottom: 0;  
 margin-topで余白の調整をする。  
 ※要素の下に、何が来るかわからないから、下につく方が、上と調整する。  
+参考サイト  
+https://design-remarks.com/margin-top-or-bottom/  
 ***
 
 
