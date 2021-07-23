@@ -10,6 +10,7 @@
         // max-width: 1280px;      // ←ここはラッパーとか作ってコンテンツまるっとのほうがいいかもしれん
         flex-direction: row;    // 横並び
         height: 20vh;           // 画面に対しての割合（217/1080=20%）
+        min-height: 150px;      // PC最大化（自分の）の753pxの20%
     }
     /* メニューボタン */
     .c-button--menu{

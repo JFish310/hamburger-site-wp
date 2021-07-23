@@ -1,12 +1,12 @@
 .p-gnavi{
     width: 100%;
     // height: 100%;
-    height: 1826px;
+    // height: 1826px;
     padding-top: 12.5%;
     padding-left: 12.5%;
     background-color: $color--background--menu-pc;
     color: $color--text-main;
-    .c-button--close{
+    // .c-button--close{
         
     // }
     > h2{
@@ -72,3 +72,29 @@
     }
 
 }
+    // /* メニュー */
+    //  &__menu{
+    //     display: none;      /* 領域そのものを生成しない */
+    //     width: 100vw;       /* ビューポートが 600px だとしたら、画像の幅は 60px になる */
+    //     height: 100vh;      /* ビューポート　高さ */
+    //     position: fixed;    /* 絶対位置、スクロールしても位置は固定されたまま */
+    //     top: 0;             /* 上0 */
+    //     left: 0;            /* 左0 */
+
+    //     @include breakpoint ( breakpoint_large ){
+    //         // 全部リセット
+    //         display: block; // divだから初期値はblock？横並びの指定はp-naviで。
+    //         width: auto;
+    //         height: auto;
+    //         position: relative;
+    //         top: auto;
+    //         left: auto;
+    //     }
+    // }
+    // /* メニューボタン */
+    // .p-menu{
+    //     @include breakpoint ( breakpoint_middle ){
+    //         // display: block;
+    //         display: none;
+    //     }
+    // }

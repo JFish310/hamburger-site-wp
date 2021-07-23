@@ -14,6 +14,7 @@
     }
     @include breakpoint( breakpoint_large ) {
         height: 49vh;
+        min-height: 369px;          // PC最大化（自分の）の753pxの49%
     }
     /* タイトル */
     h2{
