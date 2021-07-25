@@ -2,18 +2,18 @@
 .l-sidebar{
     // width: 20%;
     // height: 217px;
-    display: none;      // 非表示
+    // display: none;      // 非表示
     @include breakpoint ( breakpoint_large ){
         display: block; // 初期値
     }
     background-color: $color--background--menu-pc;
     color: $color--text-main;
-    h2{
-        display: none;
-        @include breakpoint( breakpoint_large ){
-            display: block;
-        }
-    }
+    // h2{
+    //     display: none;
+    //     @include breakpoint( breakpoint_large ){
+    //         display: block;
+    //     }
+    // }
 
 
 }

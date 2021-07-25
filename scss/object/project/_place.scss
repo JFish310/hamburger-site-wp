@@ -15,9 +15,10 @@
             // align-items: flex-end;		/* 下揃え */
         }
         h2{
+            font-size: 4.1rem;
             font-weight: 700;       // bold
             color: $color--text-sub;
-            margin-top: 10px;
+            // margin-top: 10px;
             // padding-top: 25px;
             // padding-left: 10px;
         }
@@ -35,7 +36,7 @@
         height: 642px;
         max-width: 357px;
 
-        padding: 5%;
+        padding: 10px;        // 画像（写真）に対して
         @include breakpoint( breakpoint_middle ){
             padding: 2%;
         }
@@ -75,7 +76,7 @@
         height: 642px;
         max-width: 357px;
 
-        padding: 5%;
+        padding: 10px;      // 画像（写真）に対して
         @include breakpoint( breakpoint_middle ){
             padding: 2%;
         }

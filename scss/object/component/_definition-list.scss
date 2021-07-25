@@ -3,11 +3,12 @@
     color: $color--card-text;
     
     // dt{
-    //     margin-bottom: 20px;
+    //     font-size: 2.2rem;
+    //     // margin-bottom: 20px;
     // }
     dd{
-        margin-top: 25px;
-        font-size: 1.6rem;
+        margin-top: 15px;
+        // font-size: 1.6rem;
         line-height: 2.5rem;
         font-family: "M+ 1m";
         // margin-bottom: 40px;
@@ -21,13 +22,14 @@
     // }
 }
 
-// .c-dl--level2{
-//     width: 320px;
-//     dt{
-//         height: 200px;
-//     }
-//     dd{
-//         padding: 30px 35px;
-//         font-size: 1.3rem;
-//     }
-// }
+.c-dl--level2{
+    padding: 40px;
+    color: $color--text-sub;
+    dd{
+        margin-top: 20px;
+        font-size: 1.4rem;
+        font-weight: 700;       // bold
+        line-height: 3.3rem;
+        font-family: "M+ 1m";
+    }
+}

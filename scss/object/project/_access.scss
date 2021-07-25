@@ -107,9 +107,9 @@
 
 
     // }
-    .c-dl--{
-        padding: 40px;
-        color: $color--text-sub;
+    .c-dl--level2{
+        // padding: 40px;
+        // color: $color--text-sub;
         position: absolute;
         z-index: 1;
         // background: rgba($color--background--mask-access, 0.4);
@@ -120,7 +120,7 @@
         //     }            
         // }
         dd{
-            margin-top: 25px;
+            margin-top: 15px;
         }
         @include breakpoint( breakpoint_middle ) {
             height: 100%;
@@ -132,6 +132,7 @@
     }
     h2{
         color: $color--text-sub;
+        font-size: 3.0rem;
         // position: relative;
         // z-index: 1;
         // padding: 40px;
@@ -141,7 +142,7 @@
             display: block;                             // ブロックが積みあがる
             border-bottom: solid $color--text-sub 2px;  // 線種、色、太さ
             width: 75px;                                // 線の長さ
-            margin-top: 25px;                           // タイトルとの余白
+            margin-top: 20px;                           // タイトルとの余白
         }
     }
 }

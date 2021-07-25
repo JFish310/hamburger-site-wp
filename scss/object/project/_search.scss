@@ -1,12 +1,19 @@
+/* 検索バー */
 .p-search{
+    width: 85%;
+    @include breakpoint ( breakpoint_middle ){
+        width: 65%;
+    }
+    @include breakpoint ( breakpoint_large ){
+        width: 35%;
+        margin: auto;       // リセット
+        // margin-right: 30px;  // margin設定
+        margin-right: 2%;   // margin設定
+    }
     // position: relative;
     // width: 85%;
     margin: auto;       // 中央寄せ
     // margin: 40px 3%;
-    // input{
-    //     // border-style: solid;
-    //     padding-left: 40px;
-    //     border: 1.5px solid $color--text-main;  /* 枠線 */
     // }
     /* 検索--入力エリア-- */
     input[type="search"]{
@@ -41,7 +48,8 @@
         cursor: pointer;
         // outline: none;
         // appearance: none;
-        font-size: 1.6rem;
+        // font-size: 1.6rem;
+        font-family: "M+ 1m";
         font-weight: 700;
         // display: block;
         vertical-align: top;        // 入力フォームとボタンのズレ解消（念のためこちらでも設定）

@@ -15,6 +15,7 @@
     /* メニューボタン */
     .c-button--menu{
         // width: 51px;
+        font-size: 20px;
         font-weight: 700;           // bold
         padding: 14px 0px;          // 上下、左右
         margin: 0 16px 0 auto;      // 右寄せ、右の余白の指定
@@ -33,25 +34,27 @@
     h1{
         font-weight: 700;   // bold
         margin: 0 auto;     // 上下0, 左右中央寄せ
+        font-size: 4.0rem;
         // margin-top: 54px;
         // font-size: 2.6rem;
         @include breakpoint( breakpoint_large ){
             margin: auto;           // リセット
             // margin-left: 65px;      // margin設定
             margin-left: 4%;
+            font-size: 6.4rem;
         }
     }
-    /* 検索バー */
-    .p-search{
-        width: 85%;
-        @include breakpoint ( breakpoint_middle ){
-            width: 65%;
-        }
-        @include breakpoint ( breakpoint_large ){
-            width: 35%;
-            margin: auto;       // リセット
-            // margin-right: 30px;  // margin設定
-            margin-right: 2%;   // margin設定
-        }
-    }
+    // /* 検索バー */
+    // .p-search{
+    //     width: 85%;
+    //     @include breakpoint ( breakpoint_middle ){
+    //         width: 65%;
+    //     }
+    //     @include breakpoint ( breakpoint_large ){
+    //         width: 35%;
+    //         margin: auto;       // リセット
+    //         // margin-right: 30px;  // margin設定
+    //         margin-right: 2%;   // margin設定
+    //     }
+    // }
 }

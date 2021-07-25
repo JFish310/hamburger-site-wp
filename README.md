@@ -61,6 +61,9 @@ https://html-coding.co.jp/annex/dictionary/html/hr/
 Flexboxで最後の1つだけ右寄せや下寄せにする方法！  
 https://webkore.site/flexbox-right-justified/  
 
+displayプロパティのデフォルト値一覧  
+https://programmercollege.jp/column/4914/  
+
 ***
 
 
@@ -103,7 +106,17 @@ margin-topで余白の調整をする。
 https://design-remarks.com/margin-top-or-bottom/  
 ***
 
-
+**【font-family】について**
+    font-family: 候補1,候補2,候補3,フォントの種類;
+        「sans-serif」  ゴシック体系のフォント（MSゴシック、中ゴシック、Arialなど）
+        「serif」       明朝体系のフォント（MS明朝、MS P明朝、Garamond、MS Georgia、Times New Romanなど）
+        「cursive」     筆記体系のフォント（caflisch script、ex pontoなど）
+        「fantasy」     装飾系のフォント（critter、studzなど）
+        「monospace」   等幅系のフォント（Osaka-等幅、courier、Courier Newなど）
+    ※日本語テキストにcursiveを指定していると、希に正常に表示できない場合がある※
+    英語フォントと日本語フォントの両方を指定する場合は、先に英語フォントを指定する。
+    そうすることで、アルファベットには英語フォントが、日本語には日本語フォントが使用されるようになる。
+***
 
 
 #Sass-階層説明
