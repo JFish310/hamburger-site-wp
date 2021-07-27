@@ -25,7 +25,7 @@
             padding-bottom: 0px;    // h1との余白を詰める
             margin-right: 26px;     // 右の余白指定
         }
-        // メニューボタンは非常時
+        // メニューボタンは非表示
         @include breakpoint( breakpoint_large ){
             display: none;
         }

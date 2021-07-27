@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css">
     <!-- Font Awesome の読み込み -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- jQueryの読み込み -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="l-container">
@@ -83,8 +85,9 @@
         </main><!-- /.p-main -->
         <!-- <article class="l-sidebar"><article>タグは、内容が単体で完結するセクションであることを示す際に使用 -->
         <aside class="l-sidebar"><!-- <aside>タグは、メインコンテンツとは直接関係のない、複数ページ共通のコンテンツ用の要素 -->
-            <button type="button" class="c-button--close"></button>
-            <nav class="p-gnavi"><h2>Menu</h2>
+            <button type="button" class="c-button--close"></button><!--このbuttonタグはnavタグ内に入れたほうがいいのか？？？-->
+            <nav class="p-gnavi">
+                <h2>Menu</h2>
                 <ul class="p-gnavi__main-menu">
                     <li class="p-gnavi__main-menu__list"><h3>バーガー</h3>
                         <ul class="p-gnavi__sub-menu">
@@ -128,7 +131,6 @@
             <!-- Copyright: RaiseTech -->
         </p>
     </footer>
-
-    
+    <script src="/js/menu.js"></script>
 </body>
 </html>
