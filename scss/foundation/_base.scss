@@ -18,9 +18,26 @@ html {
 body{
     font-size: 1.6rem;
     //line-height: 1.7;   // 行の高さ
-    font-weight: 400;   // フォントの太さ（基本400）
+    font-weight: 400;       // フォントの太さ（基本400）
     font-family: 'Roboto', 'M+ 1m', sans-serif; // M PLUS 1p
+    overflow-x: hidden;     // 横スクロールの非表示（l-sidebar（Menu）対策）
     // max-width: 1380px;
+
+    /* Menuボタン開閉 */
+    &.is-open{
+        position: fixed;    // 画面の固定
+        overflow: hidden;   // スクロールバーの非表示
+        // メニューが出てきたときの影
+        &::before{
+            content: "";
+            background: rgba($color--background--mask-access, 0.5);
+            position: absolute; // なぜ必要かわからない
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
 }
 
 img{

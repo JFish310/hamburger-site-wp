@@ -25,6 +25,12 @@
 .c-dl--level2{
     padding: 40px;
     color: $color--text-sub;
+    @include breakpoint( breakpoint_large ){
+        // 幅1536pxにするにはカンプの数値の80%
+        padding-top: 66px;
+        padding-left: 95px;
+        padding-right: 107px;
+    }
     dd{
         margin-top: 20px;
         font-size: 1.4rem;

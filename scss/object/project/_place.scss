@@ -4,10 +4,16 @@
         @include breakpoint( breakpoint_middle ){
             padding: 40px;
         }
+        /********* レスポンシブ *********/
+        // @include breakpoint( breakpoint_large ){
+        //     height: 48%;
+        //     padding: 8% 7%;
+        // }
 
         display: flex;              /* 親要素に指定 */
         flex-direction: column;     /* 積み重なるように配置する */
-        justify-content: center;    /* 水平方向の指定 */
+        // justify-content: center;    /* 水平方向の指定 */
+        justify-content: space-around;    /* 水平方向の指定 */
         align-items: center;        /* 垂直方向の指定 */
         /* レスポンシブ対応 */
         @include breakpoint( breakpoint_middle ){
@@ -34,12 +40,36 @@
         // background-position: center;
         background-size: cover;         /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
         height: 642px;
+        // height: 100%;
         max-width: 357px;
+
+        /********* レスポンシブ *********/
+        // min-height: auto;
+        @include breakpoint( breakpoint_large ){
+            width: 500px;    // 625*0.8
+            height: 957px;  // 1193*0.8
+            max-width: 625px;
+        //     width: 40%;
+        //     padding-bottom: 65.5%;
+        //     max-width: 625px;
+        //     // background-size: 100% auto;
+        //     // height: 82%;
+        }
 
         padding: 10px;        // 画像（写真）に対して
         @include breakpoint( breakpoint_middle ){
             padding: 2%;
         }
+        
+        /********* レスポンシブ *********/
+        // @include breakpoint( breakpoint_large ){
+        //     width: 100%;
+        //     padding-bottom: 191%;
+        //     max-width: 625px;
+        //     max-height: 1196px;
+        //     // background-size: 100% auto;
+        //     // height: 82%;
+        // }
 
         display: flex;              /* 親要素に指定 */
         flex-direction: column;     /* 積み重なるように配置する */
@@ -68,13 +98,25 @@
         margin-top: 20px;   // Take Outとの余白指定
         @include breakpoint( breakpoint_middle ){
             margin-top: 0px;   // リセット
-            margin-left: 4%;
+            // margin-left: 4%;
         }
         background-image: url(/img/front/eat-in.jpg);
         // background-position: center;
         background-size: cover;         /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
         height: 642px;
         max-width: 357px;
+        @include breakpoint( breakpoint_large ){
+            width: 500px;    // 625*0.8
+            height: 957px;  // 1193*0.8
+            max-width: 625px;
+        }
+        /********* レスポンシブ *********/
+        // @include breakpoint( breakpoint_large ){
+        //     width: 40%;
+        //     max-width: 625px;
+            
+        //     // height: 82%;
+        // }
 
         padding: 10px;      // 画像（写真）に対して
         @include breakpoint( breakpoint_middle ){
