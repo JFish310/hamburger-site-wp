@@ -1,11 +1,11 @@
 .p-place{
     ul{
         padding: 20px;
-        @include breakpoint( breakpoint_middle ){
+        @include breakpoint( breakpoint--medium ){
             padding: 40px;
         }
         /********* レスポンシブ *********/
-        // @include breakpoint( breakpoint_large ){
+        // @include breakpoint( breakpoint--large ){
         //     height: 48%;
         //     padding: 8% 7%;
         // }
@@ -16,7 +16,7 @@
         justify-content: space-around;    /* 水平方向の指定 */
         align-items: center;        /* 垂直方向の指定 */
         /* レスポンシブ対応 */
-        @include breakpoint( breakpoint_middle ){
+        @include breakpoint( breakpoint--medium ){
             flex-direction: row;		/* 横並び */
             // align-items: flex-end;		/* 下揃え */
         }
@@ -28,6 +28,7 @@
             // padding-top: 25px;
             // padding-left: 10px;
         }
+        // タイトル下の罫線
         .c-border{
             margin-top: 20px;
             // line-height: 50px;
@@ -36,16 +37,22 @@
     
     /* Take Out */
     &__take-out{
+        padding: 10px;              // 背景画像（写真）に対して
         background-image: url(/img/front/take-out.jpg);
         // background-position: center;
-        background-size: cover;         /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
+        background-size: cover;     /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
         height: 642px;
         // height: 100%;
         max-width: 357px;
+        display: flex;              /* 親要素に指定 */
+        flex-direction: column;     /* 積み重なるように配置する */
 
         /********* レスポンシブ *********/
         // min-height: auto;
-        @include breakpoint( breakpoint_large ){
+        @include breakpoint( breakpoint--medium ){
+            padding: 2%;
+        }
+        @include breakpoint( breakpoint--large ){
             width: 500px;    // 625*0.8
             height: 957px;  // 1193*0.8
             max-width: 625px;
@@ -55,14 +62,9 @@
         //     // background-size: 100% auto;
         //     // height: 82%;
         }
-
-        padding: 10px;        // 画像（写真）に対して
-        @include breakpoint( breakpoint_middle ){
-            padding: 2%;
-        }
         
         /********* レスポンシブ *********/
-        // @include breakpoint( breakpoint_large ){
+        // @include breakpoint( breakpoint--large ){
         //     width: 100%;
         //     padding-bottom: 191%;
         //     max-width: 625px;
@@ -70,10 +72,6 @@
         //     // background-size: 100% auto;
         //     // height: 82%;
         // }
-
-        display: flex;              /* 親要素に指定 */
-        flex-direction: column;     /* 積み重なるように配置する */
-
         .l-container__box{
             // margin: auto auto 10px auto;    // 下寄せ、margin-bottomは10px
             margin-top: auto;    // 下寄せ、margin-bottomは10px
@@ -92,12 +90,13 @@
         }
     }
 
-
     /* Eat In */
     &__eat-in{
-        margin-top: 20px;   // Take Outとの余白指定
-        @include breakpoint( breakpoint_middle ){
-            margin-top: 0px;   // リセット
+        margin-top: 20px;       // Take Outとの余白指定
+        padding: 10px;          // 画像（写真）に対して
+        @include breakpoint( breakpoint--medium ){
+            margin-top: 0px;    // リセット
+            padding: 2%;
             // margin-left: 4%;
         }
         background-image: url(/img/front/eat-in.jpg);
@@ -105,26 +104,14 @@
         background-size: cover;         /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
         height: 642px;
         max-width: 357px;
-        @include breakpoint( breakpoint_large ){
+        display: flex;              /* 親要素に指定 */
+        flex-direction: column;     /* 積み重なるように配置する */
+
+        @include breakpoint( breakpoint--large ){
             width: 500px;    // 625*0.8
             height: 957px;  // 1193*0.8
             max-width: 625px;
         }
-        /********* レスポンシブ *********/
-        // @include breakpoint( breakpoint_large ){
-        //     width: 40%;
-        //     max-width: 625px;
-            
-        //     // height: 82%;
-        // }
-
-        padding: 10px;      // 画像（写真）に対して
-        @include breakpoint( breakpoint_middle ){
-            padding: 2%;
-        }
-
-        display: flex;              /* 親要素に指定 */
-        flex-direction: column;     /* 積み重なるように配置する */
 
         .l-container__box{
             margin-top: auto;    // 下寄せ、margin-bottomは10px

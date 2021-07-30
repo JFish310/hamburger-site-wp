@@ -4,10 +4,8 @@
     // フッターの高さ
     height: 150px;
 
-    // background-color: $color--background--footer;
     background-image: url(/img/front/footer.png);
     background-repeat: repeat;    // 背景画像リピート
-    // background-size: 50%;
     color: $color--text-sub;
     font-family: "M+ 1m";
 
@@ -27,12 +25,8 @@
         small{
             font-size: 1.4rem;
         }
-        // margin-bottom: 35px;
-        // > .ccc{
-        //     font-size: 1.4rem;
-        // }
     }
-
+}
 /* text-align: centerを使った方法 */
 // .l-footer{
 //     width: 100%;
@@ -60,4 +54,4 @@
 //             font-size: 1.4rem;
 //         }
 //     }
-}
+//  }

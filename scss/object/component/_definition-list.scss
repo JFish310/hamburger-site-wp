@@ -1,31 +1,25 @@
+/* p-placeに使用 */
 .c-dl--level1{
     margin-top: 10px;
     color: $color--card-text;
-    
+
+    // dt内はh3のため、サイズの指定はh3で行う
     // dt{
     //     font-size: 2.2rem;
     //     // margin-bottom: 20px;
     // }
     dd{
         margin-top: 15px;
-        // font-size: 1.6rem;
         line-height: 2.5rem;
         font-family: "M+ 1m";
-        // margin-bottom: 40px;
     }
-    /* レスポンシブ対応 */
-    // @include breakpoint( breakpoint_large ){
-    //     margin-bottom: 0px;
-    //     dd{
-    //         margin-bottom: 0px;
-    //     }
-    // }
 }
 
+/* p-accessに使用 */
 .c-dl--level2{
     padding: 40px;
     color: $color--text-sub;
-    @include breakpoint( breakpoint_large ){
+    @include breakpoint( breakpoint--large ){
         // 幅1536pxにするにはカンプの数値の80%
         padding-top: 66px;
         padding-left: 95px;

@@ -1,89 +1,92 @@
 .c-button {
-    // width: 136px;
-    // padding: 12px 52px;
-    // background: $color--background--menu-pc;
-    // color: $color--text-main;
-    // border: 1px solid $color--text-main;    // 枠線指定（太さ・スタイル・色）
-    // border-radius: 0.5em;                   /* 角丸 */
-    // cursor: pointer;
-    // // outline: none;
-    // appearance: none;
-    // font-size: 1.6rem;
-    // // font-weight: 600;
-    // // display: block;
+    cursor: pointer;        // カーソルをポインターに
+    /* メニューボタン */
     &--menu{
-        cursor: pointer;        // カーソルをポインターに
+        @extend .c-button;   // .c-buttonの継承
+        
+        font-size: 20px;
+        font-weight: 700;           // bold
+        padding: 14px 0px;          // 上下、左右
+        margin: 0 16px 0 auto;      // 右寄せ、右の余白の指定
+        @include breakpoint( breakpoint--medium ){
+            // width: 86px;
+            font-size: 3.4rem;
+            padding-bottom: 0px;    // h1との余白を詰める
+            margin-right: 26px;     // 右の余白指定
+        }
+        // メニューボタンは非表示
+        @include breakpoint( breakpoint--large ){
+            display: none;
+        }
     }
-    /* ×ボタン*/
-    // &--close{
-    //     display: block;
-    //     position: relative;
-    //     width: 30px;
-    //     height: 30px;
+    /* 閉じるボタン*/
+    &--close{
+        @extend .c-button;      // .c-buttonの継承
+
+        display: block;
+        position: relative;
+        width: 66px;
+        height: 66px;
+
+        margin: 0 0 0 auto;     // 右寄せ、右の余白の指定
+        @include breakpoint ( breakpoint--large ){
+            display: none;      // 閉じるボタンの非表示
+        }
         // padding: 17px;
         // top: 8px;
         // right: 0;
         // left: auto;
-        // position: absolute;
-        // background-color: $color--text-main;
-        // cursor: pointer;        // カーソルをポインターに
-        // &::before, ::after{
-        //     content: "";
-        //     display: block;
-        //     width: 25px;
-        //     height: 2px;
-        //     background-color: $color--text-main;
-        //     transform: rotate(45deg);
-        //     transform-origin: 0% 50%;
-        //     position: absolute;
-        //     top: calc(14% - 5px);
-        //     left: 14%;
-        // }
 
-        // &::after{
-        //     transform: rotate(-45deg);
-        //     transform-origin:100% 50%;
-        //     left: auto;
-        //     right: 14%;
-        // }
-        // .bar-top{
-        //     transform: translate(-50%,10px) rotate(45deg);
-        //     transition: transform .3s;
-        // }
-        // .bar-bottom{
-        //     transform: translate(-50%,-4px) rotate(-45deg);
-        //     transition: transform .3s;
-        // }
-    }
-/* ×ボタン*/
-.c-button--close{
-    display: block;
-    position: relative;
-    width: 66px;
-    height: 66px;
-    // padding: 17px;
-    // top: 8px;
-    // right: 0;
-    // left: auto;
-    // background-color: #CCC;
-    cursor: pointer;        // カーソルをポインターに
-
-    &::before, &::after{
-        content: "";
-        display: block;
-        width: 44.8px;        // 線の長さ
-        height: 6px;        // 線の太さ
-        background-color: $color--text-main;
-        transform: rotate(45deg);
-        transform-origin: 0% 50%;
-        position: absolute;
-        top: calc(25% - 3px);
-        left: 25%;
-    }
-    &::after{
-        transform: rotate(-45deg);
-        transform-origin: 100% 50%;
-        left: auto;
-        right: 25%;
+        // ×の成形
+        &::before, &::after{
+            content: "";
+            display: block;
+            width: 44.8px;      // 線の長さ
+            height: 6px;        // 線の太さ
+            background-color: $color--text-main;
+            transform: rotate(45deg);
+            transform-origin: 0% 50%;
+            position: absolute;
+            top: calc(25% - 3px);   // 線の太さの半分を引く
+            left: 25%;              // padding17pxは66pxに対して25%
+        }
+        &::after{
+            transform: rotate(-45deg);
+            transform-origin: 100% 50%;
+            left: auto;
+            right: 25%;
+        }
     }
 }
+/* ×ボタン*/
+// .c-button--close{
+//     display: block;
+//     position: relative;
+//     width: 66px;
+//     height: 66px;
+//     // padding: 17px;
+//     // top: 8px;
+//     // right: 0;
+//     // left: auto;
+//     // background-color: #CCC;
+//     cursor: pointer;        // カーソルをポインターに
+
+//     &::before, &::after{
+//         content: "";
+//         display: block;
+//         width: 44.8px;      // 線の長さ
+//         height: 6px;        // 線の太さ
+//         background-color: $color--text-main;
+//         transform: rotate(45deg);
+//         transform-origin: 0% 50%;
+//         position: absolute;
+//         top: calc(25% - 3px);   // 線の太さの半分を引く
+//         left: 25%;              // padding17pxは66pxに対して25%
+//     }
+//     &::after{
+//         transform: rotate(-45deg);
+//         transform-origin: 100% 50%;
+//         left: auto;
+//         right: 25%;
+//     }
+// }

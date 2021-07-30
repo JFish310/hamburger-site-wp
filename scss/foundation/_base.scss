@@ -31,7 +31,7 @@ body{
         &::before{
             content: "";
             background: rgba($color--background--mask-access, 0.5);
-            position: absolute; // なぜ必要かわからない
+            position: absolute;
             top: 0;
             right: 0;
             bottom: 0;
@@ -47,7 +47,7 @@ img{
 
 a{
     text-decoration: none;
-    //color: $color--title-color;
+    color: $color--text-main;
 }
 
 li{

@@ -45,6 +45,7 @@ img {
 
 a {
   text-decoration: none;
+  color: #707070;
 }
 
 li {
@@ -65,7 +66,7 @@ fieldset {
 	max-width : 599px
 	min-width : 設定なし（実質599px以下）
 
-	ここでの変数、breakpoint_small
+	ここでの変数、breakpoint--small
 
 ◆Tablet      : 600px〜1024px
 	iPadAir 4 : 10.9インチ、820 × 1180
@@ -75,7 +76,7 @@ fieldset {
 	max-width : 1024px
 	min-width : 600px
 
-	ここでの変数、breakpoint_middle
+	ここでの変数、breakpoint--medium
 
 ◆PC          : 1280px〜
 	PCのブレイクポイントはタブレット1024pxにプラス1px加えた1025px。
@@ -84,11 +85,9 @@ fieldset {
 	max-width : 設定なし（実質1025px以上）
 	min-width : 1025px
 
-	ここでの変数、breakpoint_large
+	ここでの変数、breakpoint--large
 
 	
-
-
 モバイルファーストなら、min-width
 PCファーストなら、max-width
 
@@ -134,7 +133,6 @@ https://daib-log.com/responsive/
   /* 積み重なるように配置する */
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
-  /* メニューボタン */
   /* タイトル */
 }
 
@@ -143,31 +141,6 @@ https://daib-log.com/responsive/
     flex-direction: row;
     height: 20vh;
     min-height: 150px;
-  }
-}
-
-.l-header .c-button--menu {
-  font-size: 20px;
-  font-weight: 700;
-  padding: 14px 0px;
-  margin: 0 16px 0 auto;
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
-}
-
-@media (min-width: 834px) {
-  .l-header .c-button--menu {
-    font-size: 3.4rem;
-    padding-bottom: 0px;
-    margin-right: 26px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .l-header .c-button--menu {
-    display: none;
   }
 }
 
@@ -190,19 +163,23 @@ https://daib-log.com/responsive/
 /* メニュー */
 .l-sidebar {
   /*--------ここから下がメニューボタンを考えての対応----------*/
+  /* 画面外に配置 */
   position: fixed;
   top: 0%;
   left: 100%;
   background-color: #F2EDE9;
   height: 100%;
   padding-left: 46px;
+  /* メニューボタン押下 */
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
+  /* _button.scssへ移動 */
 }
 
 .l-sidebar.is-open {
   left: 13%;
   width: 87%;
+  /* 幅の変更 */
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
   overflow-y: scroll;
@@ -212,18 +189,6 @@ https://daib-log.com/responsive/
   .l-sidebar.is-open {
     left: 56%;
     width: 44%;
-  }
-}
-
-.l-sidebar .c-button--close {
-  margin: 0 0 0 auto;
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
-}
-
-@media (min-width: 1025px) {
-  .l-sidebar .c-button--close {
-    display: none;
   }
 }
 
@@ -250,7 +215,6 @@ https://daib-log.com/responsive/
   /* 積み重なるように配置する */
   align-items: center;
   /* 垂直方向の指定 */
-  /* text-align: centerを使った方法 */
 }
 
 .l-footer p {
@@ -266,21 +230,52 @@ https://daib-log.com/responsive/
   font-size: 1.4rem;
 }
 
-.c-button {
-  /* ×ボタン*/
+/* text-align: centerを使った方法 */
+.c-button, .c-button--menu, .c-button--close {
+  cursor: pointer;
+  /* メニューボタン */
+  /* 閉じるボタン*/
 }
 
 .c-button--menu {
-  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 14px 0px;
+  margin: 0 16px 0 auto;
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
 }
 
-/* ×ボタン*/
+@media (min-width: 834px) {
+  .c-button--menu {
+    font-size: 3.4rem;
+    padding-bottom: 0px;
+    margin-right: 26px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .c-button--menu {
+    display: none;
+  }
+}
+
 .c-button--close {
   display: block;
   position: relative;
   width: 66px;
   height: 66px;
-  cursor: pointer;
+  margin: 0 0 0 auto;
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+}
+
+@media (min-width: 1025px) {
+  .c-button--close {
+    display: none;
+  }
 }
 
 .c-button--close::before, .c-button--close::after {
@@ -303,6 +298,7 @@ https://daib-log.com/responsive/
   right: 25%;
 }
 
+/* ×ボタン*/
 .c-border {
   border-width: 3px 0px 0px 0px;
   /* 線の太さ */
@@ -338,10 +334,10 @@ https://daib-log.com/responsive/
   background: rgba(255, 255, 255, 0.3);
 }
 
+/* p-placeに使用 */
 .c-dl--level1 {
   margin-top: 10px;
   color: #3C2A10;
-  /* レスポンシブ対応 */
 }
 
 .c-dl--level1 dd {
@@ -350,6 +346,7 @@ https://daib-log.com/responsive/
   font-family: "M+ 1m";
 }
 
+/* p-accessに使用 */
 .c-dl--level2 {
   padding: 40px;
   color: #fff;
@@ -382,11 +379,11 @@ https://daib-log.com/responsive/
 /* 検索バー */
 .p-search {
   width: 85%;
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
   margin: auto;
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
   /* 検索--入力エリア-- */
   /* 検索ボタン */
 }
@@ -400,7 +397,6 @@ https://daib-log.com/responsive/
 @media (min-width: 1025px) {
   .p-search {
     width: 35%;
-    margin: auto;
     margin-right: 2%;
   }
 }
@@ -423,7 +419,7 @@ https://daib-log.com/responsive/
   height: 46px;
   margin-left: 3%;
   padding: 0.3em;
-  background: #F2EDE9;
+  background: linear-gradient(#F2EDE9, #DED8D3);
   color: #707070;
   border: 1px solid #707070;
   border-radius: 0.5em;
@@ -494,8 +490,6 @@ https://daib-log.com/responsive/
   color: #707070;
   font-family: "M+ 1m";
   margin-bottom: 527px;
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
 }
 
 .p-gnavi h2 {
@@ -517,43 +511,25 @@ https://daib-log.com/responsive/
   font-weight: 700;
 }
 
-@media (min-width: 1025px) {
-  .p-gnavi {
-    display: block;
-  }
-}
-
-.p-gnavi .p-gnavi__main-menu {
+.p-gnavi__main-menu {
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
 }
 
 @media (min-width: 834px) {
-  .p-gnavi .p-gnavi__main-menu {
+  .p-gnavi__main-menu {
     margin-top: 40px;
     display: block;
     text-align: left;
-    margin-bottom: 40px;
   }
 }
 
-.p-gnavi .p-gnavi__main-menu__list {
+.p-gnavi__main-menu__list {
   margin-top: 38px;
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
 }
 
-.p-gnavi .p-gnavi__main-menu__list:first-of-type {
+.p-gnavi__main-menu__list:first-of-type {
   margin-top: 138px;
-}
-
-@media (min-width: 1025px) {
-  .p-gnavi .p-gnavi__main-menu__list {
-    margin-bottom: 0;
-  }
-  .p-gnavi .p-gnavi__main-menu__list:last-of-type {
-    margin-right: 0;
-  }
 }
 
 .p-gnavi .p-gnavi__sub-menu {
@@ -613,22 +589,28 @@ https://daib-log.com/responsive/
 }
 
 .p-place__take-out {
+  padding: 10px;
   background-image: url(/img/front/take-out.jpg);
   background-size: cover;
   /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
   height: 642px;
   max-width: 357px;
-  /********* レスポンシブ *********/
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
-  padding: 10px;
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
-  /********* レスポンシブ *********/
   display: flex;
   /* 親要素に指定 */
   flex-direction: column;
   /* 積み重なるように配置する */
+  /********* レスポンシブ *********/
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+  /********* レスポンシブ *********/
+}
+
+@media (min-width: 834px) {
+  .p-place__take-out {
+    padding: 2%;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -636,12 +618,6 @@ https://daib-log.com/responsive/
     width: 500px;
     height: 957px;
     max-width: 625px;
-  }
-}
-
-@media (min-width: 834px) {
-  .p-place__take-out {
-    padding: 2%;
   }
 }
 
@@ -661,6 +637,7 @@ https://daib-log.com/responsive/
 
 .p-place__eat-in {
   margin-top: 20px;
+  padding: 10px;
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
   background-image: url(/img/front/eat-in.jpg);
@@ -668,21 +645,18 @@ https://daib-log.com/responsive/
   /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
   height: 642px;
   max-width: 357px;
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
-  /********* レスポンシブ *********/
-  padding: 10px;
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
   display: flex;
   /* 親要素に指定 */
   flex-direction: column;
   /* 積み重なるように配置する */
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
 }
 
 @media (min-width: 834px) {
   .p-place__eat-in {
     margin-top: 0px;
+    padding: 2%;
   }
 }
 
@@ -691,12 +665,6 @@ https://daib-log.com/responsive/
     width: 500px;
     height: 957px;
     max-width: 625px;
-  }
-}
-
-@media (min-width: 834px) {
-  .p-place__eat-in {
-    padding: 2%;
   }
 }
 
@@ -723,6 +691,8 @@ https://daib-log.com/responsive/
   /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
+  /* マスクだけのクラスを入れなくても、疑似要素で可能だったので削除 */
+  /* _definition-list.scssに加えての設定 */
 }
 
 @media (min-width: 834px) {

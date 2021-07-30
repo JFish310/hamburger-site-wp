@@ -9,23 +9,23 @@
     background-size: cover;         /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
     display: flex;                  /* 親要素に指定 */
     align-items: center;            /* 垂直方向の指定 */
-    @include breakpoint( breakpoint_middle ) {
+    @include breakpoint( breakpoint--medium ) {
         background-image: url(/img/front/first-view--large.jpg);
     }
-    @include breakpoint( breakpoint_large ) {
+    @include breakpoint( breakpoint--large ) {
         height: 49vh;
         min-height: 369px;          // PC最大化（自分の）の753pxの49%
     }
     /* タイトル */
     h2{
         color: $color--text-sub;
-        font-size: 3.6rem;// フォントサイズの指定もしなくちゃいけないけど、cでタイトルをまとめたほうがいいかも？とりあえず、後回し。
+        font-size: 3.6rem;// フォントサイズの指定もしなくちゃいけないけど、cでタイトルをまとめたほうがいいかも？
         // padding-left: 25px;
         margin-left: 25px;
-        @include breakpoint( breakpoint_middle ){
+        @include breakpoint( breakpoint--medium ){
             margin-left: 86px;
         }
-        @include breakpoint( breakpoint_large ) {
+        @include breakpoint( breakpoint--large ) {
             font-size: 4.0rem;
             margin-left: 5.5%;
         }
