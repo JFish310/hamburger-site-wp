@@ -13,7 +13,7 @@
         display: none;  // SP版、tablet版は非表示
         font-family: 'Roboto';
         font-size: 3.4rem;
-        @include breakpoint ( breakpoint--large ){
+        @include breakpoint ( breakpoint-large ){
             display: block;
         }
     }
@@ -26,7 +26,7 @@
     // .p-gnavi__main-menu{
         // text-align: left;
         // margin-bottom: 40px;
-        @include breakpoint ( breakpoint--medium ){
+        @include breakpoint ( breakpoint-medium ){
             margin-top: 40px;   // h2との余白
             display: block;
             text-align: left;
@@ -41,7 +41,7 @@
             }
             // margin-right: 0;
             // margin-bottom: 40px;
-            // @include breakpoint ( breakpoint--large ){
+            // @include breakpoint ( breakpoint-large ){
             //     // メニューの左側に余白
             //     // margin-left: 18%;
             //     // margin-bottom: 0;
@@ -71,7 +71,7 @@
     //     top: 0;             /* 上0 */
     //     left: 0;            /* 左0 */
 
-    //     @include breakpoint ( breakpoint--large ){
+    //     @include breakpoint ( breakpoint-large ){
     //         // 全部リセット
     //         display: block; // divだから初期値はblock？横並びの指定はp-naviで。
     //         width: auto;
@@ -83,7 +83,7 @@
     // }
     // /* メニューボタン */
     // .p-menu{
-    //     @include breakpoint ( breakpoint--medium ){
+    //     @include breakpoint ( breakpoint-medium ){
     //         // display: block;
     //         display: none;
     //     }

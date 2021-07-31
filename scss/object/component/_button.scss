@@ -8,14 +8,14 @@
         font-weight: 700;           // bold
         padding: 14px 0px;          // 上下、左右
         margin: 0 16px 0 auto;      // 右寄せ、右の余白の指定
-        @include breakpoint( breakpoint--medium ){
+        @include breakpoint( breakpoint-medium ){
             // width: 86px;
             font-size: 3.4rem;
             padding-bottom: 0px;    // h1との余白を詰める
             margin-right: 26px;     // 右の余白指定
         }
         // メニューボタンは非表示
-        @include breakpoint( breakpoint--large ){
+        @include breakpoint( breakpoint-large ){
             display: none;
         }
     }
@@ -29,7 +29,7 @@
         height: 66px;
 
         margin: 0 0 0 auto;     // 右寄せ、右の余白の指定
-        @include breakpoint ( breakpoint--large ){
+        @include breakpoint ( breakpoint-large ){
             display: none;      // 閉じるボタンの非表示
         }
         // padding: 17px;

@@ -2,10 +2,10 @@
 .p-search{
     width: 85%;
     margin: auto;       // 中央寄せ
-    @include breakpoint ( breakpoint--medium ){
+    @include breakpoint ( breakpoint-medium ){
         width: 65%;
     }
-    @include breakpoint ( breakpoint--large ){
+    @include breakpoint ( breakpoint-large ){
         width: 35%;
         // margin: auto;       // リセット
         // margin-right: 30px;  // margin設定

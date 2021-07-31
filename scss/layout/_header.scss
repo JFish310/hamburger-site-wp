@@ -7,7 +7,7 @@
     display: flex;              /* 親要素に指定 */
     flex-direction: column;     /* 積み重なるように配置する */
 
-    @include breakpoint( breakpoint--large ){
+    @include breakpoint( breakpoint-large ){
         // max-width: 1280px;      // ←ここはラッパーとか作ってコンテンツまるっとのほうがいいかもしれん
         flex-direction: row;    // 横並び
         height: 20vh;           // 画面に対しての割合（217/1080=20%）
@@ -21,7 +21,7 @@
         font-size: 4.0rem;
         // margin-top: 54px;
         // font-size: 2.6rem;
-        @include breakpoint( breakpoint--large ){
+        @include breakpoint( breakpoint-large ){
             margin: auto;           // リセット
             // margin-left: 65px;      // margin設定
             margin-left: 4%;
@@ -35,24 +35,24 @@
     //     font-weight: 700;           // bold
     //     padding: 14px 0px;          // 上下、左右
     //     margin: 0 16px 0 auto;      // 右寄せ、右の余白の指定
-    //     @include breakpoint( breakpoint--medium ){
+    //     @include breakpoint( breakpoint-medium ){
     //         // width: 86px;
     //         font-size: 3.4rem;
     //         padding-bottom: 0px;    // h1との余白を詰める
     //         margin-right: 26px;     // 右の余白指定
     //     }
     //     // メニューボタンは非表示
-    //     @include breakpoint( breakpoint--large ){
+    //     @include breakpoint( breakpoint-large ){
     //         display: none;
     //     }
     // }
     // /* 検索バー      p-searchへ移動*/
     // .p-search{
     //     width: 85%;
-    //     @include breakpoint ( breakpoint--medium ){
+    //     @include breakpoint ( breakpoint-medium ){
     //         width: 65%;
     //     }
-    //     @include breakpoint ( breakpoint--large ){
+    //     @include breakpoint ( breakpoint-large ){
     //         width: 35%;
     //         margin: auto;       // リセット
     //         // margin-right: 30px;  // margin設定

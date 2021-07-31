@@ -1,11 +1,11 @@
 .p-place{
     ul{
         padding: 20px;
-        @include breakpoint( breakpoint--medium ){
+        @include breakpoint( breakpoint-medium ){
             padding: 40px;
         }
         /********* レスポンシブ *********/
-        // @include breakpoint( breakpoint--large ){
+        // @include breakpoint( breakpoint-large ){
         //     height: 48%;
         //     padding: 8% 7%;
         // }
@@ -16,7 +16,7 @@
         justify-content: space-around;    /* 水平方向の指定 */
         align-items: center;        /* 垂直方向の指定 */
         /* レスポンシブ対応 */
-        @include breakpoint( breakpoint--medium ){
+        @include breakpoint( breakpoint-medium ){
             flex-direction: row;		/* 横並び */
             // align-items: flex-end;		/* 下揃え */
         }
@@ -49,10 +49,10 @@
 
         /********* レスポンシブ *********/
         // min-height: auto;
-        @include breakpoint( breakpoint--medium ){
+        @include breakpoint( breakpoint-medium ){
             padding: 2%;
         }
-        @include breakpoint( breakpoint--large ){
+        @include breakpoint( breakpoint-large ){
             width: 500px;    // 625*0.8
             height: 957px;  // 1193*0.8
             max-width: 625px;
@@ -64,7 +64,7 @@
         }
         
         /********* レスポンシブ *********/
-        // @include breakpoint( breakpoint--large ){
+        // @include breakpoint( breakpoint-large ){
         //     width: 100%;
         //     padding-bottom: 191%;
         //     max-width: 625px;
@@ -94,7 +94,7 @@
     &__eat-in{
         margin-top: 20px;       // Take Outとの余白指定
         padding: 10px;          // 画像（写真）に対して
-        @include breakpoint( breakpoint--medium ){
+        @include breakpoint( breakpoint-medium ){
             margin-top: 0px;    // リセット
             padding: 2%;
             // margin-left: 4%;
@@ -107,7 +107,7 @@
         display: flex;              /* 親要素に指定 */
         flex-direction: column;     /* 積み重なるように配置する */
 
-        @include breakpoint( breakpoint--large ){
+        @include breakpoint( breakpoint-large ){
             width: 500px;    // 625*0.8
             height: 957px;  // 1193*0.8
             max-width: 625px;
