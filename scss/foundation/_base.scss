@@ -22,6 +22,7 @@ body{
     font-family: 'Roboto', 'M+ 1m', sans-serif; // M PLUS 1p
     overflow-x: hidden;     // 横スクロールの非表示（l-sidebar（Menu）対策）
     // max-width: 1380px;
+    width: 100%;            // tablet版のメニュー開閉時にバックが左に寄れるので、この指定で解決。
 
     /* Menuボタン開閉 */
     &.is-open{

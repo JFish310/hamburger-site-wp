@@ -11,7 +11,16 @@
 7/6     再開  
 7/29    フロントページのコーディング終了  
 7/30    リファクタリング終了
+7/31    質問に答えていただいた箇所のリファクタリング
 （ここまで　　時間）  
+
+【累計】  
+構成・設計        1h20m  
+環境構築          2h  
+マークアップ      1h30m  
+Sass             44h10m  
+jQuery           4h  
+リファクタリング  
 
 
 
@@ -27,7 +36,8 @@ https://yumanoblog.com/xd-css/
 検索バーのinput要素のアイコン表示について参照サイト  
 https://www.tsukimi.net/submit-button_font-awesome.html  
 
-CSS Grid Layoutについて
+**CSS Grid Layoutについて**  
+
     CSS Grid Layout を極める！（基礎編）
     https://qiita.com/kura07/items/e633b35e33e43240d363  
 
@@ -49,14 +59,14 @@ CSS Grid Layoutについて
 ---->>>     入力フォームに「vertical-align : top;」の設定  
             一応、検索ボタンにも設定する  
 
-【CSS】背景のみ透過させて表示する方法  
+**【CSS】背景のみ透過させて表示する方法**  
 https://www.design-memo.com/coding/css-rgba-opacity  
 ---->>> https://eguweb.jp/css/overlay-transparent-black-colors  
 https://techacademy.jp/magazine/29811  
 https://kubogen.com/web-programing-211/  
 
 
-罫線について（1本だけ線を引くCSS）  
+**罫線について（1本だけ線を引くCSS）**  
 https://www.nishishi.com/css/line-border-hr.html  
 https://html-coding.co.jp/annex/dictionary/html/hr/  
 
@@ -65,6 +75,17 @@ https://webkore.site/flexbox-right-justified/
 
 displayプロパティのデフォルト値一覧  
 https://programmercollege.jp/column/4914/  
+
+**背景画像のレスポンシブについて**  
+背景画像の比率を保ったまま、レスポンシブ対応する  
+https://taneppa.net/responsive_background_image/  
+
+背景画像の縦横比率を維持したまま、コンテンツの幅に合わせて表示させる方法  
+https://blog.looseknot.jp/css/background-image-size.html  
+
+**フォントサイズのレスポンシブについて**
+
+https://techblog.raccoon.ne.jp/archives/1617239525.html
 
 ***
 
@@ -108,16 +129,16 @@ margin-topで余白の調整をする。
 https://design-remarks.com/margin-top-or-bottom/  
 ***
 
-**【font-family】について**
-    font-family: 候補1,候補2,候補3,フォントの種類;
+**【font-family】について**  
+    font-family: 候補1,候補2,候補3,フォントの種類;  
         「sans-serif」  ゴシック体系のフォント（MSゴシック、中ゴシック、Arialなど）
-        「serif」       明朝体系のフォント（MS明朝、MS P明朝、Garamond、MS Georgia、Times New Romanなど）
-        「cursive」     筆記体系のフォント（caflisch script、ex pontoなど）
-        「fantasy」     装飾系のフォント（critter、studzなど）
-        「monospace」   等幅系のフォント（Osaka-等幅、courier、Courier Newなど）
-    ※日本語テキストにcursiveを指定していると、希に正常に表示できない場合がある※
-    英語フォントと日本語フォントの両方を指定する場合は、先に英語フォントを指定する。
-    そうすることで、アルファベットには英語フォントが、日本語には日本語フォントが使用されるようになる。
+        「serif」       明朝体系のフォント（MS明朝、MS P明朝、Garamond、MS Georgia、Times New Romanなど）  
+        「cursive」     筆記体系のフォント（caflisch script、ex pontoなど）  
+        「fantasy」     装飾系のフォント（critter、studzなど）  
+        「monospace」   等幅系のフォント（Osaka-等幅、courier、Courier Newなど）  
+    ※日本語テキストにcursiveを指定していると、希に正常に表示できない場合がある※  
+    英語フォントと日本語フォントの両方を指定する場合は、先に英語フォントを指定する。  
+    そうすることで、アルファベットには英語フォントが、日本語には日本語フォントが使用されるようになる。  
 ***
 
 
