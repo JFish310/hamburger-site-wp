@@ -28,12 +28,20 @@
             // margin-top: 10px;
             // padding-top: 25px;
             // padding-left: 10px;
+            /* 罫線を疑似要素で */
+            &::after{
+                content: "";
+                display: block;                             // ブロックが積みあがる
+                border-bottom: solid $color--text-sub 3px;  // 線種、色、太さ
+                width: 36px;                                // 線の長さ
+                margin-top: 20px;                           // タイトルとの余白
+            }
         }
-        // タイトル下の罫線
-        .c-border{
-            margin-top: 20px;
-            // line-height: 50px;
-        }
+        // // タイトル下の罫線
+        // .c-border{
+        //     margin-top: 20px;
+        //     // line-height: 50px;
+        // }
     }
     /* Take Out */
     &__take-out{

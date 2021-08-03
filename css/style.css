@@ -300,17 +300,6 @@ https://daib-log.com/responsive/
 }
 
 /* ×ボタン*/
-.c-border {
-  border-width: 3px 0px 0px 0px;
-  /* 線の太さ */
-  width: 34px;
-  /* 線の長さ（ここでは親要素に対しての割合） */
-  border-style: solid;
-  /* 線種 */
-  border-color: #fff;
-  /* 色 */
-}
-
 .c-box {
   display: inline-block;
   background: rgba(255, 255, 255, 0.7);
@@ -552,7 +541,8 @@ https://daib-log.com/responsive/
   padding: 20px;
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
-  /********* レスポンシブ *********/
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
   display: flex;
   /* 親要素に指定 */
   flex-direction: column;
@@ -572,6 +562,12 @@ https://daib-log.com/responsive/
   }
 }
 
+@media (min-width: 1025px) {
+  .p-place ul {
+    padding: 8% 7%;
+  }
+}
+
 @media (min-width: 834px) {
   .p-place ul {
     flex-direction: row;
@@ -583,9 +579,14 @@ https://daib-log.com/responsive/
   font-size: 4.1rem;
   font-weight: 700;
   color: #fff;
+  /* 罫線を疑似要素で */
 }
 
-.p-place ul .c-border {
+.p-place ul h2::after {
+  content: "";
+  display: block;
+  border-bottom: solid #fff 3px;
+  width: 36px;
   margin-top: 20px;
 }
 
@@ -617,7 +618,7 @@ https://daib-log.com/responsive/
 
 @media (min-width: 1025px) {
   .p-place__take-out {
-    width: 43%;
+    width: 44%;
     height: 957px;
     max-width: 625px;
     max-height: 1196px;
@@ -662,13 +663,13 @@ https://daib-log.com/responsive/
   .p-place__eat-in {
     margin-top: 0px;
     padding: 2%;
-    margin-left: 4%;
+    margin-left: 6%;
   }
 }
 
 @media (min-width: 1025px) {
   .p-place__eat-in {
-    width: 43%;
+    width: 44%;
     height: 957px;
     max-width: 625px;
     max-height: 1196px;
@@ -690,33 +691,33 @@ https://daib-log.com/responsive/
   height: 163px;
 }
 
+/* 画像のレイヤーの修正 */
 .p-access {
   position: relative;
   width: 100%;
   height: 690px;
-  background-image: url(/img/front/map--small.jpg);
-  background-size: cover;
-  /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
-  /* マスクだけのクラスを入れなくても、疑似要素で可能だったので削除 */
+  background-color: #000;
   /* _definition-list.scssに加えての設定 */
-}
-
-@media (min-width: 834px) {
-  .p-access {
-    background-image: url(/img/front/map--large.jpg);
-  }
 }
 
 .p-access::before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
+  background-image: url(/img/front/map--small.jpg);
+  background-size: cover;
+  opacity: 0.6;
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+@media (min-width: 834px) {
+  .p-access::before {
+    background-image: url(/img/front/map--large.jpg);
+  }
 }
 
 .p-access::after {

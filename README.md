@@ -87,6 +87,10 @@ https://blog.looseknot.jp/css/background-image-size.html
 
 https://techblog.raccoon.ne.jp/archives/1617239525.html
 
+**マップ部分のレイヤーについて**  
+実際に書く！CSSで背景画像を透過させる方法【初心者向け】  
+https://techacademy.jp/magazine/19412  
+
 ***
 
 
