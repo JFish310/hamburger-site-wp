@@ -9,11 +9,16 @@
     ※日本語テキストにcursiveを指定していると、希に正常に表示できない場合がある※
     英語フォントと日本語フォントの両方を指定する場合は、先に英語フォントを指定する。
     そうすることで、アルファベットには英語フォントが、日本語には日本語フォントが使用されるようになる。
+
+// バグの見つけ方
+* {
+    outline: 2px solid blue;
+  }
 */
 
 html {
     font-size: 62.5%;
-  }
+}
 
 body{
     font-size: 1.6rem;
@@ -58,3 +63,9 @@ li{
 fieldset{
     border:none;
 }
+
+// figure,
+// figcaption{
+//     margin: 0;
+//     padding: 0;
+// }

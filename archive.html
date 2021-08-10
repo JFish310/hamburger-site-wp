@@ -25,7 +25,7 @@
     <div class="l-container">
         <header class="l-header">
             <button type="button" class="c-button--menu c-button--js">Menu</button>
-            <h1>Hamburger</h1>
+            <h1>Hamburger</h1><!-- ここのh1はどうなんだろ？ -->
             <form class="p-search" id="#search">
                 <input type="search" name="search" placeholder="&#xf002;" class="fas"><input type="submit" value="検索">
                 <!-- <input type="text" name="search" id="#search" value="&#xf002;" class="fas"> -->
@@ -36,69 +36,89 @@
         </header><!-- /.l-header -->
         <main class="p-main">
             <article id="top" class="p-first-view--archive">
-                <h2>Menu:</h2>
+                <h1>Menu:</h1>
                 <p>チーズバーガー</p>
             </article><!-- /.p-main__first-view -->
-            <section class="">
-                <dl class="">
-                    <dt><h3 class="">小見出しが入ります</h3></dt>
-                    <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+            <section class="p-archive">
+                <dl class="c-dl--level3">
+                    <dt><h2 class="">小見出しが入ります</h2></dt>
+                    <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
                 </dl>
-            </section>
-            <section class="p-">
+            <!-- </section> -->
+            <!-- <section class=""> -->
                 <!-- <ul class="c-layout-list"> -->
                 <ul class="c-layout-list--row">
                     <li class="c-layout-list--row__item">
-                        <figure class="p-card--shadow">
-                            <figcaption class="p-card--shadow__caption">
-                                <img src="./img/card.jpg" alt="image01の写真">
+                        <figure class="p-card">
+                            <img src="./img/card.jpg" alt="チーズバーガーの写真">
+                            <figcaption class="p-card__caption">
                                 <h3>チーズバーガー</h3>
-                                <dl class=""> 
-                                    <dt>小見出しが入ります</dt>
+                                <dl class="c-dl--level4"> 
+                                    <dt><h4>小見出しが入ります</h4></dt>
                                     <dd>
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが<!--入ります。-->
                                     </dd>
                                 </dl>
+                                <button class="c-button__more"><a href="#">詳しく見る</a></button>
                             </figcaption>
                         </figure>
-                        <button>詳しく見る</button>
                     </li>
                     <li class="c-layout-list--row__item">
-                        <figure class="p-card--shadow">
-                            <figcaption class="p-card--shadow__caption">
-                                <img src="./img/card.jpg" alt="image01の写真">
+                        <figure class="p-card">
+                            <img src="./img/card.jpg" alt="image01の写真">
+                            <figcaption class="p-card__caption">
                                 <h3>ダブルチーズバーガー</h3>
-                                <dl class=""> 
-                                    <dt>小見出しが入ります</dt>
+                                <dl class="c-dl--level4"> 
+                                    <dt><h4>小見出しが入ります</h4></dt>
                                     <dd>
                                         テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                                     </dd>
                                 </dl>
+                                <button class="c-button__more"><a href="#">詳しく見る</a></button>
                             </figcaption>
                         </figure>
-                        <button>詳しく見る</button>
                     </li>
                     <li class="c-layout-list--row__item">
-                        <figure class="p-card--shadow">
-                            <figcaption class="p-card--shadow__caption">
-                                <img src="./img/card.jpg" alt="image01の写真">
+                        <figure class="p-card">
+                            <img src="./img/card.jpg" alt="image01の写真">
+                            <figcaption class="p-card__caption">
                                 <h3>スペシャルチーズバーガー</h3>
-                                <dl class="c-dl--l"> 
-                                    <dt>小見出しが入ります</dt>
+                                <dl class="c-dl--level4"> 
+                                    <dt><h4>小見出しが入ります</h4></dt>
                                     <dd>
                                         テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                                     </dd>
                                 </dl>
+                                <button class="c-button__more"><a href="#">詳しく見る</a></button>
                             </figcaption>
                         </figure>
-                        <button>詳しく見る</button>
                     </li>
                 </ul>
             </section><!-- </p-main__news> -->
             <nav class="p-pagination">
-                <ul class="p-pagination__">
-                    <li class="p-pagination__list-item">＜＜前へ</li>
-                    <li class="p-pagination__list-item">次へ＞＞</li>
+                <p>page 1/10</p>
+                <ul class="p-pagination__list">
+                    <li class="p-pagination__list__item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            前へ
+                        </a>
+                    </li>
+                    <li class="p-pagination__list__item"><a href="#">1</a></li>
+                    <li class="p-pagination__list__item"><a href="#">2</a></li>
+                    <li class="p-pagination__list__item"><a href="#">3</a></li>
+                    <li class="p-pagination__list__item"><a href="#">4</a></li>
+                    <li class="p-pagination__list__item"><a href="#">5</a></li>
+                    <li class="p-pagination__list__item"><a href="#">6</a></li>
+                    <li class="p-pagination__list__item"><a href="#">7</a></li>
+                    <li class="p-pagination__list__item"><a href="#">8</a></li>
+                    <li class="p-pagination__list__item"><a href="#">9</a></li>
+                    <li class="p-pagination__list__item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            次へ
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </main><!-- /.p-main -->
@@ -139,7 +159,6 @@
                     </li>
                 </ul>
             </nav>
-        <!-- </article> -->
         </aside><!-- /.l-sidebar -->
     </div><!-- /.l-container -->
 

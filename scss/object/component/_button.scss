@@ -90,3 +90,21 @@
 //         right: 25%;
 //     }
 // }
+.c-button__more{
+    width: 163.16px;    // 48.5%
+    padding: 10px 0px;
+    font-family: "M+ 1m";
+    background: $color--background--button;
+    color: $color--text-main;
+    border: none;
+    border-radius: 2.35em;   /* 角丸 */
+    // box-shadow: 0 0 10px #1B1310;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    font-weight: 700;
+    display: block;
+    @include breakpoint( breakpoint-large ){
+        width: 292px;
+    }
+}
