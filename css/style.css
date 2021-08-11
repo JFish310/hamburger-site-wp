@@ -402,7 +402,6 @@ https://daib-log.com/responsive/
 }
 
 .c-dl--level3 dd {
-  height: 276px;
   margin-top: 30px;
 }
 
@@ -414,7 +413,6 @@ https://daib-log.com/responsive/
   width: 246px;
   height: 114px;
   margin-top: 10px;
-  margin-left: 8px;
 }
 
 .c-layout-list {
@@ -440,7 +438,15 @@ https://daib-log.com/responsive/
   margin-bottom: 0;
 }
 
-/* News　レスポンシブ　縦並び→横並び */
+/* archiveページ　レスポンシブ　縦並び→横並び */
+.c-layout-list--row__item {
+  margin-top: 20.9px;
+}
+
+.c-layout-list--row__item:first-of-type {
+  margin-top: 22px;
+}
+
 .c-title--h3 {
   font-size: 2.2rem;
   font-family: "M+ 1m";
@@ -462,7 +468,6 @@ https://daib-log.com/responsive/
 }
 
 .p-card__caption {
-  outline: 2px solid blue;
   padding: 30.5px 17px 43.7px 17px;
 }
 
@@ -591,6 +596,66 @@ https://daib-log.com/responsive/
     font-size: 4.0rem;
     margin-left: 5.5%;
   }
+}
+
+.p-first-view--archive {
+  position: relative;
+  width: 100%;
+  height: 285px;
+  color: #fff;
+  /* 背景の設定 */
+  background-color: #000;
+  display: flex;
+  /* 親要素に指定 */
+  flex-direction: column;
+  /* 横並びに配置する */
+  justify-content: center;
+  /* 水平方向の指定 */
+  /* タイトル */
+}
+
+.p-first-view--archive::before {
+  content: "";
+  background-image: url(/img/front/take-out.jpg);
+  background-position: 13% 46%;
+  background-size: 250%;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.p-first-view--archive h1 {
+  font-size: 3.6rem;
+  margin-left: 37px;
+  z-index: 1;
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+}
+
+@media (min-width: 834px) {
+  .p-first-view--archive h1 {
+    margin-left: 86px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .p-first-view--archive h1 {
+    font-size: 4.0rem;
+    margin-left: 5.5%;
+  }
+}
+
+.p-first-view--archive p {
+  margin-left: 37px;
+  padding-top: 7px;
+  font-family: "M+ 1m";
+  font-weight: 700;
+  z-index: 1;
 }
 
 .p-gnavi {
