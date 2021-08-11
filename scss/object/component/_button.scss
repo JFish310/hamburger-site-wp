@@ -106,5 +106,6 @@
     display: block;
     @include breakpoint( breakpoint-large ){
         width: 292px;
+        height: 76px;
     }
 }

@@ -46,13 +46,20 @@
     &::before {
         content: "";
         // バーガーの画像
-        background-image: url(/img/front/take-out.jpg);
-        background-position: 13% 46%;   // 左から右に、上から下へ
-        background-size: 250%;
-        opacity: 0.6;       // 透過の設定
+        background-image: url(/img/archive/first-view--small.jpg);
+        // background-position: 13% 46%;   // 左から右に、上から下へ
+        // background-size: 250%;
+        background-size: cover;
+        opacity: 0.5;       // 透過の設定
         // @include breakpoint( breakpoint-medium ) {
-        //     background-image: url(/img/front/map--large.jpg);
+        //     background-position: 25%;   // 左から右に、上から下へ
+        //     background-size: 120%;
         // }
+        @include breakpoint( breakpoint-large ) {
+            background-image: url(/img/archive/first-view--large.jpg);
+            background-position: center;
+            // background-size: 50%;
+        }
         position: absolute; // 絶対配置
         top: 0;
         right: 0;
@@ -67,6 +74,17 @@
     display: flex;                  /* 親要素に指定 */
     flex-direction: column;         /* 横並びに配置する */
     justify-content: center;        /* 水平方向の指定 */
+    @include breakpoint( breakpoint-medium ){
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    @include breakpoint( breakpoint-large ) {
+        // height: 49vh;
+        height: 30vh;
+        // height: 239px;
+        min-height: 117px;          // PC最大化（自分の）の239pxの49%
+    }
 
     /* タイトル */
     h1{
@@ -76,12 +94,13 @@
         // padding-top: 13px;
         z-index: 1;
         @include breakpoint( breakpoint-medium ){
+            font-size: 6.0rem;
             margin-left: 86px;
         }
-        @include breakpoint( breakpoint-large ) {
-            font-size: 4.0rem;
-            margin-left: 5.5%;
-        }
+        // @include breakpoint( breakpoint-large ) {
+        //     font-size: 4.0rem;
+        //     margin-left: 5.5%;
+        // }
     }
     p{
         margin-left: 37px;
@@ -89,6 +108,9 @@
         font-family: "M+ 1m";
         font-weight: 700;       // bold
         z-index: 1;
+        @include breakpoint( breakpoint-medium ){
+            margin-left: 20px;
+        }
     }
 
 }

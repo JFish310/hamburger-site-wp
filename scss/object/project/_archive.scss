@@ -1,3 +1,8 @@
 .p-archive{
-    padding: 20px;
+    // padding: 20px;
+    // padding: 5.8%;
+    padding: 6%;
+    @include breakpoint( breakpoint-large ){
+        padding: 3% 6%;
+    }
 }

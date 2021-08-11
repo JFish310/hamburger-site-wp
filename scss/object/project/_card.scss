@@ -18,15 +18,30 @@
     background-color: $color--card-background--menu;
     font-family: "M+ 1m";   // p-card内はM+ 1m
 
-    // display: flex;              /* 親要素に指定 */
-    // flex-direction: column;     /* 積み重なるように配置する */
+    display: flex;              /* 親要素に指定 */
+    flex-direction: column;     /* 積み重なるように配置する */
     // justify-content: center;    /* 水平方向の指定 */
     // // justify-content: space-around;    /* 水平方向の指定 */
     // align-items: center;        /* 垂直方向の指定 */
 
+    /* レスポンシブ対応 */
+    @include breakpoint( breakpoint-medium ){
+        flex-direction: row;     /* 積み重なるように配置する */
+        width: 100%;    // 親に対して90%だけど、paddingは大枠で設定してるから…
+        height: 357px;
+    }
+    @include breakpoint( breakpoint-medium ){
+        height: 471px;
+    }
+
     img{
         // outline: 2px solid blue;
         vertical-align: bottom; // 画像下の微妙な余白を消すため
+        /* レスポンシブ対応 */
+        @include breakpoint( breakpoint-medium ){
+            width: 50%;
+            object-fit: cover;  // どのように埋め込むか。要素のコンテンツボックス全体を埋めるように拡大縮小
+        }
     }
 
     &__caption{
@@ -34,13 +49,31 @@
         // margin: 30.5px auto 43.7px 17px;
         padding: 30.5px 17px 43.7px 17px;
         // padding-bottom: 43.7px;
+        /* レスポンシブ対応 */
+        @include breakpoint( breakpoint-medium ){
+            width: 50%;
+            padding: 29px 59px 40px 34.7px;
+        }
+        @include breakpoint( breakpoint-large ){
+            // padding-top: 53px;
+            // padding-left: 63px;
+            //  59px 40px 34.7px;
+            padding: 53px 63px;
+        }
         h3{
             font-size: 2.0rem;
             font-weight: 700;
+            @include breakpoint( breakpoint-large ){
+                font-size: 3.6rem;
+            }
+            
         }
         h4{
             // font-size: 1.6rem;
             font-weight: 700;
+            @include breakpoint( breakpoint-large ){
+                font-size: 2.4rem;
+            }
         }
         // background-color: $color--card-background--menu;
 
@@ -49,8 +82,14 @@
         }
 
         .c-button__more{
+            // position: relative;
             margin: auto;       // 中央寄せ
             margin-top: 41px;
+            @include breakpoint( breakpoint-large ){
+                margin-top: 60px;
+            }
+            // margin-left: 0;
+            // bottom: 0;
         }
     }
     /* レスポンシブ対応 */

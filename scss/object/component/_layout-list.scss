@@ -61,6 +61,12 @@
         margin-top: 20.9px;
         &:first-of-type{
             margin-top: 22px;
+            @include breakpoint( breakpoint-medium ){
+                margin-top: 37px;
+            }
+            @include breakpoint( breakpoint-large ){
+                margin-top: 70px;
+            }
         }
 
         // display: flex;              /* 親要素に指定 */
