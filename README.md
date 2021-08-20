@@ -91,8 +91,16 @@ https://techblog.raccoon.ne.jp/archives/1617239525.html
 実際に書く！CSSで背景画像を透過させる方法【初心者向け】  
 https://techacademy.jp/magazine/19412  
 
-ページネーションについて  
+**ページネーションについて**  
 https://getbootstrap.jp/docs/5.0/components/pagination/  
+
+**引用タグについて**  
+引用タグ（blockquote）の正しい使い方について  
+https://keywordfinder.jp/blog/seo/blockquote/  
+
+**HTMLでソースコードをそのまま表示させる方法！**  
+ソースコードをそのまま表示  
+https://qumeru.com/magazine/37  
 
 ***
 
