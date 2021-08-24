@@ -114,3 +114,52 @@
     }
 
 }
+
+.p-first-view--single{
+    // position: relative; // 相対配置
+    width: 100%;
+    height:225px;
+    color: $color--text-sub;
+
+    /* 背景の設定 */
+    background-image: url(/img/single/first-view.jpg);
+    background-position: center;
+    background-size: cover;         /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
+    @include breakpoint( breakpoint-large ) {
+        height: 500px;
+        // height: 49vh;
+        // min-height: 369px;          // PC最大化（自分の）の753pxの49%
+    }
+
+    display: flex;                  /* 親要素に指定 */
+    align-items: center;            /* 垂直方向の指定 */
+    // flex-direction: column;         /* 横並びに配置する */
+    // justify-content: center;        /* 水平方向の指定 */
+    // @include breakpoint( breakpoint-medium ){
+    //     flex-direction: row;
+    //     justify-content: flex-start;
+    //     align-items: center;
+    // }
+    // @include breakpoint( breakpoint-large ) {
+    //     // height: 49vh;
+    //     height: 30vh;
+    //     // height: 239px;
+    //     min-height: 117px;          // PC最大化（自分の）の239pxの49%
+    // }
+
+    /* タイトル */
+    h1{
+        font-size: 3.6rem;// フォントサイズの指定もしなくちゃいけないけど、cでタイトルをまとめたほうがいいかも？
+        margin-left: 26px;
+        font-family: "M+ 1m";
+        font-weight: 700;       // bold
+        @include breakpoint( breakpoint-medium ){
+            font-size: 6.0rem;
+            margin-left: 86px;
+        }
+        // @include breakpoint( breakpoint-large ) {
+        //     font-size: 4.0rem;
+        //     margin-left: 5.5%;
+        // }
+    }
+}

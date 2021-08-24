@@ -1,0 +1,30 @@
+.p-single{
+    padding-left: 5%;
+    padding-right: 5%;
+    @include breakpoint( breakpoint-medium ){
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    @include breakpoint( breakpoint-large ){
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    font-family: "M+ 1m";
+    h3{
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-top: 34px;
+        @include breakpoint( breakpoint-medium ){
+            margin-top: 60px;
+        }
+    }
+    h4, h5, h6{
+        font-size: 2.0rem;
+        font-weight: 700;
+        margin-top: 29px;
+        @include breakpoint( breakpoint-medium ){
+            margin-top: 59px;
+        }
+    }
+}

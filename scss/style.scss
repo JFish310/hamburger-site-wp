@@ -11,9 +11,9 @@
 // ==========================================================================
 @import "layout/container";
 @import "layout/_header";
+// @import "layout/_main";
 @import "layout/_sidebar";
 @import "layout/_footer";
-// @import "layout/_main";
 
 // ==========================================================================
 // Object
@@ -41,6 +41,8 @@
 @import "object/project/access";
 @import "object/project/archive";
 @import "object/project/pagination";
+@import "object/project/single";
+
 // @import "object/project/hamburger";
 // @import "object/project/news";
 // @import "object/project/service";
