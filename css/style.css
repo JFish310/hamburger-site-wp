@@ -561,6 +561,19 @@ https://daib-log.com/responsive/
   font-weight: 700;
 }
 
+.c-blockquote {
+  background-color: #F5F5F5;
+  padding: 30px 5%;
+}
+
+.c-blockquote__url {
+  margin-top: 30px;
+}
+
+.c-blockquote__url a {
+  text-decoration: underline;
+}
+
 .p-card {
   width: 336.11px;
   color: #fff;
@@ -1392,6 +1405,7 @@ https://daib-log.com/responsive/
 .p-single {
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 70px;
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
   /* SP基準--tablet-- */
@@ -1439,5 +1453,35 @@ https://daib-log.com/responsive/
   .p-single h4, .p-single h5, .p-single h6 {
     margin-top: 59px;
   }
+}
+
+.p-single .c-blockquote {
+  margin-top: 30px;
+}
+
+.p-single ol {
+  list-style-type: decimal;
+}
+
+.p-single pre {
+  margin-top: 30px;
+  background-color: #F5F5F5;
+  padding: 50px 14.8%;
+}
+
+.p-single pre code {
+  line-height: 2.3rem;
+}
+
+.p-single table {
+  margin-top: 30px;
+}
+
+.p-single button {
+  margin-top: 30px;
+}
+
+.p-single p {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */

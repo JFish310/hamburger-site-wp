@@ -1,0 +1,13 @@
+.c-blockquote{
+    background-color: $color--background--block;
+    padding: 30px 5%;   // 上下 左右
+    // &__block{
+    //     margin: 30px 5% 0 5%;
+    // }
+    &__url{
+        margin-top: 30px;
+        a{
+            text-decoration: underline;// 下線を引く
+        }
+    }
+}

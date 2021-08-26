@@ -47,11 +47,11 @@
                 <h4>見出しh4</h4>
                 <h5>見出しh5</h5>
                 <h6>見出しh6</h6>
-                <blockquote cite="#"><!-- 引用元の -->
-                    <p>Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ</p>
-                    <p>出典元：<cite><a href="引用元url">○○○○○○○○○○○○</a></cite></p>
+                <blockquote cite="#" class="c-blockquote"><!-- 引用元の -->
+                    <p class="c-blockquote__block">Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ</p>
+                    <p class="c-blockquote__url">出典元：<cite><a href="引用元url">○○○○○○○○○○○○</a></cite></p>
                 </blockquote>
-                <img src="./img/single/image--large.jpg" alt="">
+                <img src="./img/single/image--large.jpg" alt="" class="p-single__image--large">
                 <ul class="c-layout-list">
                     <li class="c-layout-list__item">
                         <figure class="">
@@ -70,8 +70,8 @@
                         </figure>
                     </li>
                 </ul>
-                <img src="./img/single/image--medium.jpg" alt="">
-                <div>
+                <img src="./img/single/image--medium.jpg" alt="" class="p-single__image--small">
+                <div class="">
                     <img src="./img/single/image--medium.jpg" alt="">
                     <img src="./img/single/image--medium.jpg" alt="">
                     <img src="./img/single/image--medium.jpg" alt="">
@@ -82,7 +82,30 @@
                     <img src="./img/single/image--medium.jpg" alt="">
                     <img src="./img/single/image--medium.jpg" alt="">
                 </div>
-                1.リストリストリスト
+                <ol type="1">
+                    <li>リストリストリスト</li>
+                    <li>リストリストリスト
+                        <ul>
+                            <li>リストリストリスト</li>
+                            <li>リストリストリスト</li>
+                        </ul>
+                    </li>
+                    <li>リストリストリスト</li>
+                    <li>リストリストリスト</li>
+                </ol>
+                <ul>
+                    <li>リストリストリスト</li>
+                    <li>リストリストリスト
+                        <ul>
+                            <li>リスト2リスト2リスト2</li>
+                            <li>リスト2リスト2リスト2</li>
+                        </ul>
+                    </li>
+                    <li>リストリストリスト</li>
+                    <li>リストリストリスト</li>
+                </ul>
+                
+                <!-- 1.リストリストリスト
                 2.リストリストリスト
                     1.リストリストリスト
                     2.リストリストリスト
@@ -94,25 +117,40 @@
                     リスト2リスト2リスト2
                     リスト2リスト2リスト2
                 リストリストリスト
-                リストリストリスト
-
+                リストリストリスト -->
 
                 <pre>
                     <code>
-                        &lt;html&gt;
-                            &lt;head&gt;
-                            &lt;/head&gt;
-                            &lt;body&gt;
-                            &lt;/body&gt;
-                        &lt;/html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
                     </code>
                 </pre>
 
+                
                 <table>
-                    <td></td>
+                    <tr>
+                        <td>テーブル</td>
+                        <td>テーブル</td>
+                    </tr>
+                    <tr>
+                        <td>テーブル</td>
+                        <td>テーブル</td>
+                    </tr>
+                    <tr>
+                        <td>テーブル</td>
+                        <td>テーブル</td>
+                    </tr>
+                    <tr>
+                        <td>テーブル</td>
+                        <td>テーブル</td>
+                    </tr>
                 </table>
                 <button>ボタン</button>
-                <b>boldboldboldboldboldboldbold</b>
+                <p><b>boldboldboldboldboldboldbold</b></p>
             </section><!-- </l-main__archive> -->
         </main><!-- /.p-main -->
         <!-- <article class="l-sidebar"><article>タグは、内容が単体で完結するセクションであることを示す際に使用 -->

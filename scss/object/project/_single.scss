@@ -1,6 +1,7 @@
 .p-single{
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 70px;
     @include breakpoint( breakpoint-medium ){
         padding-left: 7%;
         padding-right: 7%;
@@ -27,4 +28,35 @@
             margin-top: 59px;
         }
     }
+    .c-blockquote{
+        // 上のブロックとの余白
+        margin-top: 30px;
+    }
+
+
+
+
+
+    ol{
+        list-style-type: decimal;
+    }
+    pre{
+        margin-top: 30px;
+        background-color: $color--background--block;
+        padding: 50px 14.8%;   // 上下 左右
+        code{
+            line-height: 2.3rem;
+        }
+    }
+
+    table{
+        margin-top: 30px;
+    }
+    button{
+        margin-top: 30px;
+    }
+    p{
+        margin-top: 30px;
+    }
+
 }
