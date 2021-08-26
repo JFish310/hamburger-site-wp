@@ -52,26 +52,20 @@
                     <p class="c-blockquote__url">出典元：<cite><a href="引用元url">○○○○○○○○○○○○</a></cite></p>
                 </blockquote>
                 <img src="./img/single/image--large.jpg" alt="" class="p-single__image--large">
-                <ul class="c-layout-list">
-                    <li class="c-layout-list__item">
-                        <figure class="">
-                            <img src="./img/single/image--medium.jpg" alt="">
-                            <figcaption class="">
-                                <p>テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入<!--ります--></p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="c-layout-list__item">
-                        <figure class="">
-                            <img src="./img/single/image--medium.jpg" alt="">
-                            <figcaption class="">
-                                <p>テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入<!--ります--></p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
+                    <figure class="p-card--single">
+                        <img src="./img/single/image--medium.jpg" alt="">
+                        <figcaption class="p-card--single__caption--left">
+                            <p>テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入<!--ります--></p>
+                        </figcaption>
+                    </figure>
+                    <figure class="p-card--single">
+                        <figcaption class="p-card--single__caption--right">
+                            <p>テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入<!--ります--></p>
+                        </figcaption>
+                        <img src="./img/single/image--medium.jpg" alt="">
+                    </figure>
                 <img src="./img/single/image--medium.jpg" alt="" class="p-single__image--small">
-                <div class="">
+                <div class="p-single__images">
                     <img src="./img/single/image--medium.jpg" alt="">
                     <img src="./img/single/image--medium.jpg" alt="">
                     <img src="./img/single/image--medium.jpg" alt="">
@@ -82,43 +76,36 @@
                     <img src="./img/single/image--medium.jpg" alt="">
                     <img src="./img/single/image--medium.jpg" alt="">
                 </div>
-                <ol type="1">
-                    <li>リストリストリスト</li>
-                    <li>リストリストリスト
-                        <ul>
-                            <li>リストリストリスト</li>
-                            <li>リストリストリスト</li>
-                        </ul>
-                    </li>
-                    <li>リストリストリスト</li>
-                    <li>リストリストリスト</li>
-                </ol>
-                <ul>
-                    <li>リストリストリスト</li>
-                    <li>リストリストリスト
-                        <ul>
-                            <li>リスト2リスト2リスト2</li>
-                            <li>リスト2リスト2リスト2</li>
-                        </ul>
-                    </li>
-                    <li>リストリストリスト</li>
-                    <li>リストリストリスト</li>
-                </ul>
-                
-                <!-- 1.リストリストリスト
-                2.リストリストリスト
-                    1.リストリストリスト
-                    2.リストリストリスト
-                1.リストリストリスト
-                2.リストリストリスト
-
-                リストリストリスト
-                リストリストリスト
-                    リスト2リスト2リスト2
-                    リスト2リスト2リスト2
-                リストリストリスト
-                リストリストリスト -->
-
+                <div class="p-single__list">
+                    <ol>
+                        <li>リストリストリスト</li>
+                        <li>リストリストリスト
+                            <ol>
+                                <li>リストリストリスト</li>
+                                <li>リストリストリスト</li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <ol>
+                        <li>リストリストリスト</li>
+                        <li>リストリストリスト</li>
+                    </ol>
+                </div>
+                <div class="p-single__list">
+                    <ul>
+                        <li>リストリストリスト</li>
+                        <li>リストリストリスト
+                            <ul>
+                                <li>リスト2リスト2リスト2</li>
+                                <li>リスト2リスト2リスト2</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>リストリストリスト</li>
+                        <li>リストリストリスト</li>
+                    </ul>
+                </div>
                 <pre>
                     <code>
 &lt;html&gt;
@@ -130,7 +117,6 @@
                     </code>
                 </pre>
 
-                
                 <table>
                     <tr>
                         <td>テーブル</td>
@@ -150,7 +136,7 @@
                     </tr>
                 </table>
                 <button>ボタン</button>
-                <p><b>boldboldboldboldboldboldbold</b></p>
+                <p class="p-single__bold"><b>boldboldboldboldboldboldbold</b></p>
             </section><!-- </l-main__archive> -->
         </main><!-- /.p-main -->
         <!-- <article class="l-sidebar"><article>タグは、内容が単体で完結するセクションであることを示す際に使用 -->

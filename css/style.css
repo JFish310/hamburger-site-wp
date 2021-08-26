@@ -63,6 +63,10 @@ fieldset {
   border: none;
 }
 
+cite {
+  font-style: normal;
+}
+
 /*----------------------------------------------------------
 ◆SmartPhone  : 320px〜540px
 	iPhone 12mini   : 5.4インチ、375 × 667
@@ -165,6 +169,10 @@ https://daib-log.com/responsive/
     margin-left: 4%;
     font-size: 6.4rem;
   }
+}
+
+.p-main {
+  background-color: #FFFDFA;
 }
 
 /* メニュー */
@@ -684,6 +692,35 @@ https://daib-log.com/responsive/
   .p-card__caption .c-button__more {
     margin-top: 60px;
   }
+}
+
+.p-card--single {
+  font-family: "M+ 1m";
+  display: flex;
+  /* 親要素に指定 */
+  flex-direction: row;
+  /* 横並びに配置する */
+  justify-content: center;
+  /* 水平方向の指定 */
+  align-items: flex-start;
+  /* 垂直方向の指定 */
+  height: 176px;
+}
+
+.p-card--single img {
+  width: 42.7%;
+}
+
+.p-card--single p {
+  text-indent: 0.5em;
+}
+
+.p-card--single__caption--left {
+  padding-left: 10px;
+}
+
+.p-card--single__caption--right {
+  padding-right: 10px;
 }
 
 /* 検索バー */
@@ -1411,6 +1448,7 @@ https://daib-log.com/responsive/
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
   font-family: "M+ 1m";
+  color: #3C2A10;
 }
 
 @media (min-width: 834px) {
@@ -1459,8 +1497,55 @@ https://daib-log.com/responsive/
   margin-top: 30px;
 }
 
-.p-single ol {
+.p-single__image--large {
+  margin-top: 30px;
+}
+
+.p-single .p-card--single {
+  margin-top: 30px;
+}
+
+.p-single .p-single__image--small {
+  margin: 30px auto 0 auto;
+  width: 80%;
+  display: block;
+}
+
+.p-single .p-single__images {
+  margin-top: 30px;
+}
+
+.p-single .p-single__images img {
+  margin-top: 30px;
+}
+
+.p-single .p-single__images img:first-of-type {
+  margin-top: 0;
+}
+
+.p-single .p-single__list {
+  margin-top: 30px;
+}
+
+.p-single .p-single__list ol {
+  margin-top: 20px;
+}
+
+.p-single .p-single__list ol li {
+  list-style-position: inside;
   list-style-type: decimal;
+}
+
+.p-single .p-single__list ol ol {
+  margin-left: 18px;
+}
+
+.p-single .p-single__list ul {
+  margin-top: 20px;
+}
+
+.p-single .p-single__list ul ul {
+  margin-left: 18px;
 }
 
 .p-single pre {
@@ -1474,14 +1559,58 @@ https://daib-log.com/responsive/
 }
 
 .p-single table {
+  width: 100%;
   margin-top: 30px;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.p-single table tr {
+  height: 77px;
+  border: solid 1px black;
+}
+
+.p-single table tr td {
+  padding-left: 30px;
+  border: solid 1px black;
+}
+
+.p-single table tr td:first-of-type {
+  width: 40%;
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+}
+
+@media (min-width: 834px) {
+  .p-single table tr td:first-of-type {
+    width: 30%;
+  }
 }
 
 .p-single button {
   margin-top: 30px;
+  width: 100%;
+  max-width: 429px;
+  height: 81px;
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+  background: linear-gradient(#F2EDE9, #DED8D3);
+  border: 1px solid #707070;
+  border-radius: 1em;
+  /* 角丸 */
+  cursor: pointer;
+  font-weight: 700;
 }
 
-.p-single p {
+@media (min-width: 834px) {
+  .p-single button {
+    height: 104px;
+  }
+}
+
+.p-single .p-single__bold {
   margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */

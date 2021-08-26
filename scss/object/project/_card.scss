@@ -115,7 +115,30 @@
 
 }
 
+.p-card--single{
+    font-family: "M+ 1m";
 
+    display: flex;              /* 親要素に指定 */
+    flex-direction: row;        /* 横並びに配置する */
+    justify-content: center;    /* 水平方向の指定 */
+    align-items: flex-start;        /* 垂直方向の指定 */
+    height: 176px;
+    // flex-direction: row-reverse;
+    img{
+        width: 42.7%;
+    }
+    p{
+        text-indent: 0.5em; // 半角スペース分インテンド
+    }
+    &__caption{
+        &--left{
+            padding-left: 10px;     // 文章左に余白指定
+        }
+        &--right{
+            padding-right: 10px;    // 文章右に余白指定
+        }
+    }
+}
 
 
 

@@ -10,8 +10,8 @@
         padding-left: 6%;
         padding-right: 6%;
     }
-
     font-family: "M+ 1m";
+    color: $color--text-single;
     h3{
         font-size: 2.4rem;
         font-weight: 700;
@@ -32,13 +32,49 @@
         // 上のブロックとの余白
         margin-top: 30px;
     }
-
-
-
-
-
-    ol{
-        list-style-type: decimal;
+    &__image--large{
+        // 上のブロックとの余白
+        margin-top: 30px;
+    }
+    .p-card--single{
+        // 上のブロックとの余白
+        margin-top: 30px;
+    }
+    .p-single__image--small{
+        // 上のブロックとの余白、中央寄せ
+        margin: 30px auto 0 auto;
+        width: 80%;
+        display: block; // imgはinlineだからblockに指定
+    }
+    .p-single__images{
+        // 上のブロックとの余白
+        margin-top: 30px;
+        img{
+            // 上のimgとの余白
+            margin-top: 30px;
+            &:first-of-type{
+                margin-top: 0;
+            }
+        }
+    }
+    .p-single__list{
+        margin-top: 30px;
+        ol{
+            margin-top: 20px;
+            li{
+                list-style-position: inside;// リストアイテムの最初の要素として配置
+                list-style-type: decimal;   // baseで無効にしてるので上書き
+            }
+            ol{
+                margin-left: 18px;
+            }
+        }
+        ul{
+            margin-top: 20px;
+            ul{
+                margin-left: 18px;
+            }
+        }
     }
     pre{
         margin-top: 30px;
@@ -48,15 +84,44 @@
             line-height: 2.3rem;
         }
     }
-
     table{
+        width: 100%;
         margin-top: 30px;
+        border-collapse: collapse;  // 一重線
+        background-color: white;
+        tr{
+            height: 77px;
+            border: solid 1px black;
+            td{
+                padding-left: 30px;
+                border: solid 1px black;
+                &:first-of-type{
+                    width: 40%;
+                    @include breakpoint( breakpoint-medium ){
+                        width: 30%;
+                    }
+                    @include breakpoint( breakpoint_large ){
+                        width: 32%;
+                    }
+                }
+            }
+        }
     }
     button{
         margin-top: 30px;
+        width: 100%;
+        max-width: 429px;
+        height: 81px;
+        @include breakpoint( breakpoint-medium ){
+            height: 104px;
+        }
+        background: linear-gradient( $color--background--menu-pc , #DED8D3 );
+        border: 1px solid $color--text-main;    // 枠線指定（太さ・スタイル・色）
+        border-radius: 1em;                     /* 角丸 */
+        cursor: pointer;
+        font-weight: 700;
     }
-    p{
+    .p-single__bold{
         margin-top: 30px;
     }
-
 }
