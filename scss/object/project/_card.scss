@@ -1,17 +1,4 @@
-// .p-card{
-//     &--shadow{
-//         @extend .p-card;
-//     }
-// }
-
-// .p-card{
-//     // display: block;
-//     // position: relative;
-// }
-
-// .p-card__caption{
-
-// }
+/* archive, archive-searchページ内で使用 */
 .p-card{
     width: 336.11px;
     color: $color--text-sub;
@@ -20,9 +7,6 @@
 
     display: flex;              /* 親要素に指定 */
     flex-direction: column;     /* 積み重なるように配置する */
-    // justify-content: center;    /* 水平方向の指定 */
-    // // justify-content: space-around;    /* 水平方向の指定 */
-    // align-items: center;        /* 垂直方向の指定 */
 
     /* レスポンシブ対応 */
     @include breakpoint( breakpoint-medium ){
@@ -35,7 +19,6 @@
     }
 
     img{
-        // outline: 2px solid blue;
         vertical-align: bottom; // 画像下の微妙な余白を消すため
         /* レスポンシブ対応 */
         @include breakpoint( breakpoint-medium ){
@@ -45,19 +28,13 @@
     }
 
     &__caption{
-        // outline: 2px solid blue;
-        // margin: 30.5px auto 43.7px 17px;
         padding: 30.5px 17px 43.7px 17px;
-        // padding-bottom: 43.7px;
         /* レスポンシブ対応 */
         @include breakpoint( breakpoint-medium ){
             width: 50%;
             padding: 29px 59px 40px 34.7px;
         }
         @include breakpoint( breakpoint-large ){
-            // padding-top: 53px;
-            // padding-left: 63px;
-            //  59px 40px 34.7px;
             padding: 53px 63px;
         }
         h3{
@@ -66,18 +43,15 @@
             @include breakpoint( breakpoint-large ){
                 font-size: 3.6rem;
             }
-            
         }
         h4{
-            // font-size: 1.6rem;
             font-weight: 700;
             @include breakpoint( breakpoint-large ){
                 font-size: 2.4rem;
             }
         }
-        // background-color: $color--card-background--menu;
 
-        .c-dl--level3{
+        .c-dl--level4{
             margin-top: 24px;
         }
 
@@ -88,31 +62,8 @@
             @include breakpoint( breakpoint-large ){
                 margin-top: 60px;
             }
-            // margin-left: 0;
-            // bottom: 0;
         }
     }
-    /* レスポンシブ対応 */
-    @include breakpoint( breakpoint-large ){
-
-
-        // ul li:nth-child(odd){
-        //     flex-direction: row-reverse;
-        // }
-        // flex-direction: row;
-        // justify-content: space-between;
-        // .p-card:nth-child(even){
-        //     flex-direction: row-reverse;
-        //     .c-dl--level{
-        //         text-align: left;
-        //     }
-        //     .p-card__caption:nth-child(even){
-        //         text-align: right;
-        //     }
-        // }
-    }
-
-
 }
 
 /* singleページ内で使用 */
@@ -148,34 +99,3 @@
         }
     }
 }
-
-
-
-
-        
-
-
-
-
-// .box:nth-child(even) {
-//     flex-direction: row-reverse;
-//   }
-  
-//   .text {
-//     text-align: left;
-//   }
-//   .box:nth-child(even) .text {
-//     text-align: right;
-//   }
-
-
-
-
-// .p-card--shadow{
-//     width: 320px;
-//     // position:relative;
-//     // box-shadow: 12 12 5px 0 rgba(#1B1310, 0.16);
-//     /* offset-x | offset-y | blur-radius | spread-radius | color */
-//     /* 横方向 縦方向 (ぼかし) (広がり) (影の色) (影の向き) */
-//     box-shadow: 0 0 10px #1B1310; //0 rgba(#1B1310, 0.16);    
-// }

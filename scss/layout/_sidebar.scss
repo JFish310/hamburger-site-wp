@@ -70,10 +70,10 @@
     }
 
     /* _button.scssへ移動 */
-    // .c-button--close{
-    //     margin: 0 0 0 auto;      // 右寄せ、右の余白の指定
-    //     @include breakpoint ( breakpoint-large ){
-    //         display: none;
-    //     }
-    // }
+    .c-button--close{
+        margin: 0 0 0 auto;      // 右寄せ、右の余白の指定
+        @include breakpoint ( breakpoint-large ){
+            display: none;
+        }
+    }
 }

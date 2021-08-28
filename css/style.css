@@ -145,6 +145,7 @@ https://daib-log.com/responsive/
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
   /* タイトル */
+  /* メニューボタン */
 }
 
 @media (min-width: 1025px) {
@@ -168,6 +169,27 @@ https://daib-log.com/responsive/
     margin: auto;
     margin-left: 4%;
     font-size: 6.4rem;
+  }
+}
+
+.l-header .c-button--menu {
+  margin: 0 16px 0 auto;
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+}
+
+@media (min-width: 834px) {
+  .l-header .c-button--menu {
+    margin-right: 26px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .l-header .c-button--menu {
+    display: none;
   }
 }
 
@@ -216,6 +238,18 @@ https://daib-log.com/responsive/
   }
 }
 
+.l-sidebar .c-button--close {
+  margin: 0 0 0 auto;
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+}
+
+@media (min-width: 1025px) {
+  .l-sidebar .c-button--close {
+    display: none;
+  }
+}
+
 /* display: flexを使った方法 */
 .l-footer {
   width: 100%;
@@ -256,9 +290,6 @@ https://daib-log.com/responsive/
   font-size: 20px;
   font-weight: 700;
   padding: 14px 0px;
-  margin: 0 16px 0 auto;
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
 }
@@ -266,14 +297,6 @@ https://daib-log.com/responsive/
 @media (min-width: 834px) {
   .c-button--menu {
     font-size: 3.4rem;
-    padding-bottom: 0px;
-    margin-right: 26px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .c-button--menu {
-    display: none;
   }
 }
 
@@ -282,15 +305,6 @@ https://daib-log.com/responsive/
   position: relative;
   width: 66px;
   height: 66px;
-  margin: 0 0 0 auto;
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
-}
-
-@media (min-width: 1025px) {
-  .c-button--close {
-    display: none;
-  }
 }
 
 .c-button--close::before, .c-button--close::after {
@@ -313,7 +327,6 @@ https://daib-log.com/responsive/
   right: 25%;
 }
 
-/* ×ボタン*/
 .c-button__more {
   width: 163.16px;
   padding: 10px 0px;
@@ -352,20 +365,8 @@ https://daib-log.com/responsive/
   font-weight: 700;
 }
 
-/*
-    背景の設定
-*/
-.c-background--mask::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.3);
-}
-
 /* p-placeに使用 */
 .c-dl--level1 {
-  margin-top: 10px;
   color: #3C2A10;
 }
 
@@ -399,20 +400,11 @@ https://daib-log.com/responsive/
   font-family: "M+ 1m";
 }
 
-/* p-cardに使用 */
+/* p-archiveに使用 */
 .c-dl--level3 {
   width: 100%;
   color: #3C2A10;
-  margin-top: 10px;
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
   font-family: "M+ 1m";
-}
-
-@media (min-width: 834px) {
-  .c-dl--level3 {
-    margin-top: 16px;
-  }
 }
 
 .c-dl--level3 h2 {
@@ -439,10 +431,7 @@ https://daib-log.com/responsive/
   }
 }
 
-.c-dl--level4 {
-  margin-top: 24px;
-}
-
+/* p-cardに使用 */
 .c-dl--level4 dd {
   width: 246px;
   height: 114px;
@@ -498,30 +487,7 @@ https://daib-log.com/responsive/
   }
 }
 
-.c-layout-list {
-  display: flex;
-  /* 親要素に指定 */
-  flex-direction: column;
-  /* 積み重なるように配置する */
-  justify-content: center;
-  /* 水平方向の指定 */
-  align-items: center;
-  /* 垂直方向の指定 */
-}
-
-.c-layout-list__item {
-  max-width: 345px;
-  margin-bottom: 50px;
-  /* レスポンシブ対応 */
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
-}
-
-.c-layout-list__item:last-of-type {
-  margin-bottom: 0;
-}
-
-/* archiveページ　レスポンシブ　縦並び→横並び */
+/* archive, archive-searchページ　レスポンシブ　縦並び→横並び */
 .c-layout-list--row__item {
   /* 中央寄せ */
   display: flex;
@@ -591,6 +557,7 @@ https://daib-log.com/responsive/
   text-decoration: underline;
 }
 
+/* archive, archive-searchページ内で使用 */
 .p-card {
   width: 336.11px;
   color: #fff;
@@ -603,9 +570,6 @@ https://daib-log.com/responsive/
   /* レスポンシブ対応 */
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
-  /* レスポンシブ対応 */
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
 }
@@ -686,7 +650,7 @@ https://daib-log.com/responsive/
   }
 }
 
-.p-card__caption .c-dl--level3 {
+.p-card__caption .c-dl--level4 {
   margin-top: 24px;
 }
 
@@ -1141,6 +1105,10 @@ https://daib-log.com/responsive/
   width: 100%;
 }
 
+.p-place__take-out .l-container__box .c-dl--level1 {
+  margin-top: 10px;
+}
+
 .p-place__take-out .l-container__box > :first-child {
   margin-top: 0;
 }
@@ -1190,7 +1158,10 @@ https://daib-log.com/responsive/
 .p-place__eat-in .l-container__box {
   margin-top: auto;
   width: 100%;
-  z-index: 2;
+}
+
+.p-place__eat-in .l-container__box .c-dl--level1 {
+  margin-top: 10px;
 }
 
 .p-place__eat-in .l-container__box > :first-child {
@@ -1309,6 +1280,18 @@ https://daib-log.com/responsive/
 @media (min-width: 1025px) {
   .p-archive {
     padding: 3% 6%;
+  }
+}
+
+.p-archive .c-dl--level3 {
+  margin-top: 10px;
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+}
+
+@media (min-width: 834px) {
+  .p-archive .c-dl--level3 {
+    margin-top: 16px;
   }
 }
 

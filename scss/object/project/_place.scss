@@ -25,9 +25,6 @@
             font-size: 4.1rem;
             font-weight: 700;       // bold
             color: $color--text-sub;
-            // margin-top: 10px;
-            // padding-top: 25px;
-            // padding-left: 10px;
             /* 罫線を疑似要素で */
             &::after{
                 content: "";
@@ -37,11 +34,6 @@
                 margin-top: 20px;                           // タイトルとの余白
             }
         }
-        // // タイトル下の罫線
-        // .c-border{
-        //     margin-top: 20px;
-        //     // line-height: 50px;
-        // }
     }
     /* Take Out */
     &__take-out{
@@ -77,6 +69,10 @@
             margin-top: auto;    // 下寄せ、margin-bottomは10px
             width: 100%;
 
+            // c-dl--level間の余白
+            .c-dl--level1{
+                margin-top: 10px;
+            }
             // 最初の子要素には余白なし
             > :first-child {
                 margin-top: 0;
@@ -118,7 +114,12 @@
         .l-container__box{
             margin-top: auto;    // 下寄せ、margin-bottomは10px
             width: 100%;
-            z-index: 2;
+            // z-index: 2;
+
+            // c-dl--level間の余白
+            .c-dl--level1{
+                margin-top: 10px;
+            }
             // 最初の子要素には余白なし
             > :first-child {
                 margin-top: 0;

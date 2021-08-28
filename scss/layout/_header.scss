@@ -13,7 +13,6 @@
         height: 20vh;           // 画面に対しての割合（217/1080=20%）
         min-height: 150px;      // PC最大化（自分の）の753pxの20%
     }
-    
     /* タイトル */
     h1{
         font-weight: 700;   // bold
@@ -28,35 +27,16 @@
             font-size: 6.4rem;
         }
     }
-    // /* メニューボタン   _button.scssへ移動 */
-    // .c-button--menu{
-    //     // width: 51px;
-    //     font-size: 20px;
-    //     font-weight: 700;           // bold
-    //     padding: 14px 0px;          // 上下、左右
-    //     margin: 0 16px 0 auto;      // 右寄せ、右の余白の指定
-    //     @include breakpoint( breakpoint-medium ){
-    //         // width: 86px;
-    //         font-size: 3.4rem;
-    //         padding-bottom: 0px;    // h1との余白を詰める
-    //         margin-right: 26px;     // 右の余白指定
-    //     }
-    //     // メニューボタンは非表示
-    //     @include breakpoint( breakpoint-large ){
-    //         display: none;
-    //     }
-    // }
-    // /* 検索バー      p-searchへ移動*/
-    // .p-search{
-    //     width: 85%;
-    //     @include breakpoint ( breakpoint-medium ){
-    //         width: 65%;
-    //     }
-    //     @include breakpoint ( breakpoint-large ){
-    //         width: 35%;
-    //         margin: auto;       // リセット
-    //         // margin-right: 30px;  // margin設定
-    //         margin-right: 2%;   // margin設定
-    //     }
-    // }
+    /* メニューボタン */
+    .c-button--menu{
+        margin: 0 16px 0 auto;      // 右寄せ、右の余白の指定
+        @include breakpoint( breakpoint-medium ){
+            margin-right: 26px;     // 右の余白指定
+            padding-bottom: 0px;    // h1との余白を詰める
+        }
+        // メニューボタンは非表示
+        @include breakpoint( breakpoint-large ){
+            display: none;
+        }
+    }
 }

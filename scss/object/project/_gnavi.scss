@@ -1,9 +1,4 @@
 .p-gnavi{
-    // width: 87%;
-    // height: 100%;
-    // height: 1826px;
-    // padding-top: 12.5%;
-    // padding-left: 12.5%;
     background-color: $color--background--menu-pc;
     color: $color--text-main;
     font-family: "M+ 1m";
@@ -24,13 +19,10 @@
     }
     &__main-menu{
     // .p-gnavi__main-menu{
-        // text-align: left;
-        // margin-bottom: 40px;
         @include breakpoint ( breakpoint-medium ){
             margin-top: 40px;   // h2との余白
             display: block;
             text-align: left;
-            // margin-bottom: 40px;
         }
         // li{
         &__list{
@@ -39,16 +31,6 @@
                 // margin-top: 212px;
                 margin-top: 138px;
             }
-            // margin-right: 0;
-            // margin-bottom: 40px;
-            // @include breakpoint ( breakpoint-large ){
-            //     // メニューの左側に余白
-            //     // margin-left: 18%;
-            //     // margin-bottom: 0;
-            //     &:last-of-type{
-            //         margin-right: 0;
-            //     }
-            // }
         }
     }
     .p-gnavi__sub-menu{
@@ -62,29 +44,3 @@
         }
     }
 }
-    // /* メニュー */
-    //  &__menu{
-    //     display: none;      /* 領域そのものを生成しない */
-    //     width: 100vw;       /* ビューポートが 600px だとしたら、画像の幅は 60px になる */
-    //     height: 100vh;      /* ビューポート　高さ */
-    //     position: fixed;    /* 絶対位置、スクロールしても位置は固定されたまま */
-    //     top: 0;             /* 上0 */
-    //     left: 0;            /* 左0 */
-
-    //     @include breakpoint ( breakpoint-large ){
-    //         // 全部リセット
-    //         display: block; // divだから初期値はblock？横並びの指定はp-naviで。
-    //         width: auto;
-    //         height: auto;
-    //         position: relative;
-    //         top: auto;
-    //         left: auto;
-    //     }
-    // }
-    // /* メニューボタン */
-    // .p-menu{
-    //     @include breakpoint ( breakpoint-medium ){
-    //         // display: block;
-    //         display: none;
-    //     }
-    // }

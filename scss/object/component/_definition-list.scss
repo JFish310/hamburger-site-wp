@@ -1,13 +1,7 @@
 /* p-placeに使用 */
 .c-dl--level1{
-    margin-top: 10px;
     color: $color--card-text;
-
-    // dt内はh3のため、サイズの指定はh3で行う
-    // dt{
-    //     font-size: 2.2rem;
-    //     // margin-bottom: 20px;
-    // }
+    // dt内はh3のため、サイズの指定はh3で行う。c-title--h3へ
     dd{
         margin-top: 15px;
         line-height: 2.5rem;
@@ -34,20 +28,10 @@
     }
 }
 
-/* p-cardに使用 */
+/* p-archiveに使用 */
 .c-dl--level3{
-    // width: 335px;
-    // width: 90%;
     width: 100%;        // 周りの余白は親のpaddingで調整するから、ここでは目一杯広げる
     color: $color--card-text;
-    margin-top: 10px;   // margin-top: 30px;    paddingが20pxあるから
-    @include breakpoint( breakpoint-medium ){
-        margin-top: 16px;
-    }
-    // @include breakpoint( breakpoint-large ){
-    //     margin-top: 40px;
-    // }
-    
     font-family: "M+ 1m";
     h2{
         font-size: 2.8rem;
@@ -63,8 +47,9 @@
         }
     }
 }
+
+/* p-cardに使用 */
 .c-dl--level4{
-    margin-top: 24px;
     dd{
         width: 246px;
         height: 114px;
@@ -77,24 +62,7 @@
             width: 75%;
             height: 73px;
         }
-        // padding-left: 8px;       // インテンド指定（勘違い）
-        // margin-left: 8px;       // インテンド指定（勘違い）
     }
-    // padding: 40px;
-    // color: $color--text-sub;
-    // @include breakpoint( breakpoint-large ){
-    //     // 幅1536pxにするにはカンプの数値の80%
-    //     padding-top: 66px;
-    //     padding-left: 95px;
-    //     padding-right: 107px;
-    // }
-    // dd{
-    //     margin-top: 20px;
-    //     font-size: 1.4rem;
-    //     font-weight: 700;       // bold
-    //     line-height: 3.3rem;
-    //     font-family: "M+ 1m";
-    // }
 }
 
 /* singleページで使用 */
