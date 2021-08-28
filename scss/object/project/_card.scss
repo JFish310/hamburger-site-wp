@@ -115,27 +115,36 @@
 
 }
 
+/* singleページ内で使用 */
 .p-card--single{
     font-family: "M+ 1m";
 
     display: flex;              /* 親要素に指定 */
     flex-direction: row;        /* 横並びに配置する */
     justify-content: center;    /* 水平方向の指定 */
-    align-items: flex-start;        /* 垂直方向の指定 */
-    height: 176px;
-    // flex-direction: row-reverse;
+    align-items: flex-start;    /* 垂直方向の指定 */
+
+    max-height: 176px;
+    /* レスポンシブ対応 */
+    @include breakpoint( breakpoint-medium ){
+        max-height: 373px;
+    }
+    @include breakpoint( breakpoint-large ){
+        max-height: 358px;
+    }
+
     img{
-        width: 42.7%;
+        width: 43%;// 43% 144/335px, 43% 21/714px, 43% 581/1353px
     }
     p{
         text-indent: 0.5em; // 半角スペース分インテンド
     }
     &__caption{
-        &--left{
-            padding-left: 10px;     // 文章左に余白指定
+        &--image-left{
+            padding-left: 3%;     // 文章左に余白指定 10/335px, 21/714px, 40/1353px
         }
-        &--right{
-            padding-right: 10px;    // 文章右に余白指定
+        &--image-right{
+            padding-right: 3%;    // 文章右に余白指定 10/335px, 21/714px, 40/1353px
         }
     }
 }

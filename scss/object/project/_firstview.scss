@@ -125,7 +125,7 @@
     background-image: url(/img/single/first-view.jpg);
     background-position: center;
     background-size: cover;         /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
-    @include breakpoint( breakpoint-large ) {
+    @include breakpoint( breakpoint-medium ) {
         height: 500px;
         // height: 49vh;
         // min-height: 369px;          // PC最大化（自分の）の753pxの49%

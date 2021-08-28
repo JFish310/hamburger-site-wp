@@ -97,13 +97,10 @@
     // }
 }
 
+/* singleページで使用 */
 .c-dl--level5{
     width: 100%;        // 周りの余白は親のpaddingで調整するから、ここでは目一杯広げる
     color: $color--text-single;
-    margin-top: 30px;   // margin-top: 30px;    paddingが20pxあるから
-    @include breakpoint( breakpoint-medium ){
-        margin-top: 60px;
-    }
     font-family: "M+ 1m";
     h2{
         font-size: 2.8rem;
@@ -112,10 +109,9 @@
         }
     }
     dd{
-        // height: 276px;
         margin-top: 30px;
         @include breakpoint( breakpoint-medium ){
-            margin-top: 60                                               px;
+            margin-top: 60px;
         }
     }
 }
