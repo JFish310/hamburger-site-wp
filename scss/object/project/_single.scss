@@ -61,68 +61,34 @@
         display: block; // imgはinlineだからblockに指定
     }
     .p-single__images{
-        width: 100%;
         // 上のブロックとの余白
         margin-top: 30px;
         @include breakpoint( breakpoint-medium ){
             margin-top: 60px;
         }
-        display: flex;                  /* 親要素に指定 */
-        flex-direction: column;         /* 積み重ねで配置する */
-        align-items: center;            /* 垂直方向の指定 */
-        // justify-content: center;        /* 水平方向の指定 */
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);  /* gridの設定(1列) */
+        row-gap: 20px;                          /* 画像間の余白 */
+        justify-items: center;                  /* 中央寄せ */
         @include breakpoint( breakpoint-medium ){
-            // flex-direction: row;
-            // flex-wrap: wrap;
-            flex-flow: row wrap;
-            // align-items: center;            /* 垂直方向の指定 */
+            grid-template-columns: repeat(2, 1fr);  /* gridの設定(2列) */
+            gap: 20px 16px;                         /* 画像間の余白 縦方向 横方向 */
         }
-
+        @include breakpoint( breakpoint-large ){
+            grid-template-columns: repeat(3, 1fr);  /* gridの設定(3列) */
+            gap: 20px 20px;                         /* 画像間の余白 縦方向 横方向 */
+        }
         img{
-            // 上のimgとの余白
-            margin-top: 30px;
-            // display: block; // imgはinlineだからblockに指定
-            // // 上のブロックとの余白、中央寄せ
-            // margin: 30px auto 0 auto;
-
-            // 1番目の画像には余白を付けない
-            &:first-of-type{
-                margin-top: 0;
-            }
-            @include breakpoint( breakpoint-medium ){
-                // margin-top: 20px;
-                margin: 20px auto 0 auto;
-                // 1,2番目の画像までは、上の余白は0
-                &:first-of-type, &:nth-of-type(2){
-                    margin-top: 0;
-                }
-                // 偶数番目の画像
-                &:nth-child(even){
-                    margin-left: 16px;
-                }
-            }
-            @include breakpoint( breakpoint-large ){
-                margin-left: 20px;  // 
-                // 偶数番目の画像
-                &:nth-child(even){
-                    margin-left: 20px; // 16pxのままなのでリセット
-                }
-                // 3番目の画像（1番上の行）までは、上の余白は0
-                &:nth-of-type(3){
-                    margin-top: 0;
-                }
-                // 左列の画像の余白は削除
-                &:nth-of-type(3n+1){
-                    margin-left: 0;
-                }
-            }
             // 画像幅の指定
             width: 349px;
             @include breakpoint( breakpoint-medium ){
-                width: 49%;     // 349/714px
+                // width: 49%;     // 349/714px
+                width: 100%;
             }
             @include breakpoint( breakpoint-large ){
-                width: 32%;     // 438/1353px
+                // width: 32%;     // 438/1353px
                 max-width: 438px;
             }
         }
