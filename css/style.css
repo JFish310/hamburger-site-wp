@@ -199,7 +199,6 @@ https://daib-log.com/responsive/
 
 /* メニュー */
 .l-sidebar {
-  /*--------ここから下がメニューボタンを考えての対応----------*/
   /* 画面外に配置 */
   position: fixed;
   top: 0%;
@@ -279,7 +278,6 @@ https://daib-log.com/responsive/
   font-size: 1.4rem;
 }
 
-/* text-align: centerを使った方法 */
 .c-button, .c-button--menu, .c-button--close {
   cursor: pointer;
   /* メニューボタン */
