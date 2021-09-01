@@ -1,7 +1,6 @@
 // ==========================================================================
 // Foundation
 // ==========================================================================
-//@import "foundation/_reset";
 @import "foundation/_variable";
 @import "foundation/_base";
 @import "foundation/_mixin";
@@ -22,9 +21,7 @@
 // Component
 // -----------------------------------------------------------------
 @import "object/component/_button";
-// @import "object/component/_border";
 @import "object/component/_box";
-// @import "object/component/_background";
 @import "object/component/_definition-list";
 @import "object/component/_layout-list";
 @import "object/component/_section-title";
@@ -32,9 +29,7 @@
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
-// @import "object/project/about";
 @import "object/project/card";
-// @import "object/project/contact";
 @import "object/project/search";
 @import "object/project/firstview";
 @import "object/project/gnavi";
@@ -43,12 +38,8 @@
 @import "object/project/archive";
 @import "object/project/pagination";
 @import "object/project/single";
-
-// @import "object/project/hamburger";
-// @import "object/project/news";
-// @import "object/project/service";
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
-// @import "object/utility/_color";
-// @import "object/utility/_display";
+// @import "object/utility";
+// @import "object/utility/";

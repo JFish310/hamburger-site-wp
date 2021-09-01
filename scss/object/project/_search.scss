@@ -7,8 +7,6 @@
     }
     @include breakpoint ( breakpoint-large ){
         width: 35%;
-        // margin: auto;       // リセット
-        // margin-right: 30px;  // margin設定
         margin-right: 2%;   // margin設定
     }
     /* 検索--入力エリア-- */
@@ -16,16 +14,10 @@
         width: 72%;
         max-width: 546px;
         height: 46px;
-        // margin: 8px 0;
-        // padding: 11px 0.3rem;
         padding: 11px 16px;
-        //font: 15px/24px sans-serif;
-	    // box-sizing: border-box;
         background: $color--background--search;
-        // transition: 0.3s;
         border: 1px solid $color--text-main;    // 枠線指定（太さ・スタイル・色）
         border-radius: 0.5em;                   /* 角丸 */
-        // outline: none;
         vertical-align: top;        // 入力フォームとボタンのズレ解消
     }
 
@@ -35,19 +27,14 @@
         max-width: 136px;
         height: 46px;
         margin-left: 3%;
-        // padding: 10px 52px;
         padding: 0.3em;
         background: linear-gradient( $color--background--menu-pc , #DED8D3 );
         color: $color--text-main;
         border: 1px solid $color--text-main;    // 枠線指定（太さ・スタイル・色）
         border-radius: 0.5em;                   /* 角丸 */
         cursor: pointer;
-        // outline: none;
-        // appearance: none;
-        // font-size: 1.6rem;
         font-family: "M+ 1m";
         font-weight: 700;
-        // display: block;
         vertical-align: top;        // 入力フォームとボタンのズレ解消（念のためこちらでも設定）
     }
 }
