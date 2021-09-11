@@ -37,7 +37,8 @@ https://wp.yat-net.com/?p=5970#theme04
 
 - rtl.css 言語によってはテキストを右から左へ記述するものが有り、その場合はこのスタイルシートが自動的に呼び出されます。
 
-
+**Font Awesome の読み込みはfunction.phpで。**
+https://www.bootstrapcdn.com/
 
 
 ***
