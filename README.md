@@ -4,6 +4,7 @@
 WordPress化  
 
 ----履歴----  
+8/30    環境構築スタート(phpのインストール、Local・WordPressの更新など）
 9/8     構成考察  
 9/9     コーディングスタート  
 
@@ -32,16 +33,43 @@ jQuery           4h
 
 ----学習参考サイトや、考察、メモ----  
 
-YATさんの最初の課題のブログ
-https://wp.yat-net.com/?p=5970#theme04
+YATさんの最初の課題のブログ  
+https://wp.yat-net.com/?p=5970#theme04  
 
 - rtl.css 言語によってはテキストを右から左へ記述するものが有り、その場合はこのスタイルシートが自動的に呼び出されます。
 
-**Font Awesome の読み込みはfunction.phpで。**
-https://www.bootstrapcdn.com/
+**Localのエラー【参考サイト】9/8**  
+●https://localwp.com/help-docs/advanced/router-mode/  
+●https://tips.back2nature.jp/wordpress/fixed-locals-router-is-having-trouble-starting/  
+https://qiita.com/ponsuke0531/items/7b33e7a48cb27c42fbdc  
+●https://moriya.xrea.jp/tdiary/20161128.html  
+
+**Font Awesome の読み込みはfunction.phpで。**  
+https://www.bootstrapcdn.com/  
 
 
 ***
+
+
+
+
+# WordPress　コーディングルール
+https://make.wordpress.org/core/handbook/best-practices/coding-standards/css/　　
+
+- インデントにはスペースではなくタブ
+- セクション間に2つの改行をつける。セクション内のブロック間に一つの改行をつける
+- 各セレクターはカンマもしくは開始中括弧終了
+- プロパティと値の行は一つのインデントと終了にセミコロン
+- 終了を示す中括弧は開始括弧のインデント位置と合わせる
+- プロパティの後にはコロンとスペース
+- 特有の指定がない限り小文字で記述
+- 色の16進数コード記述で省略が可能な場合は省略（ #ffffff → #fff ）
+- なるべくショートハンドで記述（プロパティの上書きを除く
+
+
+
+
+
 
 
 
