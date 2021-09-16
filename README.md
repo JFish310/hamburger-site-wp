@@ -48,6 +48,16 @@ https://qiita.com/ponsuke0531/items/7b33e7a48cb27c42fbdc
 https://www.bootstrapcdn.com/  
 
 
+**function.php  wp_enqueue_style()での指定するところの色々**  
+WordPress テーマを作るなら get_theme_file_uri と get_theme_file_path を使いましょう
+https://nendeb.com/597
+- リセットCSS と 開発 CSS がある場合、開発CSSファイルを呼び出す側に array( reset ) と書くと、先にリセットCSSを読み込んでから開発CSSを読み込んでくれる
+
+
+
+
+
+
 ***
 
 
