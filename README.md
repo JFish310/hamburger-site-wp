@@ -53,6 +53,27 @@ WordPress テーマを作るなら get_theme_file_uri と get_theme_file_path �
 https://nendeb.com/597
 - リセットCSS と 開発 CSS がある場合、開発CSSファイルを呼び出す側に array( reset ) と書くと、先にリセットCSSを読み込んでから開発CSSを読み込んでくれる
 
+Googleフォントの読み込みの時の書き方参照
+wp_enqueue_styleがGoogle Fontsから１つしか読み込まない
+https://neetlance.com/post/enqueue-style-google-fonts/
+
+ブログ1
+wp_enqueue_style( 'fontawesome','https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+私
+wp_enqueue_style( 'font-awesome-5','//use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '5.6.1' );
+スライド
+wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.7.0' );
+忘れた
+wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
+get_theme_file_uriの書き方
+wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ), array(), '4.7.0' );
+
+
+カスタムメニュー  
+https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html  
+
+
+
 
 
 
@@ -135,3 +156,25 @@ https://design-remarks.com/margin-top-or-bottom/
 
 
 # Sass-階層説明
+```
+hamburger-site-wp
+├─ css
+├─ img
+├─ js
+├─ sass
+|  ├─
+|  ├─
+|  └─
+├─ 
+├─ archive_search.html
+├─ archive.html
+├─ footer.php
+├─ function.php
+├─ header.php
+├─ index.php
+├─ page.php
+├─ searchform.php
+├─ sidebar.php
+├─ single.php
+└─ README.md
+```
