@@ -36,11 +36,28 @@
     }
     add_action( 'wp_enqueue_scripts', 'hamburgersite_script' );
 
-// wp_enqueue_style( 'fontawesome','https://use.fontawesome.com/releases/v5.2.0/css/all.css');
-// wp_enqueue_style( 'font-awesome-5','//use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '5.6.1' );
+    // ウィジェット用
+    // function hamburgersite_widgets_init() {
+    //     register_sidebar (
+    //         array(
+    //             'name'          => 'カテゴリーウィジェット',
+    //             'id'            => 'category_widget',
+    //             'description'   => 'カテゴリー用ウィジェットです',
+    //             'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    //             'after_widget'  => '</div>',
+    //             'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
+    //             'after_title'   => "</h2>\n",
+    //         )
+    //     );
+    // }
+    // add_action( 'widgets_init', 'hamburgersite_widgets_init' );
 
-// wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.7.0' );
-
-// wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
-
-// wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ), array(), '4.7.0' );
+    // カスタムメニュー
+    function register_my_menus() { 
+        register_nav_menus( array( //複数のナビゲーションメニューを登録する関数
+        //'「メニューの位置」の識別子' => 'メニューの説明の文字列',
+          'main-menu' => 'Main Menu',
+          'footer-menu'  => 'Footer Menu',
+        ) );
+      }
+      add_action( 'after_setup_theme', 'register_my_menus' );
