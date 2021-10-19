@@ -1,13 +1,10 @@
 # RaiseTech WP副業コース  
-最終課題  
-ハンバーガーサイト  
-WordPress化  
+## 最終課題  ハンバーガーサイト  WordPress化  
 
 ----履歴----  
-8/30    環境構築スタート(phpのインストール、Local・WordPressの更新など）
+8/30    環境構築スタート(phpのインストール、Local・WordPressの更新など）  
 9/8     構成考察  
 9/9     コーディングスタート  
-
 
 
 6/9     環境構築  
@@ -49,7 +46,7 @@ https://www.bootstrapcdn.com/
 
 
 **function.php  wp_enqueue_style()での指定するところの色々**  
-WordPress テーマを作るなら get_theme_file_uri と get_theme_file_path を使いましょう
+WordPress テーマを作るなら get_theme_file_uri と get_theme_file_path を使いましょう  
 https://nendeb.com/597
 - リセットCSS と 開発 CSS がある場合、開発CSSファイルを呼び出す側に array( reset ) と書くと、先にリセットCSSを読み込んでから開発CSSを読み込んでくれる
 
@@ -85,7 +82,7 @@ https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html
 
 
 # WordPress　コーディングルール
-https://make.wordpress.org/core/handbook/best-practices/coding-standards/css/　　
+https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standards/　　
 
 - インデントにはスペースではなくタブ
 - セクション間に2つの改行をつける。セクション内のブロック間に一つの改行をつける
