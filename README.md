@@ -13,8 +13,8 @@
 6/18    中断  
 7/6     再開  
 7/29    フロントページのコーディング終了  
-7/30    リファクタリング終了
-7/31    質問に答えていただいた箇所のリファクタリング
+7/30    リファクタリング終了  
+7/31    質問に答えていただいた箇所のリファクタリング  
 （ここまで　　時間）  
 
 【累計】  
@@ -54,16 +54,20 @@ Googleフォントの読み込みの時の書き方参照
 wp_enqueue_styleがGoogle Fontsから１つしか読み込まない
 https://neetlance.com/post/enqueue-style-google-fonts/
 
-ブログ1
-wp_enqueue_style( 'fontawesome','https://use.fontawesome.com/releases/v5.2.0/css/all.css');
-私
-wp_enqueue_style( 'font-awesome-5','//use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '5.6.1' );
-スライド
-wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.7.0' );
-忘れた
-wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
-get_theme_file_uriの書き方
-wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ), array(), '4.7.0' );
+ブログ1  
+wp_enqueue_style( 'fontawesome','https://use.fontawesome.com/releases/v5.2.0/css/all.css');  
+
+私  
+wp_enqueue_style( 'font-awesome-5','//use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '5.6.1' );  
+
+スライド  
+wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.7.0' );  
+
+忘れた  
+wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );  
+
+get_theme_file_uriの書き方  
+wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ), array(), '4.7.0' );  
 
 
 カスタムメニュー  
@@ -71,18 +75,12 @@ https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html
 
 
 
-
-
-
-
-
 ***
 
 
-
-
 # WordPress　コーディングルール
-https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standards/　　
+~~https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standards/~~
+https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standards/php/
 
 - インデントにはスペースではなくタブ
 - セクション間に2つの改行をつける。セクション内のブロック間に一つの改行をつける
@@ -93,11 +91,6 @@ https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standar
 - 特有の指定がない限り小文字で記述
 - 色の16進数コード記述で省略が可能な場合は省略（ #ffffff → #fff ）
 - なるべくショートハンドで記述（プロパティの上書きを除く
-
-
-
-
-
 
 
 
@@ -119,10 +112,10 @@ layout-list
 **原則、保守性を高めるため、単語は省略しない**
 
 よくある単語  
-    bg  は  background  
-    btn は  button  
-    ttl は  title  
-    txt は  text  
+	bg  は  background  
+	btn は  button  
+	ttl は  title  
+	txt は  text  
 
 ただし、**開発時のルールに合わせることが大原則のため、この限りではない**
 
@@ -140,15 +133,15 @@ https://design-remarks.com/margin-top-or-bottom/
 ***
 
 **【font-family】について**  
-    font-family: 候補1,候補2,候補3,フォントの種類;  
-        「sans-serif」  ゴシック体系のフォント（MSゴシック、中ゴシック、Arialなど）
-        「serif」       明朝体系のフォント（MS明朝、MS P明朝、Garamond、MS Georgia、Times New Romanなど）  
-        「cursive」     筆記体系のフォント（caflisch script、ex pontoなど）  
-        「fantasy」     装飾系のフォント（critter、studzなど）  
-        「monospace」   等幅系のフォント（Osaka-等幅、courier、Courier Newなど）  
-    ※日本語テキストにcursiveを指定していると、希に正常に表示できない場合がある※  
-    英語フォントと日本語フォントの両方を指定する場合は、先に英語フォントを指定する。  
-    そうすることで、アルファベットには英語フォントが、日本語には日本語フォントが使用されるようになる。  
+	font-family: 候補1,候補2,候補3,フォントの種類;  
+		「sans-serif」  ゴシック体系のフォント（MSゴシック、中ゴシック、Arialなど）
+		「serif」       明朝体系のフォント（MS明朝、MS P明朝、Garamond、MS Georgia、Times New Romanなど）  
+		「cursive」     筆記体系のフォント（caflisch script、ex pontoなど）  
+		「fantasy」     装飾系のフォント（critter、studzなど）  
+		「monospace」   等幅系のフォント（Osaka-等幅、courier、Courier Newなど）  
+	※日本語テキストにcursiveを指定していると、希に正常に表示できない場合がある※  
+	英語フォントと日本語フォントの両方を指定する場合は、先に英語フォントを指定する。  
+	そうすることで、アルファベットには英語フォントが、日本語には日本語フォントが使用されるようになる。  
 ***
 
 
