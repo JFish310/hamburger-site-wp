@@ -1,128 +1,128 @@
 .p-place{
-    ul{
-        // 白の余白調整
-        padding: 20px;
-        @include breakpoint( breakpoint-medium ){
-            padding: 40px;
-        }
-        @include breakpoint( breakpoint-large ){
-            // height: 48%;
-            padding: 8% 7%;
-        }
+	ul{
+		// 白の余白調整
+		padding: 20px;
+		@include breakpoint( breakpoint-medium ){
+			padding: 40px;
+		}
+		@include breakpoint( breakpoint-large ){
+			// height: 48%;
+			padding: 8% 7%;
+		}
 
-        display: flex;              /* 親要素に指定 */
-        flex-direction: column;     /* 積み重なるように配置する */
-        justify-content: center;    /* 水平方向の指定 */
-        align-items: center;        /* 垂直方向の指定 */
-        /* レスポンシブ対応 */
-        @include breakpoint( breakpoint-medium ){
-            flex-direction: row;		/* 横並び */
-            // align-items: flex-end;		/* 下揃え */
-        }
-        // TakeOut, EatIn
-        h2{
-            font-size: 4.1rem;
-            font-weight: 700;       // bold
-            color: $color--text-sub;
-            /* 罫線を疑似要素で */
-            &::after{
-                content: "";
-                display: block;                             // ブロックが積みあがる
-                border-bottom: solid $color--text-sub 3px;  // 線種、色、太さ
-                width: 36px;                                // 線の長さ
-                margin-top: 20px;                           // タイトルとの余白
-            }
-        }
-    }
-    /* Take Out */
-    &__take-out{
-        padding: 10px;              // 背景画像（写真）に対して
-        background-image: url(../img/front/take-out.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;     /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
-        height: 642px;
-        // height: 100%;
-        max-width: 357px;
-        display: flex;              /* 親要素に指定 */
-        flex-direction: column;     /* 積み重なるように配置する */
+		display: flex;              /* 親要素に指定 */
+		flex-direction: column;     /* 積み重なるように配置する */
+		justify-content: center;    /* 水平方向の指定 */
+		align-items: center;        /* 垂直方向の指定 */
+		/* レスポンシブ対応 */
+		@include breakpoint( breakpoint-medium ){
+			flex-direction: row;		/* 横並び */
+			// align-items: flex-end;		/* 下揃え */
+		}
+		// TakeOut, EatIn
+		h2{
+			font-size: 4.1rem;
+			font-weight: 700;       // bold
+			color: $color--text-sub;
+			/* 罫線を疑似要素で */
+			&::after{
+				content: "";
+				display: block;                             // ブロックが積みあがる
+				border-bottom: solid $color--text-sub 3px;  // 線種、色、太さ
+				width: 36px;                                // 線の長さ
+				margin-top: 20px;                           // タイトルとの余白
+			}
+		}
+	}
+	/* Take Out */
+	&__take-out{
+		padding: 10px;              // 背景画像（写真）に対して
+		background-image: url(../img/front/take-out.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;     /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
+		height: 642px;
+		// height: 100%;
+		max-width: 357px;
+		display: flex;              /* 親要素に指定 */
+		flex-direction: column;     /* 積み重なるように配置する */
 
-        /********* レスポンシブ *********/
-        @include breakpoint( breakpoint-medium ){
-            padding: 2%;
-        }
-        @include breakpoint( breakpoint-large ){
-            // width: 500px;    // 625*0.8（自分のPCブラウザ最大化に合わせるための0.8）
-            width: 44%;
-            height: 957px;      // 1193*0.8（自分のPCブラウザ最大化に合わせるための0.8）
-            max-width: 625px;
-            max-height: 1196px;
-        }
-        .l-container__box{
-            // margin: auto auto 10px auto;    // 下寄せ、margin-bottomは10px
-            margin-top: auto;    // 下寄せ、margin-bottomは10px
-            width: 100%;
+		/********* レスポンシブ *********/
+		@include breakpoint( breakpoint-medium ){
+			padding: 2%;
+		}
+		@include breakpoint( breakpoint-large ){
+			// width: 500px;    // 625*0.8（自分のPCブラウザ最大化に合わせるための0.8）
+			width: 44%;
+			height: 957px;      // 1193*0.8（自分のPCブラウザ最大化に合わせるための0.8）
+			max-width: 625px;
+			max-height: 1196px;
+		}
+		.l-container__box{
+			// margin: auto auto 10px auto;    // 下寄せ、margin-bottomは10px
+			margin-top: auto;    // 下寄せ、margin-bottomは10px
+			width: 100%;
 
-            // c-dl--level間の余白
-            .c-dl--level1{
-                margin-top: 10px;
-            }
-            // 最初の子要素には余白なし
-            > :first-child {
-                margin-top: 0;
-            }
+			// c-dl--level間の余白
+			.c-dl--level1{
+				margin-top: 10px;
+			}
+			// 最初の子要素には余白なし
+			> :first-child {
+				margin-top: 0;
+			}
 
-            // 「小見出しが入ります」のboxのサイズ指定
-            .c-box{
-                width: 100%;
-                height: 163px;
-            }
-        }
-    }
+			// 「小見出しが入ります」のboxのサイズ指定
+			.c-box{
+				width: 100%;
+				height: 163px;
+			}
+		}
+	}
 
-    /* Eat In */
-    &__eat-in{
-        margin-top: 20px;       // Take Outとの余白指定
-        padding: 10px;          // 画像（写真）に対して
-        @include breakpoint( breakpoint-medium ){
-            margin-top: 0px;    // リセット
-            padding: 2%;
-            // ulをjustify-content: center;にしたので、余白調整
-            margin-left: 6%;
-        }
-        background-image: url(../img/front/eat-in.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;         /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
-        height: 642px;
-        max-width: 357px;
-        display: flex;              /* 親要素に指定 */
-        flex-direction: column;     /* 積み重なるように配置する */
+	/* Eat In */
+	&__eat-in{
+		margin-top: 20px;       // Take Outとの余白指定
+		padding: 10px;          // 画像（写真）に対して
+		@include breakpoint( breakpoint-medium ){
+			margin-top: 0px;    // リセット
+			padding: 2%;
+			// ulをjustify-content: center;にしたので、余白調整
+			margin-left: 6%;
+		}
+		background-image: url(../img/front/eat-in.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;         /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
+		height: 642px;
+		max-width: 357px;
+		display: flex;              /* 親要素に指定 */
+		flex-direction: column;     /* 積み重なるように配置する */
 
-        @include breakpoint( breakpoint-large ){
-            width: 44%;
-            height: 957px;      // 1193*0.8（自分のPCブラウザ最大化に合わせるための0.8）
-            max-width: 625px;
-            max-height: 1196px;
-        }
-        .l-container__box{
-            margin-top: auto;    // 下寄せ、margin-bottomは10px
-            width: 100%;
-            // z-index: 2;
+		@include breakpoint( breakpoint-large ){
+			width: 44%;
+			height: 957px;      // 1193*0.8（自分のPCブラウザ最大化に合わせるための0.8）
+			max-width: 625px;
+			max-height: 1196px;
+		}
+		.l-container__box{
+			margin-top: auto;    // 下寄せ、margin-bottomは10px
+			width: 100%;
+			// z-index: 2;
 
-            // c-dl--level間の余白
-            .c-dl--level1{
-                margin-top: 10px;
-            }
-            // 最初の子要素には余白なし
-            > :first-child {
-                margin-top: 0;
-            }
-            // 「小見出しが入ります」のboxのサイズ指定
-            .c-box{
-                width: 100%;
-                height: 163px;
-            }
-        }
-    }
+			// c-dl--level間の余白
+			.c-dl--level1{
+				margin-top: 10px;
+			}
+			// 最初の子要素には余白なし
+			> :first-child {
+				margin-top: 0;
+			}
+			// 「小見出しが入ります」のboxのサイズ指定
+			.c-box{
+				width: 100%;
+				height: 163px;
+			}
+		}
+	}
 }

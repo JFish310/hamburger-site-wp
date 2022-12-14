@@ -1,69 +1,69 @@
 /*
 【font-family】について
-    font-family: 候補1,候補2,候補3,フォントの種類;
-        「sans-serif」  ゴシック体系のフォント（MSゴシック、中ゴシック、Arialなど）
-        「serif」       明朝体系のフォント（MS明朝、MS P明朝、Garamond、MS Georgia、Times New Romanなど）
-        「cursive」     筆記体系のフォント（caflisch script、ex pontoなど）
-        「fantasy」     装飾系のフォント（critter、studzなど）
-        「monospace」   等幅系のフォント（Osaka-等幅、courier、Courier Newなど）
-    ※日本語テキストにcursiveを指定していると、希に正常に表示できない場合がある※
-    英語フォントと日本語フォントの両方を指定する場合は、先に英語フォントを指定する。
-    そうすることで、アルファベットには英語フォントが、日本語には日本語フォントが使用されるようになる。
+	font-family: 候補1,候補2,候補3,フォントの種類;
+		「sans-serif」  ゴシック体系のフォント（MSゴシック、中ゴシック、Arialなど）
+		「serif」       明朝体系のフォント（MS明朝、MS P明朝、Garamond、MS Georgia、Times New Romanなど）
+		「cursive」     筆記体系のフォント（caflisch script、ex pontoなど）
+		「fantasy」     装飾系のフォント（critter、studzなど）
+		「monospace」   等幅系のフォント（Osaka-等幅、courier、Courier Newなど）
+	※日本語テキストにcursiveを指定していると、希に正常に表示できない場合がある※
+	英語フォントと日本語フォントの両方を指定する場合は、先に英語フォントを指定する。
+	そうすることで、アルファベットには英語フォントが、日本語には日本語フォントが使用されるようになる。
 
 // バグの見つけ方
 * {
-    outline: 2px solid blue;
+	outline: 2px solid blue;
   }
 */
 
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 body{
-    font-size: 1.6rem;
-    //line-height: 1.7;   // 行の高さ
-    font-weight: 400;       // フォントの太さ（基本400）
-    font-family: 'Roboto', 'M+ 1m', sans-serif; // M PLUS 1p
-    overflow-x: hidden;     // 横スクロールの非表示（l-sidebar（Menu）対策）
-    // max-width: 1380px;
-    width: 100%;            // tablet版のメニュー開閉時にバックが左に寄れるので、この指定で解決。
+	font-size: 1.6rem;
+	//line-height: 1.7;   // 行の高さ
+	font-weight: 400;       // フォントの太さ（基本400）
+	font-family: 'Roboto', 'M+ 1m', sans-serif; // M PLUS 1p
+	overflow-x: hidden;     // 横スクロールの非表示（l-sidebar（Menu）対策）
+	// max-width: 1380px;
+	width: 100%;            // tablet版のメニュー開閉時にバックが左に寄れるので、この指定で解決。
 
-    /* Menuボタン開閉 */
-    &.is-open{
-        position: fixed;    // 画面の固定
-        overflow: hidden;   // スクロールバーの非表示
-        // メニューが出てきたときの影
-        &::before{
-            content: "";
-            background: rgba($color--background--mask-access, 0.5);
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-    }
+	/* Menuボタン開閉 */
+	&.is-open{
+		position: fixed;    // 画面の固定
+		overflow: hidden;   // スクロールバーの非表示
+		// メニューが出てきたときの影
+		&::before{
+			content: "";
+			background: rgba($color--background--mask-access, 0.5);
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+	}
 }
 
 img{
-    max-width: 100%;
-    vertical-align: bottom;
+	max-width: 100%;
+	vertical-align: bottom;
 }
 
 a{
-    text-decoration: none;
-    color: $color--text-main;
+	text-decoration: none;
+	color: $color--text-main;
 }
 
 li{
-    list-style-type: none;
+	list-style-type: none;
 }
 
 fieldset{
-    border:none;
+	border:none;
 }
 
 cite{
-    font-style: normal; // 斜体
+	font-style: normal; // 斜体
 }

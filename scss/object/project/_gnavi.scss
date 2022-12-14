@@ -1,46 +1,46 @@
 .p-gnavi{
-    background-color: $color--background--menu-pc;
-    color: $color--text-main;
-    font-family: "M+ 1m";
-    margin-bottom: 527px;
-    // Menuの文字
-    h2{
-        display: none;  // SP版、tablet版は非表示
-        font-family: 'Roboto';
-        font-size: 3.4rem;
-        @include breakpoint ( breakpoint-large ){
-            display: block;
-        }
-    }
-    // メインメニュー
-    h3{
-        font-size: 2.4rem;
-        font-weight: 700;
-    }
-    &__main-menu{
-    // .p-gnavi__main-menu{
-        @include breakpoint ( breakpoint-medium ){
-            margin-top: 40px;   // h2との余白
-            display: block;
-            text-align: left;
-        }
-        // li{
-        &__list{
-            margin-top: 38px;
-            &:first-of-type{
-                // margin-top: 212px;
-                margin-top: 138px;
-            }
-        }
-    }
-    .p-gnavi__sub-menu{
-        margin-top: 40px;   // main-menuとの余白設定
-        &__list{
-            margin-top: 22px;
-            // margin-left: 17.7%;
-            margin-left: 20px;
-            // margin-bottom: 40px;
-            font-size: 2rem;
-        }
-    }
+	background-color: $color--background--menu-pc;
+	color: $color--text-main;
+	font-family: "M+ 1m";
+	margin-bottom: 527px;
+	// Menuの文字
+	h2{
+		display: none;  // SP版、tablet版は非表示
+		font-family: 'Roboto';
+		font-size: 3.4rem;
+		@include breakpoint ( breakpoint-large ){
+			display: block;
+		}
+	}
+	// メインメニュー
+	h3{
+		font-size: 2.4rem;
+		font-weight: 700;
+	}
+	&__main-menu{
+	// .p-gnavi__main-menu{
+		@include breakpoint ( breakpoint-medium ){
+			margin-top: 40px;   // h2との余白
+			display: block;
+			text-align: left;
+		}
+		// li{
+		&__list{
+			margin-top: 38px;
+			&:first-of-type{
+				// margin-top: 212px;
+				margin-top: 138px;
+			}
+		}
+	}
+	.p-gnavi__sub-menu{
+		margin-top: 40px;   // main-menuとの余白設定
+		&__list{
+			margin-top: 22px;
+			// margin-left: 17.7%;
+			margin-left: 20px;
+			// margin-bottom: 40px;
+			font-size: 2rem;
+		}
+	}
 }
