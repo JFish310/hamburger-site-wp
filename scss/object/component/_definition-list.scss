@@ -1,85 +1,85 @@
 /* p-placeに使用 */
 .c-dl--level1{
-    color: $color--card-text;
-    // dt内はh3のため、サイズの指定はh3で行う。c-title--h3へ
-    dd{
-        margin-top: 15px;
-        line-height: 2.5rem;
-        font-family: "M+ 1m";
-    }
+	color: $color--card-text;
+	// dt内はh3のため、サイズの指定はh3で行う。c-title--h3へ
+	dd{
+		margin-top: 15px;
+		line-height: 2.5rem;
+		font-family: "M+ 1m";
+	}
 }
 
 /* p-accessに使用 */
 .c-dl--level2{
-    padding: 40px;
-    color: $color--text-sub;
-    @include breakpoint( breakpoint-large ){
-        // 幅1536pxにするにはカンプの数値の80%
-        padding-top: 66px;
-        padding-left: 95px;
-        padding-right: 107px;
-    }
-    dd{
-        margin-top: 20px;
-        font-size: 1.4rem;
-        font-weight: 700;       // bold
-        line-height: 3.3rem;
-        font-family: "M+ 1m";
-    }
+	padding: 40px;
+	color: $color--text-sub;
+	@include breakpoint( breakpoint-large ){
+		// 幅1536pxにするにはカンプの数値の80%
+		padding-top: 66px;
+		padding-left: 95px;
+		padding-right: 107px;
+	}
+	dd{
+		margin-top: 20px;
+		font-size: 1.4rem;
+		font-weight: 700;       // bold
+		line-height: 3.3rem;
+		font-family: "M+ 1m";
+	}
 }
 
 /* p-archiveに使用 */
 .c-dl--level3{
-    width: 100%;        // 周りの余白は親のpaddingで調整するから、ここでは目一杯広げる
-    color: $color--card-text;
-    font-family: "M+ 1m";
-    h2{
-        font-size: 2.8rem;
-        @include breakpoint( breakpoint-medium ){
-            font-size: 3.6rem;
-        }
-    }
-    dd{
-        // height: 276px;
-        margin-top: 30px;
-        @include breakpoint( breakpoint-medium ){
-            margin-top: 25px;
-        }
-    }
+	width: 100%;        // 周りの余白は親のpaddingで調整するから、ここでは目一杯広げる
+	color: $color--card-text;
+	font-family: "M+ 1m";
+	h2{
+		font-size: 2.8rem;
+		@include breakpoint( breakpoint-medium ){
+			font-size: 3.6rem;
+		}
+	}
+	dd{
+		// height: 276px;
+		margin-top: 30px;
+		@include breakpoint( breakpoint-medium ){
+			margin-top: 25px;
+		}
+	}
 }
 
 /* p-cardに使用 */
 .c-dl--level4{
-    dd{
-        width: 246px;
-        height: 114px;
-        margin-top: 10px;
-        @include breakpoint( breakpoint-medium ){
-            width: 284px;
-        }
-        @include breakpoint( breakpoint-large ){
-            margin-top: 17px;
-            width: 75%;
-            height: 73px;
-        }
-    }
+	dd{
+		width: 246px;
+		height: 114px;
+		margin-top: 10px;
+		@include breakpoint( breakpoint-medium ){
+			width: 284px;
+		}
+		@include breakpoint( breakpoint-large ){
+			margin-top: 17px;
+			width: 75%;
+			height: 73px;
+		}
+	}
 }
 
 /* singleページで使用 */
 .c-dl--level5{
-    width: 100%;        // 周りの余白は親のpaddingで調整するから、ここでは目一杯広げる
-    color: $color--text-single;
-    font-family: "M+ 1m";
-    h2{
-        font-size: 2.8rem;
-        @include breakpoint( breakpoint-medium ){
-            font-size: 3.6rem;
-        }
-    }
-    dd{
-        margin-top: 30px;
-        @include breakpoint( breakpoint-medium ){
-            margin-top: 60px;
-        }
-    }
+	width: 100%;        // 周りの余白は親のpaddingで調整するから、ここでは目一杯広げる
+	color: $color--text-single;
+	font-family: "M+ 1m";
+	h2{
+		font-size: 2.8rem;
+		@include breakpoint( breakpoint-medium ){
+			font-size: 3.6rem;
+		}
+	}
+	dd{
+		margin-top: 30px;
+		@include breakpoint( breakpoint-medium ){
+			margin-top: 60px;
+		}
+	}
 }

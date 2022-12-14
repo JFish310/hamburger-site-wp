@@ -1,38 +1,38 @@
 /* メニュー */
 .l-sidebar{
-    /* 画面外に配置 */
-    position: fixed;
-    top: 0%;            // 上寄せ
-    left: 100%;         // 右画面外に
+	/* 画面外に配置 */
+	position: fixed;
+	top: 0%;            // 上寄せ
+	left: 100%;         // 右画面外に
 
-    background-color: $color--background--menu-pc;
-    height: 100%;
-    padding-left: 46px;
+	background-color: $color--background--menu-pc;
+	height: 100%;
+	padding-left: 46px;
 
-    /* メニューボタン押下 */
-    &.is-open{
-        left: 13%;      // 左13%残す
-        width: 87%;     // 幅は87%
-        /* 幅の変更 */
-        @include breakpoint ( breakpoint-medium ){
-            left: 56%;
-            width: 44%;
-        }
-        // padding-left: 46px;
-        overflow-y: scroll;     // 縦スクロールの表示
-    }
-    @include breakpoint ( breakpoint-large ){
-        display: block;         // 初期値（リセット）
-        position: static;       // 初期値（リセット）
-        width: 100%;
-        padding-top: 82px;
-    }
+	/* メニューボタン押下 */
+	&.is-open{
+		left: 13%;      // 左13%残す
+		width: 87%;     // 幅は87%
+		/* 幅の変更 */
+		@include breakpoint ( breakpoint-medium ){
+			left: 56%;
+			width: 44%;
+		}
+		// padding-left: 46px;
+		overflow-y: scroll;     // 縦スクロールの表示
+	}
+	@include breakpoint ( breakpoint-large ){
+		display: block;         // 初期値（リセット）
+		position: static;       // 初期値（リセット）
+		width: 100%;
+		padding-top: 82px;
+	}
 
-    /* _button.scssへ移動 */
-    .c-button--close{
-        margin: 0 0 0 auto;      // 右寄せ、右の余白の指定
-        @include breakpoint ( breakpoint-large ){
-            display: none;
-        }
-    }
+	/* _button.scssへ移動 */
+	.c-button--close{
+		margin: 0 0 0 auto;      // 右寄せ、右の余白の指定
+		@include breakpoint ( breakpoint-large ){
+			display: none;
+		}
+	}
 }
