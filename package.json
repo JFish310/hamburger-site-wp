@@ -1,0 +1,31 @@
+{
+  "name": "hamburger-site-wp",
+  "version": "1.0.0",
+  "description": "----履歴----  \r 8/30    環境構築スタート(phpのインストール、Local・WordPressの更新など）  \r 9/8     構成考察  \r 9/9     コーディングスタート",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JFish310/hamburger-site-wp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JFish310/hamburger-site-wp/issues"
+  },
+  "homepage": "https://github.com/JFish310/hamburger-site-wp#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "minimist": "^1.2.7",
+    "sass": "^1.57.1"
+  }
+}
