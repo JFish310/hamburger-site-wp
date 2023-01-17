@@ -2,5 +2,5 @@
 @use "../foundation/variable";
 
 .p-main{
-	background-color: $color--background--main;
+	background-color: variable.$color--background--main;
 }

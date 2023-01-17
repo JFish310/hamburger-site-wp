@@ -1,6 +1,6 @@
-@use "../foundation/base";
-@use "../foundation/variable";
-@use "../foundation/mixin";
+@use "../../foundation/base";
+@use "../../foundation/variable";
+@use "../../foundation/mixin";
 
 /* p-placeに使用 */
 .c-dl--level1{
@@ -39,7 +39,7 @@
 	font-family: "M+ 1m";
 	h2{
 		font-size: 2.8rem;
-		@include mixin.ntmlbreakpoint( breakpoint-medium ){
+		@include mixin.breakpoint( breakpoint-medium ){
 			font-size: 3.6rem;
 		}
 	}
