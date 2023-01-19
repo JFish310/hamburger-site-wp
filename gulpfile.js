@@ -28,11 +28,15 @@ parallel =>  並列処理
 //---------------------------------------------------------
 // 参照元パス
 const srcPath = {
-	'scss': './scss/**/*.scss'
+	'scss': './scss/**/*.scss'//,
+	// 'php' : '*.php',
+	// 'js'  : './js/**/*.js'
 }
 // 出力先パス
 const destPath = {
-	'css': './css/'
+	'css': './css/'//,
+	// 'php': './',
+	// 'js' : './js/'
 }
 
 //---------------------------------------------------------
@@ -71,14 +75,13 @@ const scssCompile = (done) => {
 	done();
 }
 
-// Browser-sync部分は削除
 //---------------------------------------------------------
 //	minimist設定・Browser-sync
 //---------------------------------------------------------
 const options = minimist( process.argv.slice(2),{ // process.argv=>コマンドラインの引数取得
 	string: 'domain',
 	default: {
-		domain: 'humburgersite.local' // 引数初期値
+		domain: 'hamburgersite.local' // 引数初期値
 		// domain: 'index.html' // 引数初期値 C:\Users\AAAAA\htdocs\hamburger-site\index.html
 	}
 });
@@ -102,7 +105,21 @@ const browserSyncReload = (done) => {
 	done();
 }
 
-
+//---------------------------------------------------------
+//	PHP・Jsファイル監視、出力
+//---------------------------------------------------------
+// // PHP
+// const phpWatch = (done) => {
+// 	return src( srcPath.php )
+// 	.pipe( gulp.dest( destPath.php )),
+// 	done();
+// }
+// // Js
+// const jsWatch = (done) => {
+// 	return src( srcPath.js )
+// 	.pipe( gulp.dest( destPath.js )),
+// 	done();
+// }
 
 //---------------------------------------------------------
 //	watchタスク
@@ -118,11 +135,7 @@ const watchFiles = (done) => {
 //	モジュール作成
 //---------------------------------------------------------
 exports.default = series(
-	// parallel( phpWatch, jsWatch, scssCompile ),
 	parallel( scssCompile ),
-	parallel( watchFiles )
-	// parallel( watchFiles, browserSyncFunc )
+	// parallel( phpWatch, jsWatch, scssCompile ),
+	parallel( watchFiles, browserSyncFunc )
 );
-
-
-
