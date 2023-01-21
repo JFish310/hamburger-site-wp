@@ -2,19 +2,22 @@
 ## 最終課題  ハンバーガーサイト  WordPress化  
 
 ----履歴----  
+2021年
 8/30    環境構築スタート(phpのインストール、Local・WordPressの更新など）  
 9/8     構成考察  
 9/9     コーディングスタート  
 
+9/22    休止  
+ここまで 累計　h m  
 
-6/9     環境構築  
-6/10    indexページ、マークアップ開始  
-6/13    scss側開始  
-6/18    中断  
-7/6     再開  
-7/29    フロントページのコーディング終了  
-7/30    リファクタリング終了  
-7/31    質問に答えていただいた箇所のリファクタリング  
+2022年  
+12/14   #1 タブ対応　40m  
+
+2023年  
+1/16    再開 -- リファクタリング(#2 gulp対応, Browser-sync)  
+1/21    #3 Menu  
+
+
 （ここまで　　時間）  
 
 【累計】  
@@ -149,12 +152,52 @@ https://design-remarks.com/margin-top-or-bottom/
 ```
 hamburger-site-wp
 ├─ css
+|  ├─ ress.css
+|  ├─ style.css -- gulpでコンパイル（自動生成）
+|  └─ style.css.map
 ├─ img
+|  ├─ archive
+|  ├─ front
+|  ├─ page
+|  └─ single
 ├─ js
 ├─ sass
-|  ├─
-|  ├─
-|  └─
+|  ├─ foundation
+|  |  ├─ _base.scss
+|  |  ├─ _mixin.scss
+|  |  └─ _variable.scss
+|  ├─ layout
+|  |  ├─ _container.scss
+|  |  ├─ _footer.scss
+|  |  ├─ _header.scss
+|  |  ├─ _main.scss
+|  |  └─ _sidebar.scss
+|  └─ object
+|  |  ├─component
+|  |  |  ├─ _blockquote.scss
+|  |  |  ├─ _box.scss
+|  |  |  ├─ _button.scss
+|  |  |  ├─ _definition-list.scss
+|  |  |  ├─ _layout-list.scss
+|  |  |  └─ _section-title.scss
+|  |  ├─project
+|  |  |  ├─ _access.scss
+|  |  |  ├─ _archive.scss
+|  |  |  ├─ _card.scss
+|  |  |  ├─ _firstview.scss
+|  |  |  ├─ _gnavi.scss
+|  |  |  ├─ _pagination.scss
+|  |  |  ├─ _place.scss
+|  |  |  ├─ _search.scss
+|  |  |  └─ _single.scss
+|  |  └─utility  
+|  └─ style.scss
+├─ 
+├─ node_modules -- GitHub管理外
+├─ .gitignore
+├─ gulp.js
+├─ package-lock.json
+├─ package.json
 ├─ 
 ├─ archive_search.html
 ├─ archive.html
