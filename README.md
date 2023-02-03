@@ -73,9 +73,10 @@ get_theme_file_uriの書き方
 wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ), array(), '4.7.0' );  
 
 
-カスタムメニュー  
+**カスタムメニュー**  
 https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html  
-
+https://techmemo.biz/wordpress/wp-nav-menu-add-class/  
+	wp_nav_menu関数のパラメータに関しての記事。クラスの追加の仕方（2023/2/3)
 
 
 ***

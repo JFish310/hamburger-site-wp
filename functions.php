@@ -54,9 +54,11 @@
 
 	// カスタムメニュー
 	function register_my_menus() { 
-		register_nav_menus( array( //複数のナビゲーションメニューを登録する関数
+		register_nav_menus( array( // 複数のナビゲーションメニューを登録する関数
 			//'「メニューの位置」の識別子' => 'メニューの説明の文字列',
 			'category_nav' => 'カテゴリーナビゲーション',
+			//'menu_nav' => 'メニューナビゲーション',
+			'footer_nav' => 'フッターナビゲーション',
 		) );
 	}
 	add_action( 'after_setup_theme', 'register_my_menus' );
