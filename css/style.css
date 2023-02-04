@@ -875,10 +875,6 @@ https://daib-log.com/responsive/
     display: block;
   }
 }
-.p-gnavi h3 {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
 .p-gnavi__main-menu {
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
@@ -892,17 +888,20 @@ https://daib-log.com/responsive/
 }
 .p-gnavi__main-menu__list {
   margin-top: 38px;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 .p-gnavi__main-menu__list:first-of-type {
   margin-top: 138px;
 }
-.p-gnavi .p-gnavi__sub-menu {
+.p-gnavi .p-gnavi__submenu {
   margin-top: 40px;
 }
-.p-gnavi .p-gnavi__sub-menu__list {
+.p-gnavi .p-gnavi__submenu__list {
   margin-top: 22px;
   margin-left: 20px;
   font-size: 2rem;
+  font-weight: 400;
 }
 
 .p-place {
