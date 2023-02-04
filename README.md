@@ -75,8 +75,18 @@ wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ),
 
 **カスタムメニュー**  
 https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html  
+https://olein-design.com/blog/register-setting-souce-code-of-custom-menu  
 https://techmemo.biz/wordpress/wp-nav-menu-add-class/  
-	wp_nav_menu関数のパラメータに関しての記事。クラスの追加の仕方（2023/2/3)
+	wp_nav_menu関数のパラメータに関しての記事。クラスの追加の仕方（2023/2/3)  
+https://site-manage.net/archives/3346#_wp_footer  
+	謎の余白の原因→解決  
+http://dim5.net/wordpress/wp-nav-menu-container-delete.html  
+https://www.sejuku.net/blog/30092  
+	str_replaceについての記事  
+https://blog.webico.work/wp_nav_menu_sub  
+	sub-menuを変更する方法（これに伴い、もともとあった「p-gnavi__sub-menu__list」は「p-gnavi__submenu__list」に変更  
+
+
 
 
 ***
