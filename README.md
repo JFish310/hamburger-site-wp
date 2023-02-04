@@ -86,8 +86,10 @@ https://www.sejuku.net/blog/30092
 https://blog.webico.work/wp_nav_menu_sub  
 	sub-menuを変更する方法（これに伴い、もともとあった「p-gnavi__sub-menu__list」は「p-gnavi__submenu__list」に変更  
 
-
-
+**フッター**  
+メニュー間の「｜」は、li+liでやるというサイトを見てヒントを得た。良かった。  
+https://wk-partners.co.jp/homepage/blog/hpseisaku/htmlcss/adjacent-sibling-combinator/  
+2023/2/4
 
 ***
 
