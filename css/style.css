@@ -225,18 +225,28 @@ https://daib-log.com/responsive/
   color: #fff;
   font-family: "M+ 1m";
   display: flex; /* 親要素に指定 */
-  flex-direction: column; /* 積み重なるように配置する */
+  flex-direction: column; /* 行の配置 */
   align-items: center; /* 垂直方向の指定 */
 }
-.l-footer p {
-  padding-top: 39px;
+.l-footer ul {
+  display: flex; /* 親要素に指定 */
+  flex-direction: row; /*  */
+  margin-top: 39px;
   font-size: 2rem;
 }
-.l-footer p:last-of-type {
-  padding-top: 29px;
+.l-footer ul li {
+  margin-right: 10px;
 }
-.l-footer p small {
+.l-footer ul li + li {
+  border-left: 2px solid #fff;
+  padding-left: 10px;
+}
+.l-footer ul a {
+  color: #fff;
+}
+.l-footer p {
   font-size: 1.4rem;
+  margin-top: 29px;
 }
 
 .c-button, .c-button--close, .c-button--menu {
