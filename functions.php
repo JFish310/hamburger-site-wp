@@ -64,42 +64,9 @@
 	add_action( 'after_setup_theme', 'register_my_menus' );
 
 	// ページネーション
-	// function custom_wp_pagenavi_class_current( $class_name ) {
-	// 	return 'is-current';
-	// }
-	// add_filter( 'custom_wp_pagenavi_class_current', 'custom_wp_pagenavi_class_current' );
-
-	// function custom_wp_pagenavi_class( $class_name ) {
-	// 	switch( $class_name ) {
-	// 		case 'current':
-	// 			$class_name = 'is-current';
-	// 			break;
-	// 		case 'previouspostslink':
-	// 			$class_name = 'prev';
-	// 			break;
-	// 		case 'nextpostslink':
-	// 			$class_name = 'next';
-	// 			break;
-	// 		}
-	// 	return $class_name;
-	// }
-	// add_filter( 'wp_pagenavi_class_current', 'custom_wp_pagenavi_class' );
-	// add_filter( 'wp_pagenavi_class_previouspostslink', 'custom_wp_pagenavi_class' );
-	// add_filter( 'wp_pagenavi_class_nextpostslink', 'custom_wp_pagenavi_class' );4
-
-	// function custom_wp_pagenavi() {
-	// 	$args = array(
-	// 		'wrapper_tag' => 'nav',
-	// 		'wrapper_class' => 'pagination'
-	// 	);
-	// 	wp_pagenavi( $args );
-	// }
-
-
 	function custom_wp_pagenavi( $html ) {
 		$out = '';
 		$out = str_replace( "<div class='wp-pagenavi' role='navigation'>", "", $html );// 引数:$検索文字列 , $置換後文字列 , $検索対象文字列 [, int &$count ] )
-		// $out = str_replace( "class='wp-pagenavi'>", "", $out );
 		$out = str_replace( "<a", "<li class='p-pagination__list__item'><a", $out );
 		$out = str_replace( "</a>", "</a></li>", $out );
 		$out = str_replace( "<span class='pages'>", "<li class='p-pagination__list__item'><span class='pages'>page ", $out );
@@ -110,39 +77,3 @@
 		return '<nav class="p-pagination" role="navigation"><ul class="p-pagination__list">' . $out . '</ul></nav>';
 	}
 	add_filter( 'wp_pagenavi', 'custom_wp_pagenavi' );
-
-
-
-	// <div class="wp-pagenavi" role="navigation">
-	// 	<span class="pages">2 / 2</span>
-	// 		<a class="previouspostslink" rel="prev" aria-label="前のページ" href="//localhost:3000/category/drink/">«</a>
-	// 		<a class="page smaller" title="ページ 1" href="//localhost:3000/category/drink/">1</a>
-	// 	<span aria-current="page" class="current">2</span>
-	// </div>
-
-
-
-
-
-	// <nav class="p-pagination" role="navigation">
-	//	<ul class="p-pagination__list">
-	// 		<li class="p-pagination__list__item">
-	//			<span class="pages">1 / 2</span></li>
-	// 		<li class="p-pagination__list__item">
-	//			<span aria-current="page" class="current">1</span></li>
-	// 		<li class="p-pagination__list__item">
-	//			<a class="page larger" title="ページ 2" href="//localhost:3000/category/burger/page/2/">2</a></li>
-	// 		<li class="p-pagination__list__item">
-	//			<a class="nextpostslink" rel="next" aria-label="次のページ" href="//localhost:3000/category/burger/page/2/">»</a></li>
-	// 	</ul>
-	// </nav>
-
-
-// <nav class="p-pagination" role="navigation">
-// 	<ul class="p-pagination__list">&gt;
-// 		<li><span class="pages">1 / 2</span></li>
-// 		<li><span aria-current="page" class="current">1</span></li>
-// 		<li class="p-pagination__list__item"><a class="page larger" title="ページ 2" href="//localhost:3000/category/burger/page/2/">2</a></li>
-// 		<li class="p-pagination__list__item"><a class="nextpostslink" rel="next" aria-label="次のページ" href="//localhost:3000/category/burger/page/2/">»</a></li>
-// 	</ul>
-// </nav>

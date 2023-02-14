@@ -1166,7 +1166,7 @@ https://daib-log.com/responsive/
   /* SP基準--PC-- */
   color: #707070;
   display: flex; /* 親要素に指定 */
-  flex-direction: row; /* 積み重なるように配置する */
+  flex-direction: row; /* 並ぶように配置 */
   justify-content: center; /* 水平方向の指定 */
   align-items: center; /* 垂直方向の指定 */
   padding: 6%;
@@ -1183,99 +1183,112 @@ https://daib-log.com/responsive/
     margin-bottom: 64px;
   }
 }
-.p-pagination > p {
-  display: none;
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
-}
-@media (min-width: 834px) {
-  .p-pagination > p {
-    display: block;
-  }
-}
 .p-pagination__list {
+  /* li・p-pagination__list__itemの配置の設定 */
   width: 100%;
   display: flex; /* 親要素に指定 */
-  flex-direction: row; /* 積み重なるように配置する */
-  justify-content: space-between; /* 水平方向の指定 */
+  flex-direction: row; /* 並ぶように配置する */
+  justify-content: right; /* 水平方向の指定（右端配置） */
   align-items: center; /* 垂直方向の指定 */
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
+}
+.p-pagination__list:has(.previouspostslink) {
+  justify-content: space-between; /* 水平方向の指定（左右に配置） */
 }
 @media (min-width: 834px) {
   .p-pagination__list {
     width: auto;
-    justify-content: center; /* 水平方向の指定 */
+    justify-content: center; /* 水平方向の指定（中央配置） */
   }
 }
 .p-pagination__list__item {
-  /* 最初と最後以外は非表示 */
-  width: 35px;
-  height: 35px;
-  margin-left: 15px;
-  cursor: pointer;
-  border: solid 1.5px #707070;
-  /* SP基準--tablet-- */
-  /* SP基準--PC-- */
-  display: flex;
-  justify-content: center; /* 水平方向の指定 */
-  align-items: center;
-}
-.p-pagination__list__item:first-of-type, .p-pagination__list__item:last-of-type {
-  border: none;
+  /* 「次へ」「前へ」以外は非表示 */
   width: auto;
   height: auto;
-}
-.p-pagination__list__item a {
-  display: flex; /* 親要素に指定 */
-  flex-direction: row; /* 積み重なるように配置する */
-  justify-content: space-between; /* 水平方向の指定 */
-  align-items: center; /* 垂直方向の指定 */
-}
-.p-pagination__list__item a p {
+  margin-left: 15px;
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
+  cursor: pointer;
+  border: solid 1.5px #707070;
+  display: flex; /* 親要素に指定 */
+  justify-content: center; /* 水平方向の指定 */
+  align-items: center; /* 垂直方向の指定 */
 }
-@media (min-width: 834px) {
-  .p-pagination__list__item a p {
-    display: none;
-  }
-}
-.p-pagination__list__item:not(:first-of-type):not(:last-of-type) {
+.p-pagination__list__item:not(:has(.nextpostslink, .previouspostslink)) {
   display: none;
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
 }
 @media (min-width: 834px) {
-  .p-pagination__list__item:not(:first-of-type):not(:last-of-type) {
+  .p-pagination__list__item:not(:has(.nextpostslink, .previouspostslink)) {
     display: flex;
+  }
+}
+@media (min-width: 834px) {
+  .p-pagination__list__item {
+    width: 35px;
+    height: 35px;
+  }
+  .p-pagination__list__item a {
+    display: flex; /* 親要素に指定 */
+    justify-content: center; /* 水平方向の指定 */
+    align-items: center; /* 垂直方向の指定 */
+    width: 35px;
+    height: 35px;
+  }
+  .p-pagination__list__item:not(:has(.pages, .nextpostslink, .previouspostslink, .extend)) :hover {
+    background-color: #3C2B1C;
+    color: #fff;
+  }
+  .p-pagination__list__item .extend {
+    cursor: auto;
   }
 }
 .p-pagination__list__item:first-of-type {
   margin-left: 0;
+  width: auto;
+  height: auto;
+}
+.p-pagination__list__item:has(.pages, .nextpostslink, .previouspostslink) {
+  border: none;
+}
+.p-pagination__list__item:has(.current) {
+  background-color: #3C2B1C;
+  color: #fff;
+  cursor: auto;
+}
+.p-pagination__list__item > .pages {
+  display: none;
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
 }
 @media (min-width: 834px) {
-  .p-pagination__list__item:first-of-type {
-    margin-left: 15px;
+  .p-pagination__list__item > .pages {
+    display: block;
+    cursor: auto;
   }
 }
-.p-pagination__list__item:first-of-type p {
-  margin-left: 8.2px;
-}
-.p-pagination__list__item:last-of-type p {
+.p-pagination__list__item .nextpostslink::before {
+  content: "次へ";
   margin-right: 8.2px;
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
 }
 @media (min-width: 834px) {
-  .p-pagination__list__item:first-of-type, .p-pagination__list__item:last-of-type {
-    border: none;
+  .p-pagination__list__item .nextpostslink::before {
+    display: none;
   }
-  .p-pagination__list__item:nth-of-type(2) {
-    background-color: #3C2B1C;
-  }
-  .p-pagination__list__item:nth-of-type(2) a {
-    color: #fff;
+}
+.p-pagination__list__item .previouspostslink::after {
+  content: "前へ";
+  margin-left: 8.2px;
+  /* SP基準--tablet-- */
+  /* SP基準--PC-- */
+}
+@media (min-width: 834px) {
+  .p-pagination__list__item .previouspostslink::after {
+    display: none;
   }
 }
 
