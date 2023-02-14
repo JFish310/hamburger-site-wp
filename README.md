@@ -2,11 +2,10 @@
 ## 最終課題  ハンバーガーサイト  WordPress化  
 
 ----履歴----  
-2021年
+2021年  
 8/30    環境構築スタート(phpのインストール、Local・WordPressの更新など）  
 9/8     構成考察  
 9/9     コーディングスタート  
-
 9/22    休止  
 ここまで 累計　h m  
 
@@ -18,14 +17,17 @@
 1/21    #3 Menu  
 
 
+●2/5 - 2/14    #10 ページネーション(9h45m)  
+
+
 （ここまで　　時間）  
 
 【累計】  
-構成・設計        1h20m  
-環境構築          2h  
-マークアップ      1h30m  
-Sass             44h10m  
-jQuery           4h  
+構成・設計        hm  
+環境構築          h  
+マークアップ      hm  
+Sass             hm  
+jQuery           h  
 リファクタリング  
 
 
@@ -33,12 +35,12 @@ jQuery           4h
 
 ----学習参考サイトや、考察、メモ----  
 
-YATさんの最初の課題のブログ  
+RaiseTech・WP副業コース、最初の課題のブログ  
 https://wp.yat-net.com/?p=5970#theme04  
 
 - rtl.css 言語によってはテキストを右から左へ記述するものが有り、その場合はこのスタイルシートが自動的に呼び出されます。
 
-**Localのエラー【参考サイト】9/8**  
+**Localのエラー【参考サイト】2021/9/8**  
 ●https://localwp.com/help-docs/advanced/router-mode/  
 ●https://tips.back2nature.jp/wordpress/fixed-locals-router-is-having-trouble-starting/  
 https://qiita.com/ponsuke0531/items/7b33e7a48cb27c42fbdc  
@@ -91,7 +93,30 @@ https://blog.webico.work/wp_nav_menu_sub
 https://wk-partners.co.jp/homepage/blog/hpseisaku/htmlcss/adjacent-sibling-combinator/  
 2023/2/4
 
+**issueとプルリクを紐づけるには**  
+https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue  
+
+**ページネーション参考**  
+WP-PageNaviカスタム方法  
+https://www.nxworld.net/wp-plugin-wp-pagenavi-custom-tag-and-class.html  
+https://deep-blog.jp/engineer/plugin-wp-pagenavi/  
+
+:hasについて  
+https://web-de-asobo.net/2022/10/19/css-has/  
+https://coliss.com/articles/build-websites/operation/css/howtouse-css-has-pseudo-selector.html  
+
+:hoverについて  
+https://developer.mozilla.org/ja/docs/Web/CSS/:hover  
+:notについて  
+https://pisuke-code.com/css-why-not-pseudo-elem-not-work/  
+CSS 階層構造でセレクタを指定  
+https://itsakura.com/css-selector-combination  
+
+
+
+
 ***
+
 
 
 # WordPress　コーディングルール

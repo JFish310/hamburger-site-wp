@@ -62,3 +62,18 @@
 		) );
 	}
 	add_action( 'after_setup_theme', 'register_my_menus' );
+
+	// ページネーション
+	function custom_wp_pagenavi( $html ) {
+		$out = '';
+		$out = str_replace( "<div class='wp-pagenavi' role='navigation'>", "", $html );// 引数:$検索文字列 , $置換後文字列 , $検索対象文字列 [, int &$count ] )
+		$out = str_replace( "<a", "<li class='p-pagination__list__item'><a", $out );
+		$out = str_replace( "</a>", "</a></li>", $out );
+		$out = str_replace( "<span class='pages'>", "<li class='p-pagination__list__item'><span class='pages'>page ", $out );
+		$out = str_replace( "<span aria-current='page'", "<li class='p-pagination__list__item'><span aria-current='page'", $out );
+		$out = str_replace( "<span class='extend'>", "<li class='p-pagination__list__item'><span class='extend'>", $out );
+		$out = str_replace( "</span>", "</span></li>", $out );
+		$out = str_replace( "</div>", "", $out );
+		return '<nav class="p-pagination" role="navigation"><ul class="p-pagination__list">' . $out . '</ul></nav>';
+	}
+	add_filter( 'wp_pagenavi', 'custom_wp_pagenavi' );
