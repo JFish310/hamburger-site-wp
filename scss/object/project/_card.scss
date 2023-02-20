@@ -24,10 +24,12 @@
 
 	img{
 		vertical-align: bottom; // 画像下の微妙な余白を消すため
+		height: 230.725px;
+		object-fit: cover;	// // どのように埋め込むか。要素のコンテンツボックス全体を埋めるように拡大縮小
 		/* レスポンシブ対応 */
 		@include mixin.breakpoint( breakpoint-medium ){
 			width: 50%;
-			object-fit: cover;  // どのように埋め込むか。要素のコンテンツボックス全体を埋めるように拡大縮小
+			height: 471px;
 		}
 	}
 

@@ -391,7 +391,7 @@ https://daib-log.com/responsive/
 /* p-cardに使用 */
 .c-dl--level4 dd {
   width: 246px;
-  height: 114px;
+  max-height: 114px;
   margin-top: 10px;
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
@@ -407,7 +407,7 @@ https://daib-log.com/responsive/
   .c-dl--level4 dd {
     margin-top: 17px;
     width: 75%;
-    height: 73px;
+    max-height: 73px;
   }
 }
 
@@ -525,6 +525,9 @@ https://daib-log.com/responsive/
 }
 .p-card img {
   vertical-align: bottom;
+  height: 230.725px;
+  -o-object-fit: cover;
+     object-fit: cover;
   /* レスポンシブ対応 */
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
@@ -532,8 +535,7 @@ https://daib-log.com/responsive/
 @media (min-width: 834px) {
   .p-card img {
     width: 50%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: 471px;
   }
 }
 .p-card__caption {
@@ -785,11 +787,11 @@ https://daib-log.com/responsive/
   }
 }
 .p-first-view--archive p {
+  font-size: 1.6rem;
   margin-left: 37px;
   padding-top: 7px;
   font-family: "M+ 1m";
   font-weight: 700;
-  z-index: 1;
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
 }
