@@ -56,8 +56,7 @@ https://www.bootstrapcdn.com/
 
 
 **function.php  wp_enqueue_style()での指定するところの色々**  
-WordPress テーマを作るなら get_theme_file_uri と get_theme_file_path を使いましょう  
-https://nendeb.com/597
+[WordPress テーマを作るなら get_theme_file_uri と get_theme_file_path を使いましょう](https://nendeb.com/597)  
 - リセットCSS と 開発 CSS がある場合、開発CSSファイルを呼び出す側に array( reset ) と書くと、先にリセットCSSを読み込んでから開発CSSを読み込んでくれる
 
 Googleフォントの読み込みの時の書き方参照
@@ -95,10 +94,10 @@ wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ),
 - sub-menuを変更する方法（これに伴い、もともとあった「p-gnavi__sub-menu__list」は「p-gnavi__submenu__list」に変更  
 [wp_nav_menuのサブメニュークラス「sub-menu」を変更する方法](https://blog.webico.work/wp_nav_menu_sub)  
 
-**フッター**  
-メニュー間の「｜」は、li+liでやるというサイトを見てヒントを得た。良かった。
+**フッター** 2023/2/4  
+メニュー間の「｜」は、li+liでやるというサイトを見てヒントを得た。良かった。  
 [横並びメニューの区切り線を隣接セレクタを使ってスマートに実装する方法](https://wk-partners.co.jp/homepage/blog/hpseisaku/htmlcss/adjacent-sibling-combinator/)  
-2023/2/4  
+
 
 **issueとプルリクを紐づけるには**  
 https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue  
@@ -184,20 +183,15 @@ function get_index() {
 	}
 }
 ```
-- 抜粋方法関係
+- 抜粋方法関係  
 [substrやmb_substrを使って文字列を簡単に切り出そう!](https://www.sejuku.net/blog/48076)  
 [wp trim words](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/wp_trim_words)  
 [多言語対応サイトの英語ページで本文抜粋（文字数制限）が効かないときの対処方法](https://bambooworks.co/english-excerpt-fix/)  
 [wp_trim_words()関数 を使って表示させる文字数を制限したい](https://terakoya.sejuku.net/question/detail/9649)  
-[]()  
-[]()  
 ★[【CSS】文字数制限(行数制限)して3点リーダーを表示させる方法（複数行、IE対応）](https://junpei-sugiyama.com/ellipsis/)  
-- 投稿本文取得関係
+- 投稿本文取得関係  
 [WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)  
 [WordPress ループで使うテンプレートタグや関数](https://www.webdesignleaves.com/pr/wp/wp_func_loop.html)  
-[]()  
-[]()  
-[]()  
 []()  
 
 
