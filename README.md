@@ -112,7 +112,76 @@ https://pisuke-code.com/css-why-not-pseudo-elem-not-work/
 CSS 階層構造でセレクタを指定  
 https://itsakura.com/css-selector-combination  
 
+**ループ処理関係**  
 
+[text](url)
+
+「while (have_posts()) : the_post();」の意味
+https://php1st.com/1202
+<a href="https://php1st.com/1202">「while (have_posts()) : the_post();」の意味</a>
+[「while (have_posts()) : the_post();」の意味](https://php1st.com/1202)
+
+[WordPress でよく使われる PHP の条件分岐と反復の命令の記述方法](https://plugmize.jp/archives/blog/20160817_php_if_while_for_foreach.html)
+> if、while、for、foreach とその必要な条件式等の記述の後で、「:」（コロン）を記述し、そこからブロックが始まることを示す
+> if、while、for、foreach などの条件分岐や反復の最終端に、それぞれ end を付けた endif、endwhile、endfor、endforeach を記述し、そこが終わりであることを示すために「;」（セミコロン）を付ける
+> ifに対するelseやelseifなども同様に、必要な記述の後に「:」（コロン）を記述し、そこからブロックが始まることを示す
+> 従来のブロック内の構文は、これまで通り普通に記述します
+> 簡単に置き換えができるように表現しなおすと、「{」を「:」に置き換え、「}」は、最も最後のもののみ、end○○; とし、それ以外の「}」は削除します。
+>
+>具体的な使い方を見たいという方のために、言語ではよくある関数等の表記パターンに従って、それぞれ書き起こしましたので参考にされてください。
+>
+>制御構造に関する別の構文　http://php.net/manual/ja/control-structures.alternative-syntax.php
+
+ループの使い方まとめ
+[公式ドキュメント＞ループ](https://wpdocs.osdn.jp/%E3%83%AB%E3%83%BC%E3%83%97)
+```
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php endwhile; else : ?>
+	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>
+```
+PHPの制御構造を用いると
+```
+<?php 
+if ( have_posts() ) {
+	while ( have_posts() ) {
+		the_post(); 
+		//
+		// 投稿がここに表示される
+		//
+	} // end while
+} // end if
+?>
+```
+[投稿内容(記事本文)からhタグを取得し目次として使用する](https://unskilled.site/wordpressdetoukounaiyou/)
+```
+function get_index() {
+	// グローバル変数を使う為の宣言
+	global $post;
+
+	////// 3通りの書き方（正規表現） //////
+	// マッチングで<h>タグを取得する
+	preg_match_all('/<h[1-6]>.+<\/h[1-6]>/u', $post->post_content, $matches);
+	// マッチングで<h>タグ以外にも、idやクラス名を含んで取得する
+	// 「\s」は、空白(タブ、改行、半角スペース)にマッチするという意味
+	preg_match_all('/<h[1-6]\s.+>.+<\/h[1-6]>/u', $post->post_content, $matches);
+	// マッチングで<h2>タグを取得する
+	preg_match_all('/<h2>.+<\/h2>/u', $post->post_content, $matches);
+	/////////////////////////////////////
+
+	// 取得した<h>タグの個数をカウント
+	$matches_count = count($matches[0]);
+	if(empty($matches)){
+		// <h>タグがない場合の出力
+		echo '<span>Sorry no index</span>';
+	}else{
+		// <h>タグが存在する場合に<h>タグを出力
+		for ($i = 0; $i < $matches_count; $i++){
+			echo  $matches[0][$i];
+		}
+	}
+}
+```
 
 
 ***

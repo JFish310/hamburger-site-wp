@@ -18,16 +18,21 @@
 		width: 100%;    // 親に対して90%だけど、paddingは大枠で設定してるから…
 		height: 357px;
 	}
-	@include mixin.breakpoint( breakpoint-medium ){
+	@include mixin.breakpoint( breakpoint-large ){
 		height: 471px;
 	}
 
 	img{
 		vertical-align: bottom; // 画像下の微妙な余白を消すため
+		height: 230.725px;
+		object-fit: cover;	// // どのように埋め込むか。要素のコンテンツボックス全体を埋めるように拡大縮小
 		/* レスポンシブ対応 */
 		@include mixin.breakpoint( breakpoint-medium ){
 			width: 50%;
-			object-fit: cover;  // どのように埋め込むか。要素のコンテンツボックス全体を埋めるように拡大縮小
+			height: 357px;
+		}
+		@include mixin.breakpoint( breakpoint-large ){
+			height: 471px;
 		}
 	}
 
@@ -41,23 +46,44 @@
 		@include mixin.breakpoint( breakpoint-large ){
 			padding: 53px 63px;
 		}
-		h3{
+		h1{
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 1; /* 制限したい行数が1 */
+			overflow: hidden;
 			font-size: 2.0rem;
 			font-weight: 700;
 			@include mixin.breakpoint( breakpoint-large ){
 				font-size: 3.6rem;
 			}
 		}
-		h4{
+		h2{
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 1; /* 制限したい行数が1 */
+			overflow: hidden;
+			margin-top: 24px;
+			font-size: 1.6rem;
 			font-weight: 700;
 			@include mixin.breakpoint( breakpoint-large ){
 				font-size: 2.4rem;
 			}
 		}
-
-		.c-dl--level4{
-			margin-top: 24px;
+		p{
+			margin-top: 10px;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 5; /* 制限したい行数が5 */
+			overflow: hidden;
+			@include mixin.breakpoint( breakpoint-large ){
+				margin-top: 17px;
+				-webkit-line-clamp: 3; /* 制限したい行数が3 */
+			}
 		}
+
+		// .c-dl--level4{
+		// 	margin-top: 24px;
+		// }
 
 		.c-button__more{
 			// position: relative;

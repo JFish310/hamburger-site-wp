@@ -86,15 +86,18 @@
 			font-size: 6.0rem;
 			margin-left: 86px;
 		}
-	}
-	p{
-		margin-left: 37px;
-		padding-top: 7px;
-		font-family: "M+ 1m";
-		font-weight: 700;       // bold
-		z-index: 1;
-		@include mixin.breakpoint( breakpoint-medium ){
-			margin-left: 20px;
+		span{
+			display: block;
+			font-size: 1.6rem;
+			padding-top: 7px;
+			font-family: "M+ 1m";
+			font-weight: 700;       // bold
+			// z-index: 1;
+			@include mixin.breakpoint( breakpoint-medium ){
+				display: inline-block;
+				margin-left: 20px;
+				vertical-align:middle;
+			}
 		}
 	}
 }

@@ -1,7 +1,8 @@
 <?php
 	// テーマサポート
-	add_theme_support( 'menus' );       //<!-- テーマにメニューという項目を機能をサポートすることを許可するという記述 -->
-	add_theme_support( 'title-tag' );   // タイトルの出力
+	add_theme_support( 'menus' );			// テーマにメニューという項目を機能をサポートすることを許可するという記述
+	add_theme_support( 'title-tag' );		// タイトルの出力
+	add_theme_support( 'post-thumbnails' );	// アイキャッチ画像を有効にする
 
 	// タイトル出力
 	function hamburgersite_title( $title ) {
@@ -77,3 +78,57 @@
 		return '<nav class="p-pagination" role="navigation"><ul class="p-pagination__list">' . $out . '</ul></nav>';
 	}
 	add_filter( 'wp_pagenavi', 'custom_wp_pagenavi' );
+
+	// // archive.phpに使用する、抜粋本文の文字数指定
+	// function new_excerpt_mblength( $length ) {
+	// 	return 50;
+	// }
+	// add_filter( 'excerpt_mblength', 'new_excerpt_mblength' );
+
+	// // archive.phpに使用する、投稿記事のh2タグ（小見出し）を取得
+	// function get_h_index() {
+	// 	// グローバル変数を使う為の宣言
+	// 	global $post;
+	// 	// マッチングで<h2>タグを取得する
+	// 	preg_match_all('/<h2>.+<\/h2>/u', $post->post_content, $matches);
+	// 	// 取得した<h>タグの個数をカウント
+	// 	$matches_count = count($matches[0]);
+	// 	if(empty($matches)){
+	// 		// <h>タグがない場合の出力
+	// 		echo '<span>Sorry no index</span>';
+	// 	}else{
+	// 		// <h>タグが存在する場合に<h>タグを出力
+	// 		for ($i = 0; $i < $matches_count; $i++){
+	// 			echo  $matches[0][$i];
+	// 		}
+	// 	}
+	// }
+	// // archive.phpに使用する、投稿記事のpタグ（最初の段落）を取得
+	// function get_p_index() {
+	// 	// グローバル変数を使う為の宣言
+	// 	global $post;
+	// 	// マッチングで<p>タグを取得する
+	// 	preg_match_all('/<p>.+<\/p>/u', $post->post_content, $matches);
+	// 	// 取得した<p>タグの個数をカウント
+	// 	$matches_count = count($matches[0]);
+	// 	if(empty($matches)){
+	// 		// <p>タグがない場合の出力
+	// 		echo '<span>Sorry no index</span>';
+	// 	}else{
+	// 		// <p>タグが存在する場合に<p>タグを出力
+	// 		for ($i = 0; $i < $matches_count; $i++){
+	// 			echo  $matches[0][$i];
+	// 		}
+	// 	}
+	// }
+	// function custom_the_content( $html ) {
+	// 	$out = '';
+	// 	$out = str_replace( "<figure class='wp-block-post-featured-image'>", "<figure class='p-card'>", $html );// 引数:$検索文字列 , $置換後文字列 , $検索対象文字列 [, int &$count ] )
+	// 	$out = str_replace( "</figure>", "", $out );
+	// 	$out = str_replace( "<h2>", "<h2>", $out );
+	// 	$out = str_replace( "</h2>", "</h4'>", $out );
+	// 	$out = str_replace( "</span>", "</span></li>", $out );
+	// 	$out = str_replace( "</div>", "", $out );
+	// 	return '<nav class="p-pagination" role="navigation"><ul class="p-pagination__list">' . $out . '</ul></nav>';
+	// }
+	// add_filter( 'get_the_content', 'custom_the_content' );

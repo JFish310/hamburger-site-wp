@@ -48,7 +48,7 @@
 
 .c-button__more{
 	width: 163.16px;    // 48.5%
-	padding: 10px 0px;
+	height: 44px;
 	font-family: "M+ 1m";
 	background: variable.$color--background--button;
 	color: variable.$color--text-main;
@@ -61,7 +61,22 @@
 	font-weight: 700;
 	display: block;
 	@include mixin.breakpoint( breakpoint-large ){
-		width: 292px;
+		width: 100%;
+		max-width: 292px;
 		height: 76px;
 	}
+	a{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 163px;
+		height: 44px;
+		@include mixin.breakpoint( breakpoint-large ){
+			width: 100%;
+			max-width: 292px;
+			height: 76px;
+		}
+	}
 }
+// 43, 40, 60	margin-bottomメモ

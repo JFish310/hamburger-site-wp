@@ -56,7 +56,7 @@
 .c-dl--level4{
 	dd{
 		width: 246px;
-		height: 114px;
+		max-height: 114px;
 		margin-top: 10px;
 		@include mixin.breakpoint( breakpoint-medium ){
 			width: 284px;
@@ -64,7 +64,7 @@
 		@include mixin.breakpoint( breakpoint-large ){
 			margin-top: 17px;
 			width: 75%;
-			height: 73px;
+			max-height: 73px;
 		}
 	}
 }
