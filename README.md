@@ -1,26 +1,31 @@
 # RaiseTech WP副業コース  
 ## 最終課題  ハンバーガーサイト  WordPress化  
 
-----履歴----  
+### 履歴  
 2021年  
-8/30    環境構築スタート(phpのインストール、Local・WordPressの更新など）  
-9/8     構成考察  
-9/9     コーディングスタート  
-9/22    休止  
-ここまで 累計　h m  
+	8/30    環境構築スタート(phpのインストール、Local・WordPressの更新など）  
+	9/8     構成考察  
+	9/9     コーディングスタート  
+	9/22    休止  
+	ここまで 累計　h m  
 
 2022年  
-12/14   #1 タブ対応　40m  
+	12/14(再開)		#1 タブ対応　40m  
 
 2023年  
-1/16    再開 -- リファクタリング(#2 gulp対応, Browser-sync)  
-1/21    #3 Menu  
-
-
-●2/5 - 2/14    #10 ページネーション(9h45m)  
+	1/16			#2 gulp対応, Browser-sync　3h25m  
+	1/21 - 2/4		#3 Menu　10h10m  
+	1/24 - 1/28		#4 ショップ情報（固定ページ）　1h50m  
+	1/28 - 1/30		#6 バーガーメニュー作成　1h20m  
+	1/31			#7 サイドメニュー作成　10m  
+	1/31			#8 ドリンクメニュー作成　10m  
+	2/4				#9 footer対応　1h15m  
+	2/5  - 2/14		#10 ページネーション　9h45m  
+	2/14 - 2/21		#11 archive.php（カテゴリー別投稿一覧）　17h35m
 
 
 （ここまで　　時間）  
+
 
 【累計】  
 構成・設計        hm  
@@ -33,7 +38,7 @@ jQuery           h
 
 
 
-----学習参考サイトや、考察、メモ----  
+### ----学習参考サイトや、考察、メモ----  
 
 RaiseTech・WP副業コース、最初の課題のブログ  
 https://wp.yat-net.com/?p=5970#theme04  
@@ -76,52 +81,48 @@ wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ),
 
 
 **カスタムメニュー**  
-https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html  
-https://olein-design.com/blog/register-setting-souce-code-of-custom-menu  
-https://techmemo.biz/wordpress/wp-nav-menu-add-class/  
-	wp_nav_menu関数のパラメータに関しての記事。クラスの追加の仕方（2023/2/3)  
-https://site-manage.net/archives/3346#_wp_footer  
-	謎の余白の原因→解決  
-http://dim5.net/wordpress/wp-nav-menu-container-delete.html  
-https://www.sejuku.net/blog/30092  
-	str_replaceについての記事  
-https://blog.webico.work/wp_nav_menu_sub  
-	sub-menuを変更する方法（これに伴い、もともとあった「p-gnavi__sub-menu__list」は「p-gnavi__submenu__list」に変更  
+[WordPress ナビゲーションメニュー（カスタムメニュー）](https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html)  
+[[WordPress]カスタムメニュー機能の設定と設置と書き出されるソースコードを分かりやすく紹介します](https://olein-design.com/blog/register-setting-souce-code-of-custom-menu)  
+[wp_nav_menu関数のパラメータに関しての記事。クラスの追加の仕方（2023/2/3)](https://techmemo.biz/wordpress/wp-nav-menu-add-class/)  
+
+- 謎の余白の原因→解決  
+[WordPressの上部に謎の余白ができた！原因と対策方法まとめ](https://site-manage.net/archives/3346#_wp_footer)  
+
+- str_replaceについての記事  
+[wp_nav_menuでcontainerを削除してulにclassを設定](http://dim5.net/wordpress/wp-nav-menu-container-delete.html)  
+[str_replaceで文字列を置換する方法まとめ](https://www.sejuku.net/blog/30092)  
+
+- sub-menuを変更する方法（これに伴い、もともとあった「p-gnavi__sub-menu__list」は「p-gnavi__submenu__list」に変更  
+[wp_nav_menuのサブメニュークラス「sub-menu」を変更する方法](https://blog.webico.work/wp_nav_menu_sub)  
 
 **フッター**  
-メニュー間の「｜」は、li+liでやるというサイトを見てヒントを得た。良かった。  
-https://wk-partners.co.jp/homepage/blog/hpseisaku/htmlcss/adjacent-sibling-combinator/  
-2023/2/4
+メニュー間の「｜」は、li+liでやるというサイトを見てヒントを得た。良かった。
+[横並びメニューの区切り線を隣接セレクタを使ってスマートに実装する方法](https://wk-partners.co.jp/homepage/blog/hpseisaku/htmlcss/adjacent-sibling-combinator/)  
+2023/2/4  
 
 **issueとプルリクを紐づけるには**  
 https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue  
 
 **ページネーション参考**  
-WP-PageNaviカスタム方法  
+- WP-PageNaviカスタム方法  
 https://www.nxworld.net/wp-plugin-wp-pagenavi-custom-tag-and-class.html  
 https://deep-blog.jp/engineer/plugin-wp-pagenavi/  
 
-:hasについて  
+- :hasについて  
 https://web-de-asobo.net/2022/10/19/css-has/  
 https://coliss.com/articles/build-websites/operation/css/howtouse-css-has-pseudo-selector.html  
 
-:hoverについて  
+- :hoverについて  
 https://developer.mozilla.org/ja/docs/Web/CSS/:hover  
-:notについて  
+- :notについて  
 https://pisuke-code.com/css-why-not-pseudo-elem-not-work/  
-CSS 階層構造でセレクタを指定  
+- CSS 階層構造でセレクタを指定  
 https://itsakura.com/css-selector-combination  
 
 **ループ処理関係**  
-
-[text](url)
-
-「while (have_posts()) : the_post();」の意味
-https://php1st.com/1202
-<a href="https://php1st.com/1202">「while (have_posts()) : the_post();」の意味</a>
-[「while (have_posts()) : the_post();」の意味](https://php1st.com/1202)
-
-[WordPress でよく使われる PHP の条件分岐と反復の命令の記述方法](https://plugmize.jp/archives/blog/20160817_php_if_while_for_foreach.html)
+[WordPress 記事一覧の取得をするループを記述してみる](https://shu-sait.com/kiji-ichiran-syutoku/)  
+[「while (have_posts()) : the_post();」の意味](https://php1st.com/1202)  
+[WordPress でよく使われる PHP の条件分岐と反復の命令の記述方法](https://plugmize.jp/archives/blog/20160817_php_if_while_for_foreach.html)  
 > if、while、for、foreach とその必要な条件式等の記述の後で、「:」（コロン）を記述し、そこからブロックが始まることを示す
 > if、while、for、foreach などの条件分岐や反復の最終端に、それぞれ end を付けた endif、endwhile、endfor、endforeach を記述し、そこが終わりであることを示すために「;」（セミコロン）を付ける
 > ifに対するelseやelseifなども同様に、必要な記述の後に「:」（コロン）を記述し、そこからブロックが始まることを示す
@@ -132,7 +133,7 @@ https://php1st.com/1202
 >
 >制御構造に関する別の構文　http://php.net/manual/ja/control-structures.alternative-syntax.php
 
-ループの使い方まとめ
+- ループの使い方まとめ  
 [公式ドキュメント＞ループ](https://wpdocs.osdn.jp/%E3%83%AB%E3%83%BC%E3%83%97)
 ```
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -153,6 +154,7 @@ if ( have_posts() ) {
 } // end if
 ?>
 ```
+
 [投稿内容(記事本文)からhタグを取得し目次として使用する](https://unskilled.site/wordpressdetoukounaiyou/)
 ```
 function get_index() {
@@ -182,6 +184,22 @@ function get_index() {
 	}
 }
 ```
+- 抜粋方法関係
+[substrやmb_substrを使って文字列を簡単に切り出そう!](https://www.sejuku.net/blog/48076)  
+[wp trim words](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/wp_trim_words)  
+[多言語対応サイトの英語ページで本文抜粋（文字数制限）が効かないときの対処方法](https://bambooworks.co/english-excerpt-fix/)  
+[wp_trim_words()関数 を使って表示させる文字数を制限したい](https://terakoya.sejuku.net/question/detail/9649)  
+[]()  
+[]()  
+★[【CSS】文字数制限(行数制限)して3点リーダーを表示させる方法（複数行、IE対応）](https://junpei-sugiyama.com/ellipsis/)  
+- 投稿本文取得関係
+[WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)  
+[WordPress ループで使うテンプレートタグや関数](https://www.webdesignleaves.com/pr/wp/wp_func_loop.html)  
+[]()  
+[]()  
+[]()  
+[]()  
+
 
 
 ***
@@ -189,7 +207,7 @@ function get_index() {
 
 
 # WordPress　コーディングルール
-~~https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standards/~~
+~~https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standards/~~  
 https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standards/php/
 
 - インデントにはスペースではなくタブ
