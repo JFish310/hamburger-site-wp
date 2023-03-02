@@ -99,6 +99,7 @@
 /* singleページ内で使用 */
 .p-card--single{
 	font-family: "M+ 1m";
+	width: 100%;
 
 	display: flex;              /* 親要素に指定 */
 	flex-direction: row;        /* 横並びに配置する */
@@ -113,19 +114,16 @@
 	@include mixin.breakpoint( breakpoint-large ){
 		max-height: 358px;
 	}
-
-	img{
-		width: 43%;// 43% 144/335px, 43% 21/714px, 43% 581/1353px
+	.wp-block-media-text__media{
+		width: 43%;	// 43% 144/335px, 43% 21/714px, 43% 581/1353px（固定領域の子要素）
+		align-self: flex-start;    /* 垂直方向の指定 */
 	}
-	p{
-		text-indent: 0.5em; // 半角スペース分インテンド
-	}
-	&__caption{
-		&--image-left{
-			padding-left: 3%;     // 文章左に余白指定 10/335px, 21/714px, 40/1353px
-		}
-		&--image-right{
-			padding-right: 3%;    // 文章右に余白指定 10/335px, 21/714px, 40/1353px
+	.wp-block-media-text__content{
+		padding: 0 3%;
+		align-self:flex-start;
+		flex: 1;	// 可変領域の子要素に指定する
+		.p-card--single__caption{
+			text-indent: 0.5em; // 半角スペース分インテンド
 		}
 	}
 }

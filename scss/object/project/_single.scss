@@ -62,8 +62,13 @@
 		@include mixin.breakpoint( breakpoint-medium ){
 			width: 43%;
 		}
-		display: block; // imgはinlineだからblockに指定
+		img{
+			width: 100%;
+			object-fit: contain;	// アスペクト比を維持したまま、要素のコンテンツボックスに収まるように拡大縮小される
+		}
 	}
+	// .is-layout-flex, .wp-block-gallery-3, .wp-block-gallery, .has-nested-images, .columns-default, .is-cropped{
+	// .is-layout-flex, .wp-block-gallery, .has-nested-images, .columns-default, .is-cropped{
 	.p-single__images{
 		// 上のブロックとの余白
 		margin-top: 30px;
@@ -74,6 +79,7 @@
 		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);  /* gridの設定(1列) */
+		// grid-template-rows: minmax(117px, 215px);
 		row-gap: 20px;                          /* 画像間の余白 */
 		justify-items: center;                  /* 中央寄せ */
 		@include mixin.breakpoint( breakpoint-medium ){
@@ -84,16 +90,24 @@
 			grid-template-columns: repeat(3, 1fr);  /* gridの設定(3列) */
 			gap: 20px 20px;                         /* 画像間の余白 縦方向 横方向 */
 		}
-		img{
+		&__card{
 			// 画像幅の指定
-			width: 349px;
-			@include mixin.breakpoint( breakpoint-medium ){
-				// width: 49%;     // 349/714px
+			width: 100%;
+			// max-width: 349px;
+			// max-height: 215px;
+			// object-fit: cover;
+			// @include mixin.breakpoint( breakpoint-medium ){
+			// 	// width: 49%;     // 349/714px
+			// 	width: 100%;
+			// }
+			// @include mixin.breakpoint( breakpoint-large ){
+			// 	// width: 32%;     // 438/1353px
+			// 	max-width: 438px;
+			// }
+			img{
 				width: 100%;
-			}
-			@include mixin.breakpoint( breakpoint-large ){
-				// width: 32%;     // 438/1353px
-				max-width: 438px;
+				max-width: 349px;
+				object-fit: cover;
 			}
 		}
 	}
@@ -103,27 +117,41 @@
 		@include mixin.breakpoint( breakpoint-medium ){
 			margin-top: 60px;
 		}
-		ol{
+		&--ol{
+			@extend .p-single__list;
 			margin-top: 20px;
-			@include mixin.breakpoint( breakpoint-medium ){
-				margin-left: 50px;
-			}
 			li{
+				@include mixin.breakpoint( breakpoint-medium ){
+					margin-left: 50px;
+				}
 				list-style-position: inside;// リストアイテムの最初の要素として配置
 				list-style-type: decimal;   // baseで無効にしてるので上書き
-			}
-			ol{
-				margin-left: 18px;
+				ol, ul{
+					margin-top: 20px;
+					margin-left: 18px;
+					margin-bottom: 20px;
+				}
 			}
 		}
-		ul{
-			margin-top: 20px;
-			@include mixin.breakpoint( breakpoint-medium ){
-				margin-left: 50px;
+		&--ul{
+			@extend .p-single__list;
+			li{
+				@include mixin.breakpoint( breakpoint-medium ){
+					margin-left: 50px;
+				}
+				list-style-position: inside;// リストアイテムの最初の要素として配置
+				list-style-type: disc;		// baseで無効にしてるので上書き
+				ul, ol{
+					margin-top: 20px;
+					margin-left: 18px;
+					margin-bottom: 20px;
+					li{
+						list-style-type: circle;
+					}
+					
+				}
 			}
-			ul{
-				margin-left: 18px;
-			}
+		
 		}
 	}
 	pre{
@@ -170,24 +198,47 @@
 			}
 		}
 	}
-	button{
-		margin-top: 30px;
-		@include mixin.breakpoint( breakpoint-medium ){
-			margin-top: 60px;
-		}
 
-		width: 100%;
-		max-width: 429px;
-		height: 81px;
-		@include mixin.breakpoint( breakpoint-medium ){
-			height: 104px;
+	// ボタンのカスタマイズ（クラス名は、WP側に合わせる
+	.wp-block-buttons {
+		.wp-block-button {
+			margin-top: 30px;
+			@include mixin.breakpoint( breakpoint-medium ){
+				margin-top: 60px;
+			}
+			width: 100%;
+			max-width: 429px;
+			height: 81px;
+			@include mixin.breakpoint( breakpoint-medium ){
+				height: 104px;
+			}
+			
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			
+			&__link {
+				background: linear-gradient( variable.$color--background--menu-pc , #DED8D3 );
+				border: 1px solid variable.$color--text-main;    // 枠線指定（太さ・スタイル・色）
+				border-radius: 1em;                     /* 角丸 */
+				color: variable.$color--text-main;
+				cursor: pointer;
+				font-weight: 700;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				max-width: 429px;
+				height: 81px;
+				@include mixin.breakpoint( breakpoint-medium ){
+					height: 104px;
+				}
+			}
 		}
-		background: linear-gradient( variable.$color--background--menu-pc , #DED8D3 );
-		border: 1px solid variable.$color--text-main;    // 枠線指定（太さ・スタイル・色）
-		border-radius: 1em;                     /* 角丸 */
-		cursor: pointer;
-		font-weight: 700;
 	}
+
 	.p-single__bold{
 		margin-top: 30px;
 		@include mixin.breakpoint( breakpoint-medium ){

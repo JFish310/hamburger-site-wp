@@ -28,8 +28,8 @@ parallel =>  並列処理
 //---------------------------------------------------------
 // 参照元パス
 const srcPath = {
-	'scss': './scss/**/*.scss'//,
-	// 'php' : '*.php',
+	'scss': './scss/**/*.scss',
+	'php' : '*.php'//,
 	// 'js'  : './js/**/*.js'
 }
 // 出力先パス
@@ -108,12 +108,12 @@ const browserSyncReload = (done) => {
 //---------------------------------------------------------
 //	PHP・Jsファイル監視、出力
 //---------------------------------------------------------
-// // PHP
-// const phpWatch = (done) => {
-// 	return src( srcPath.php )
-// 	.pipe( gulp.dest( destPath.php )),
-// 	done();
-// }
+// PHP
+const phpWatch = (done) => {
+	return src( srcPath.php )
+	.pipe( gulp.dest( destPath.php )),
+	done();
+}
 // // Js
 // const jsWatch = (done) => {
 // 	return src( srcPath.js )
