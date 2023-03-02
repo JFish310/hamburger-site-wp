@@ -8,6 +8,7 @@
 	<?php wp_head(); ?> <!-- WordPressのテーマに含める関数。admin_barや必要となるソースの出力などを行う。 -->
 </head>
 <body <?php body_class(); ?>><!-- ページによって装飾を変えたい時などテンプレートに自分でクラスを付けなくてもWordPressが付けてくれるので便利 -->
+<?php wp_body_open(); ?>
 	<div class="l-container">
 		<header class="l-header">
 			<button type="button" class="c-button--menu c-button--js">Menu</button>

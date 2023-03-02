@@ -20,7 +20,7 @@
 						<figure class="p-card">
 							<?php the_post_thumbnail(); ?><!-- アイキャッチ画像表示 -->
 							<figcaption class="p-card__caption">
-								<?php the_title( '<h1>', '</h1>' ); ?>
+								<?php the_title( '<h1>', '</h1>' ); ?><!-- 投稿・固定ページのタイトルを出力する -->
 								<?php
 								if( has_excerpt() ){
 									the_excerpt();

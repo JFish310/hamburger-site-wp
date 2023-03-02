@@ -9,9 +9,28 @@
 	9/22    休止  
 	ここまで 累計　h m  
 
+|  2022年  |
+| ---- | ---- | ---- |
+|  開始-終了  |  作業内容  |  時間  |
+| ---- | ---- | ---- |
+|  12/14(再開)  |  #1 タブ対応  |  40m  |
+|  2023年  |
+| ---- | ---- | ---- |
+|  1/16  |  #2 gulp対応, Browser-sync  |  3h25m  |
+|  1/21 - 2/4  |  #3 Menu  |  10h10m  |
+|  1/24 - 1/28  |  #4 ショップ情報（固定ページ）  |  1h50m  |
+|  1/28 - 1/30  |  #6 バーガーメニュー作成  |  1h20m  |
+|  1/31  |  #7 サイドメニュー作成  |  10m  |
+|  1/31  |  #8 ドリンクメニュー作成  |  10m  |
+|  2/4  |  #9 footer対応  |  1h15m  |
+|  2/5 - 2/14  |  #10 ページネーション  |  9h45m  |
+|  2/14 - 2/21  |  #11 archive.php（カテゴリー別投稿一覧）  |  17h35m  |
+|  TD  |  TD  |  TD  |
+|  TD  |  TD  |  TD  |
+|  TD  |  TD  |  TD  |
+|  TD  |  TD  |  TD  |
 2022年  
 	12/14(再開)		#1 タブ対応　40m  
-
 2023年  
 	1/16			#2 gulp対応, Browser-sync　3h25m  
 	1/21 - 2/4		#3 Menu　10h10m  
@@ -22,6 +41,14 @@
 	2/4				#9 footer対応　1h15m  
 	2/5  - 2/14		#10 ページネーション　9h45m  
 	2/14 - 2/21		#11 archive.php（カテゴリー別投稿一覧）　17h35m
+
+
+
+|  TH  |  TH  |
+| ---- | ---- |
+|  TD  |  TD  |  TD  |
+|  TD  |  TD  |  TD  |
+
 
 
 （ここまで　　時間）  
@@ -192,7 +219,17 @@ function get_index() {
 - 投稿本文取得関係  
 [WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)  
 [WordPress ループで使うテンプレートタグや関数](https://www.webdesignleaves.com/pr/wp/wp_func_loop.html)  
-[]()  
+
+**single.php（投稿ページ）に関する記事**
+[marginの相殺を回避するテクニック](https://coliss.com/articles/build-websites/operation/css/about-collapsing-margins.html)  
+> 空要素や親子要素で起きるマージンの相殺は、実際には避けることができません。これに対応する唯一の方法は、要素の間にボーダーなど何かを挿入することです。ほかの対応方法としては、要素のプロパティをブロックレベル以外（flex, gridなど）に変更します。  
+[WordPress ボタンブロックの使い方・ボタンの作り方を解説](https://webst8.com/blog/wordpress-button-block/)
+
+**ギャラリーのCSS設定に関する記事**2023/03/02  
+ここのCSSについては後回しにする  
+
+**single.php内、メディアとテキストの装飾について**
+[width指定が効かない？Flexboxは子要素の横幅指定がポイント](https://www.alivecast.co.jp/staff-blog/shiraishi.yuuri/1159)
 
 
 
@@ -256,7 +293,7 @@ https://design-remarks.com/margin-top-or-bottom/
 
 **【font-family】について**  
 	font-family: 候補1,候補2,候補3,フォントの種類;  
-		「sans-serif」  ゴシック体系のフォント（MSゴシック、中ゴシック、Arialなど）
+		「sans-serif」  ゴシック体系のフォント（MSゴシック、中ゴシック、Arialなど）  
 		「serif」       明朝体系のフォント（MS明朝、MS P明朝、Garamond、MS Georgia、Times New Romanなど）  
 		「cursive」     筆記体系のフォント（caflisch script、ex pontoなど）  
 		「fantasy」     装飾系のフォント（critter、studzなど）  
@@ -318,13 +355,13 @@ hamburger-site-wp
 ├─ package-lock.json
 ├─ package.json
 ├─ 
-├─ archive_search.html
-├─ archive.html
+├─ archive.php
 ├─ footer.php
 ├─ function.php
 ├─ header.php
 ├─ index.php
 ├─ page.php
+├─ search.php
 ├─ searchform.php
 ├─ sidebar.php
 ├─ single.php

@@ -79,6 +79,10 @@
 	}
 	add_filter( 'wp_pagenavi', 'custom_wp_pagenavi' );
 
+	//デフォルトのCSSを止める
+	add_filter( 'use_default_gallery_style', '__return_false' );
+
+
 	// // archive.phpに使用する、抜粋本文の文字数指定
 	// function new_excerpt_mblength( $length ) {
 	// 	return 50;
@@ -121,14 +125,3 @@
 	// 		}
 	// 	}
 	// }
-	// function custom_the_content( $html ) {
-	// 	$out = '';
-	// 	$out = str_replace( "<figure class='wp-block-post-featured-image'>", "<figure class='p-card'>", $html );// 引数:$検索文字列 , $置換後文字列 , $検索対象文字列 [, int &$count ] )
-	// 	$out = str_replace( "</figure>", "", $out );
-	// 	$out = str_replace( "<h2>", "<h2>", $out );
-	// 	$out = str_replace( "</h2>", "</h4'>", $out );
-	// 	$out = str_replace( "</span>", "</span></li>", $out );
-	// 	$out = str_replace( "</div>", "", $out );
-	// 	return '<nav class="p-pagination" role="navigation"><ul class="p-pagination__list">' . $out . '</ul></nav>';
-	// }
-	// add_filter( 'get_the_content', 'custom_the_content' );
