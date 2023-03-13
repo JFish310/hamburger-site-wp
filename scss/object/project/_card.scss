@@ -2,7 +2,7 @@
 @use "../../foundation/variable";
 @use "../../foundation/mixin";
 
-/* archive, archive-searchページ内で使用 */
+/* archive, search内で使用 */
 .p-card{
 	width: 336.11px;
 	color: variable.$color--text-sub;
@@ -86,6 +86,15 @@
 		// }
 
 		.c-button__more{
+		// .more-link{
+			// position: relative;
+			margin: auto;       // 中央寄せ
+			margin-top: 41px;
+			@include mixin.breakpoint( breakpoint-large ){
+				margin-top: 60px;
+			}
+		}
+		.more-link{
 			// position: relative;
 			margin: auto;       // 中央寄せ
 			margin-top: 41px;

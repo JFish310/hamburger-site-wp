@@ -32,7 +32,14 @@
 		wp_enqueue_style( 'hamburger-site', get_theme_file_uri( '/css/style.css' ), array(), '1.0.0' );
 		wp_enqueue_style( 'style', get_theme_file_uri( '/style.css' ), array(), '1.0.0' );
 		// jQueryの読み込み
+		if (!is_admin()) {
+			//デフォルトjquery削除
+			wp_deregister_script('jquery');
+			//GoogleCDNから読み込む
 			wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js' , "", "3.6.0", true );
+			//wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js' );
+		}
+			//wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js' , "", "3.6.0", true );
 			wp_enqueue_script( 'samplejs', get_theme_file_uri( '/js/menu.js' ), array(), '1.0.0', true );
 	}
 	add_action( 'wp_enqueue_scripts', 'hamburgersite_script' );
@@ -82,6 +89,21 @@
 	//デフォルトのCSSを止める
 	add_filter( 'use_default_gallery_style', '__return_false' );
 
+	// 詳しく見る押下時のリンク先を先頭に変更させる
+	function custom_content_more_link( $output ) {
+	$output = preg_replace('/#more-[\d]+/i', '', $output );
+	return $output;
+	}
+	add_filter( 'the_content_more_link', 'custom_content_more_link' );
+
+
+	// 特定のカテゴリのみ非表示にする
+	// function exclude_widget_categories($args){
+	// 	$exclude = array( 2, 58, 59 );
+	// 	$args["exclude"] = $exclude;
+	// 	return $args;
+	//   }
+	//   add_filter( 'widget_categories_args', 'exclude_widget_categories');
 
 	// // archive.phpに使用する、抜粋本文の文字数指定
 	// function new_excerpt_mblength( $length ) {
