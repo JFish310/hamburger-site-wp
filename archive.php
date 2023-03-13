@@ -22,21 +22,18 @@
 							<figcaption class="p-card__caption">
 								<?php the_title( '<h1>', '</h1>' ); ?><!-- 投稿・固定ページのタイトルを出力する -->
 								<?php
-								if( has_excerpt() ){
+								if( has_excerpt() ){	// 投稿に手動入力された抜粋があるか否か
 									the_excerpt();
-									echo '<a href="';
+									echo '<a class="c-button__more" href="';
 									the_permalink();
 									echo '">詳しく見る</a>';
 								} else {
-									echo get_the_content();
+									echo get_the_content( '詳しく見る' );
 								} ?>
-								<button class="c-button__more">
-									<a href="<?php the_permalink(); ?>">詳しく見る</a>
-								</button>
-							</figcaption>
+								</figcaption>
 						</figure>
 					</li>
-				<?php endwhile; else : ?>// カテゴリーがない場合
+				<?php endwhile; else : ?><!-- カテゴリーがない場合 -->
 					<p>記事がありません。</p>
 				<?php endif; ?>
 				</ul>

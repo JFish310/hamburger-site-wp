@@ -115,7 +115,8 @@ wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ),
 **カスタムメニュー**  
 [WordPress ナビゲーションメニュー（カスタムメニュー）](https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html)  
 [[WordPress]カスタムメニュー機能の設定と設置と書き出されるソースコードを分かりやすく紹介します](https://olein-design.com/blog/register-setting-souce-code-of-custom-menu)  
-[wp_nav_menu関数のパラメータに関しての記事。クラスの追加の仕方（2023/2/3)](https://techmemo.biz/wordpress/wp-nav-menu-add-class/)  
+★wp_nav_menu関数のパラメータに関しての記事。クラスの追加の仕方（2023/2/3)  
+[WordPressのカスタムメニューで出力されるulやliに任意のクラスを追加する方法](https://techmemo.biz/wordpress/wp-nav-menu-add-class/)  
 
 - 謎の余白の原因→解決  
 [WordPressの上部に謎の余白ができた！原因と対策方法まとめ](https://site-manage.net/archives/3346#_wp_footer)  
@@ -139,6 +140,9 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-
 - WP-PageNaviカスタム方法  
 https://www.nxworld.net/wp-plugin-wp-pagenavi-custom-tag-and-class.html  
 https://deep-blog.jp/engineer/plugin-wp-pagenavi/  
+[WordPress：ナビゲーションプラグイン「WP-PageNavi」のタグやclassを任意のものに変更する方法](https://www.nxworld.net/wp-plugin-wp-pagenavi-custom-tag-and-class.html)  
+[5分で実装！WordPressでページネーションを作成する方法（プラグインor自作）](https://digitor.jp/textbook/wordpress-pagination-selfmade-plugin/#PHP)  
+
 
 - :hasについて  
 https://web-de-asobo.net/2022/10/19/css-has/  
@@ -229,14 +233,25 @@ function get_index() {
 **single.php（投稿ページ）に関する記事**
 [marginの相殺を回避するテクニック](https://coliss.com/articles/build-websites/operation/css/about-collapsing-margins.html)  
 > 空要素や親子要素で起きるマージンの相殺は、実際には避けることができません。これに対応する唯一の方法は、要素の間にボーダーなど何かを挿入することです。ほかの対応方法としては、要素のプロパティをブロックレベル以外（flex, gridなど）に変更します。  
-[WordPress ボタンブロックの使い方・ボタンの作り方を解説](https://webst8.com/blog/wordpress-button-block/)
+[WordPress ボタンブロックの使い方・ボタンの作り方を解説](https://webst8.com/blog/wordpress-button-block/)  
 
 **ギャラリーのCSS設定に関する記事**2023/03/02  
 ここのCSSについては後回しにする  
+[画像サイズを「サムネイル」「中」「大」「フルサイズ」から選択または任意のサイズを指定する](https://www.javadrive.jp/wordpress/media/index8.html)  
+[gridレイアウトについて調べました【CSS/grid-template/auto-fit/auto-fill】](https://m-kenomemo.com/grid-template/)  
+
 
 **single.php内、メディアとテキストの装飾について**
-[width指定が効かない？Flexboxは子要素の横幅指定がポイント](https://www.alivecast.co.jp/staff-blog/shiraishi.yuuri/1159)
+[width指定が効かない？Flexboxは子要素の横幅指定がポイント](https://www.alivecast.co.jp/staff-blog/shiraishi.yuuri/1159)  
+[flexboxでリキッドレイアウト（固定＋可変）にする方法](https://www.aizulab.com/blog/css-flexbox-liquid-layout/)  
 
+
+
+[テンプレートタグ/the excerpt](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/the_excerpt)  
+★[WordPress ループで使うテンプレートタグや関数](https://www.webdesignleaves.com/pr/wp/wp_func_loop.html)  
+[WP 「続きを読む」のリンク先をページの先頭にしてほしい](https://www.nwun.com/katsunakatamisa/2021-3-25/)
+[WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)
+[抜粋を表示する](http://wordpress.hitsuji.me/show-excerpt/#A0.B0.C1.D3.E0.F0)
 
 
 ***
@@ -256,8 +271,6 @@ https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standar
 - 特有の指定がない限り小文字で記述
 - 色の16進数コード記述で省略が可能な場合は省略（ #ffffff → #fff ）
 - なるべくショートハンドで記述（プロパティの上書きを除く
-
-
 
 
 # 命名規則（FLOCSSに帰属）

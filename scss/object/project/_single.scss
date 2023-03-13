@@ -4,17 +4,22 @@
 
 .p-single{
 	/* 余白調整 */
-	padding: 30px 5% 70px 5%;
-	@include mixin.breakpoint( breakpoint-medium ){
-		padding: 60px 5% 70px 7%;
-	}
+	padding: 0 5% 70px 5%;
 	@include mixin.breakpoint( breakpoint-large ){
-		padding: 60px 6% 179px 6%;
+		padding: 0 6% 179px 6%;
 	}
 
 	font-family: "M+ 1m";
 	color: variable.$color--text-single;
 
+	h2{
+		margin-top: 30px;
+		font-size: 2.8rem;
+		@include mixin.breakpoint( breakpoint-medium ){
+			margin-top: 60px;
+			font-size: 3.6rem;
+		}
+	}
 	h3{
 		font-size: 2.4rem;
 		font-weight: 700;
@@ -29,6 +34,12 @@
 		margin-top: 29px;
 		@include mixin.breakpoint( breakpoint-medium ){
 			margin-top: 59px;
+		}
+	}
+	p{
+		margin-top: 30px;
+		@include mixin.breakpoint( breakpoint-medium ){
+			margin-top: 60px;
 		}
 	}
 	.c-blockquote{
@@ -151,7 +162,6 @@
 					
 				}
 			}
-		
 		}
 	}
 	pre{
