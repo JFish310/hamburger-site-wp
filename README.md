@@ -10,7 +10,6 @@
 	ここまで 累計　h m  
 
 |  2022年  |  
-| ---- | ---- | ---- |  
 
 |  開始-終了  |  作業内容  |  時間  |
 | ---- | ---- | ---- |
@@ -30,23 +29,12 @@
 |  2/5 - 2/14  |  #10 ページネーション  |  9h45m  |
 |  2/14 - 2/21  |  #11 archive.php（カテゴリー別投稿一覧）  |  17h35m  |
 |  2/21 - 3/2  |  #12 single.php（投稿ページ装飾）  |  10h35m  |
+|  3/2 - 3/14  |  #13 search.php（検索結果画面）  |  8h20m  |
+|  3/14 - 3/  |  #14   |  hm  |
 |  TD  |  TD  |  TD  |
 |  TD  |  TD  |  TD  |
 |  TD  |  TD  |  TD  |
-
-2022年  
-	12/14(再開)		#1 タブ対応　40m  
-2023年  
-	1/16			#2 gulp対応, Browser-sync　3h25m  
-	1/21 - 2/4		#3 Menu　10h10m  
-	1/24 - 1/28		#4 ショップ情報（固定ページ）　1h50m  
-	1/28 - 1/30		#6 バーガーメニュー作成　1h20m  
-	1/31			#7 サイドメニュー作成　10m  
-	1/31			#8 ドリンクメニュー作成　10m  
-	2/4				#9 footer対応　1h15m  
-	2/5  - 2/14		#10 ページネーション　9h45m  
-	2/14 - 2/21		#11 archive.php（カテゴリー別投稿一覧）　17h35m  
-	2/21 - 3/2		#12 single.php（投稿ページ装飾）　10h35m  
+|  TD  |  TD  |  TD  |
 
 
 
@@ -246,12 +234,15 @@ function get_index() {
 [flexboxでリキッドレイアウト（固定＋可変）にする方法](https://www.aizulab.com/blog/css-flexbox-liquid-layout/)  
 
 
-
+**search.php関係、正規表現**
 [テンプレートタグ/the excerpt](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/the_excerpt)  
 ★[WordPress ループで使うテンプレートタグや関数](https://www.webdesignleaves.com/pr/wp/wp_func_loop.html)  
-[WP 「続きを読む」のリンク先をページの先頭にしてほしい](https://www.nwun.com/katsunakatamisa/2021-3-25/)
-[WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)
-[抜粋を表示する](http://wordpress.hitsuji.me/show-excerpt/#A0.B0.C1.D3.E0.F0)
+★[WP 「続きを読む」のリンク先をページの先頭にしてほしい](https://www.nwun.com/katsunakatamisa/2021-3-25/)  
+[WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)  
+[抜粋を表示する](http://wordpress.hitsuji.me/show-excerpt/#A0.B0.C1.D3.E0.F0)  
+[とほほの正規表現入門](https://www.tohoho-web.com/ex/regexp.html)  
+★[PHPのstr_replaceとpreg_replace（正規表現）の使い方](https://fantastech.net/str-replace-preg-replace)  
+
 
 
 ***
