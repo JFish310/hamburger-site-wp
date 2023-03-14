@@ -91,7 +91,7 @@
 
 	// 詳しく見る押下時のリンク先を先頭に変更させる
 	function custom_content_more_link( $output ) {
-	$output = preg_replace('/#more-[\d]+/i', '', $output );
+	$output = preg_replace('/#more-[\d]+/i', '', $output );	// 例)#more-55のようなリンク先になるので、これを消去。[\d]は数字の事。「/.../i」は大文字・小文字無視モード
 	return $output;
 	}
 	add_filter( 'the_content_more_link', 'custom_content_more_link' );
