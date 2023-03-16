@@ -30,8 +30,8 @@
 |  2/14 - 2/21  |  #11 archive.php（カテゴリー別投稿一覧）  |  17h35m  |
 |  2/21 - 3/2  |  #12 single.php（投稿ページ装飾）  |  10h35m  |
 |  3/2 - 3/14  |  #13 search.php（検索結果画面）  |  8h20m  |
-|  3/14 - 3/  |  #14   |  hm  |
-|  TD  |  TD  |  TD  |
+|  3/15  |  #14　残りのメニューの投稿   |  1h15m  |
+|  3/16 -   |  #15 地図  |  hm  |
 |  TD  |  TD  |  TD  |
 |  TD  |  TD  |  TD  |
 |  TD  |  TD  |  TD  |
@@ -236,16 +236,33 @@ function get_index() {
 
 **search.php関係、正規表現**
 [テンプレートタグ/the excerpt](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/the_excerpt)  
+[関数リファレンス/get the content](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_the_content)  
+
 ★[WordPress ループで使うテンプレートタグや関数](https://www.webdesignleaves.com/pr/wp/wp_func_loop.html)  
 ★[WP 「続きを読む」のリンク先をページの先頭にしてほしい](https://www.nwun.com/katsunakatamisa/2021-3-25/)  
 [WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)  
+[【WordPress】記事本文を出力（表示）、または、取得する方法](https://deep-blog.jp/engineer/6718/)  
+[WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)  
+
+
+
+
+
 [抜粋を表示する](http://wordpress.hitsuji.me/show-excerpt/#A0.B0.C1.D3.E0.F0)  
 [とほほの正規表現入門](https://www.tohoho-web.com/ex/regexp.html)  
 ★[PHPのstr_replaceとpreg_replace（正規表現）の使い方](https://fantastech.net/str-replace-preg-replace)  
 
+[Githubでブランチ保護設定した時の作業メモ](https://qiita.com/da-sugi/items/ba3cd83e64c689795c50)  
 
 
 ***
+質問  
+- 投稿記事は、「投稿のアイキャッチ画像（追加CSSにp-single__image--large）」、「h2の見出し」「段落」「続き」ブロックの前提でコーディング。それでいいのか。見出しと段落は、グループにしてあります。
+- TakeOutとEatInは固定ページ？
+
+
+
+
 
 
 
