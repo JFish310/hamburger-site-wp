@@ -7,25 +7,33 @@
 	position: relative; // 相対配置
 	width: 100%;
 	height: 690px;
-	// 一番奥の黒い背景
-	background-color: variable.$color--background--mask-access;
-
-	// 真ん中の地図画像の透過レイヤーの疑似要素
-	&::before {
-		content: "";
-		// 真ん中の地図画像
-		background-image: url(../img/front/map--small.jpg);
-		background-size: cover;
-		opacity: 0.6;       // 透過の設定
-		// background-blend-mode:lighten;  // 背景色と背景画像のブレンド方法を指定(下レイヤー色と上レイヤー色のそれぞれのRGB値を比較して、よりRGB値の高い（明るい）色を採用する)
-		@include mixin.breakpoint( breakpoint-medium ) {
-			background-image: url(../img/front/map--large.jpg);
+	
+	// Googleマップ
+	.c-iframe-wrapper{
+		width: 100%;
+		position: relative;
+		padding-bottom: 76%;
+		height: calc( 100% + 150px );	// -150pxした分、ここで足す
+		overflow: hidden;	// 枠からはみ出た要素を非表示
+		// opacity: 0.6;       // 透過の設定
+		&::after {
+			content: "";
+			background: rgba(variable.$color--background--mask-access, 0.4);
+			position: absolute; // 絶対配置
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			max-height: 690px;
 		}
-		position: absolute; // 絶対配置
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			margin-top: -150px;	// 左上のポップを非表示に
+		}
 	}
 	// 主に文字の部分にかかる濃い最前のレイヤーの疑似要素
 	&::after {
@@ -50,7 +58,25 @@
 	.c-dl--level2{
 		// padding: 40px;
 		position: absolute;
+		top: 0;
+		left: 0;
 		z-index: 1;
+		// タイトル（見出しが入ります）
+		h2{
+			color: variable.$color--text-sub;
+			font-size: 3.0rem;
+			// position: relative;
+			// z-index: 1;
+			// padding: 40px;
+			/* 罫線を疑似要素で */
+			&::after{
+				content: "";
+				display: block;								// ブロックが積みあがる
+				border-bottom: solid variable.$color--text-sub 2px;	// 線種、色、太さ
+				width: 75px;								// 線の長さ
+				margin-top: 20px;							// タイトルとの余白
+			}
+		}
 		dd{
 			margin-top: 15px;
 		}
@@ -60,22 +86,6 @@
 		@include mixin.breakpoint( breakpoint-large ) {
 			height: 100%;
 			width: 61%;
-		}
-	}
-	// タイトル（見出しが入ります）
-	h2{
-		color: variable.$color--text-sub;
-		font-size: 3.0rem;
-		// position: relative;
-		// z-index: 1;
-		// padding: 40px;
-		/* 罫線を疑似要素で */
-		&::after{
-			content: "";
-			display: block;                             // ブロックが積みあがる
-			border-bottom: solid variable.$color--text-sub 2px;  // 線種、色、太さ
-			width: 75px;                                // 線の長さ
-			margin-top: 20px;                           // タイトルとの余白
 		}
 	}
 }

@@ -31,8 +31,8 @@
 |  2/21 - 3/2  |  #12 single.php（投稿ページ装飾）  |  10h35m  |
 |  3/2 - 3/14  |  #13 search.php（検索結果画面）  |  8h20m  |
 |  3/15  |  #14　残りのメニューの投稿   |  1h15m  |
-|  3/16 -   |  #15 地図  |  hm  |
-|  TD  |  TD  |  TD  |
+|  3/16 - 3/17  |  #15 地図  |  4h30m  |
+|  TD  |  ♯16  |  TD  |
 |  TD  |  TD  |  TD  |
 |  TD  |  TD  |  TD  |
 
@@ -247,12 +247,20 @@ function get_index() {
 
 
 
-
 [抜粋を表示する](http://wordpress.hitsuji.me/show-excerpt/#A0.B0.C1.D3.E0.F0)  
 [とほほの正規表現入門](https://www.tohoho-web.com/ex/regexp.html)  
 ★[PHPのstr_replaceとpreg_replace（正規表現）の使い方](https://fantastech.net/str-replace-preg-replace)  
 
 [Githubでブランチ保護設定した時の作業メモ](https://qiita.com/da-sugi/items/ba3cd83e64c689795c50)  
+
+
+
+[CSS：Google Maps埋め込み時に左の吹き出し（ポップ）を消す](https://monakanote.net/coding/css-googlemaps-20200624/)  
+[iframeで埋め込むときのレスポンシブ対応について](https://naeco.jp/iframe-responsive)  
+[【CSS】Google Mapの比率を保持しながらレスポンシブで埋め込む方法](https://web-dev.tech/front-end/css/embed-google-map-with-proportion/)
+[アスペクト比計算ツール](https://aspect.arc-one.jp/)
+
+
 
 
 ***
