@@ -1114,7 +1114,6 @@ https://daib-log.com/responsive/
 .p-access .c-iframe-wrapper {
   width: 100%;
   position: relative;
-  padding-bottom: 76%;
   height: calc(100% + 150px);
   overflow: hidden;
 }
@@ -1172,6 +1171,17 @@ https://daib-log.com/responsive/
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
 }
+@media (min-width: 834px) {
+  .p-access .c-dl--level2 {
+    height: 100%;
+  }
+}
+@media (min-width: 1025px) {
+  .p-access .c-dl--level2 {
+    height: 100%;
+    width: 61%;
+  }
+}
 .p-access .c-dl--level2 h2 {
   color: #fff;
   font-size: 3rem;
@@ -1186,17 +1196,6 @@ https://daib-log.com/responsive/
 }
 .p-access .c-dl--level2 dd {
   margin-top: 15px;
-}
-@media (min-width: 834px) {
-  .p-access .c-dl--level2 {
-    height: 100%;
-  }
-}
-@media (min-width: 1025px) {
-  .p-access .c-dl--level2 {
-    height: 100%;
-    width: 61%;
-  }
 }
 
 .p-archive {
