@@ -43,6 +43,9 @@
 		}
 	}
 	.c-blockquote{
+		p{
+			margin-top: 0;
+		}
 		// 上のブロックとの余白
 		margin-top: 30px;
 		@include mixin.breakpoint( breakpoint-medium ){
@@ -102,8 +105,15 @@
 			gap: 20px 20px;                         /* 画像間の余白 縦方向 横方向 */
 		}
 		&__card{
+			// <figure class="wp-block-image
+			//					 size-large
+			//					 p-single__images__card">
+			// <img decoding="async" loading="lazy" width="1024" height="873" data-id="134" src="//localhost:3000/wp-content/uploads/2023/01/burg_teriyaki-1024x873.jpg" alt="テリヤキバーガー" class="wp-image-134" srcset="//localhost:3000/wp-content/uploads/2023/01/burg_teriyaki-1024x873.jpg 1024w, //localhost:3000/wp-content/uploads/2023/01/burg_teriyaki-300x256.jpg 300w, //localhost:3000/wp-content/uploads/2023/01/burg_teriyaki-768x655.jpg 768w, //localhost:3000/wp-content/uploads/2023/01/burg_teriyaki-1536x1310.jpg 1536w,
+			 //localhost:3000/wp-content/uploads/2023/01/burg_teriyaki.jpg 1678w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+			// .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image)
 			// 画像幅の指定
 			width: 100%;
+			// width: ;
 			// max-width: 349px;
 			// max-height: 215px;
 			// object-fit: cover;
@@ -130,7 +140,7 @@
 		}
 		&--ol{
 			@extend .p-single__list;
-			margin-top: 20px;
+			// margin-top: 20px;
 			li{
 				@include mixin.breakpoint( breakpoint-medium ){
 					margin-left: 50px;
@@ -151,13 +161,13 @@
 					margin-left: 50px;
 				}
 				list-style-position: inside;// リストアイテムの最初の要素として配置
-				list-style-type: disc;		// baseで無効にしてるので上書き
+				list-style-type: none;		// baseで無効にしてるので上書き
 				ul, ol{
 					margin-top: 20px;
 					margin-left: 18px;
 					margin-bottom: 20px;
 					li{
-						list-style-type: circle;
+						list-style-type: none;
 					}
 					
 				}

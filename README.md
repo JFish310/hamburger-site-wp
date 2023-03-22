@@ -32,8 +32,8 @@
 |  3/2 - 3/14  |  #13 search.php（検索結果画面）  |  8h20m  |
 |  3/15  |  #14 残りのメニューの投稿   |  1h15m  |
 |  3/16 - 3/17  |  #15 地図  |  4h35m  |
-|  3/18  |  ♯16 Take Out, Eat In内、記事のピックアップ  |  TD  |
-|  TD  |  TD  |  TD  |
+|  3/18  |  ♯16 固定ページ（page.php）  |  TD  |
+|  TD  |  #17 Take Out, Eat In内、記事のピックアップ  |  TD  |
 |  TD  |  TD  |  TD  |
 
 
@@ -228,6 +228,8 @@ function get_index() {
 [画像サイズを「サムネイル」「中」「大」「フルサイズ」から選択または任意のサイズを指定する](https://www.javadrive.jp/wordpress/media/index8.html)  
 [gridレイアウトについて調べました【CSS/grid-template/auto-fit/auto-fill】](https://m-kenomemo.com/grid-template/)  
 
+[WordPress標準ギャラリーの最も簡単なカスタマイズ方法](https://fixcode.jp/wordpress/wp-gallery-custom/)  
+※コピペでコードをfunctiosに置いてみたが、無反応だった。2023/03/20  
 
 **single.php内、メディアとテキストの装飾について**
 [width指定が効かない？Flexboxは子要素の横幅指定がポイント](https://www.alivecast.co.jp/staff-blog/shiraishi.yuuri/1159)  
@@ -254,11 +256,11 @@ function get_index() {
 [Githubでブランチ保護設定した時の作業メモ](https://qiita.com/da-sugi/items/ba3cd83e64c689795c50)  
 
 
-
+[Googleマップを埋め込み、レスポンシブ対応させる方法](https://webcreatetips.com/coding/3481/)  
 [CSS：Google Maps埋め込み時に左の吹き出し（ポップ）を消す](https://monakanote.net/coding/css-googlemaps-20200624/)  
 [iframeで埋め込むときのレスポンシブ対応について](https://naeco.jp/iframe-responsive)  
-[【CSS】Google Mapの比率を保持しながらレスポンシブで埋め込む方法](https://web-dev.tech/front-end/css/embed-google-map-with-proportion/)
-[アスペクト比計算ツール](https://aspect.arc-one.jp/)
+[【CSS】Google Mapの比率を保持しながらレスポンシブで埋め込む方法](https://web-dev.tech/front-end/css/embed-google-map-with-proportion/)  
+[アスペクト比計算ツール](https://aspect.arc-one.jp/)  
 
 
 
@@ -267,7 +269,7 @@ function get_index() {
 質問  
 - 投稿記事は、「投稿のアイキャッチ画像（追加CSSにp-single__image--large）」、「h2の見出し」「段落」「続き」ブロックの前提でコーディング。それでいいのか。見出しと段落は、グループにしてあります。
 - TakeOutとEatInは固定ページ？
-
+- page.phpに、while文が必要なのか。
 
 
 

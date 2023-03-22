@@ -88,7 +88,7 @@
 		.c-button__more{
 		// .more-link{
 			// position: relative;
-			margin: auto;       // 中央寄せ
+			margin: auto;		// 中央寄せ
 			margin-top: 41px;
 			@include mixin.breakpoint( breakpoint-large ){
 				margin-top: 60px;
@@ -110,10 +110,10 @@
 	font-family: "M+ 1m";
 	width: 100%;
 
-	display: flex;              /* 親要素に指定 */
-	flex-direction: row;        /* 横並びに配置する */
-	justify-content: center;    /* 水平方向の指定 */
-	align-items: flex-start;    /* 垂直方向の指定 */
+	display: flex;				/* 親要素に指定 */
+	flex-direction: row;		/* 横並びに配置する */
+	justify-content: center;	/* 水平方向の指定 */
+	align-items: flex-start;	/* 垂直方向の指定 */
 
 	max-height: 176px;
 	/* レスポンシブ対応 */
@@ -125,13 +125,14 @@
 	}
 	.wp-block-media-text__media{
 		width: 43%;	// 43% 144/335px, 43% 21/714px, 43% 581/1353px（固定領域の子要素）
-		align-self: flex-start;    /* 垂直方向の指定 */
+		align-self: flex-start;		/* 垂直方向の指定 */
 	}
 	.wp-block-media-text__content{
 		padding: 0 3%;
 		align-self:flex-start;
 		flex: 1;	// 可変領域の子要素に指定する
 		.p-card--single__caption{
+			margin-top: 0;
 			text-indent: 0.5em; // 半角スペース分インテンド
 		}
 	}

@@ -678,6 +678,7 @@ https://daib-log.com/responsive/
   flex: 1;
 }
 .p-card--single .wp-block-media-text__content .p-card--single__caption {
+  margin-top: 0;
   text-indent: 0.5em;
 }
 
@@ -1418,6 +1419,9 @@ https://daib-log.com/responsive/
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
 }
+.p-single .c-blockquote p {
+  margin-top: 0;
+}
 @media (min-width: 834px) {
   .p-single .c-blockquote {
     margin-top: 60px;
@@ -1516,9 +1520,6 @@ https://daib-log.com/responsive/
     margin-top: 60px;
   }
 }
-.p-single .p-single__list--ol {
-  margin-top: 20px;
-}
 .p-single .p-single__list--ol li {
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
@@ -1539,7 +1540,7 @@ https://daib-log.com/responsive/
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
   list-style-position: inside;
-  list-style-type: disc;
+  list-style-type: none;
 }
 @media (min-width: 834px) {
   .p-single .p-single__list--ul li {
@@ -1552,7 +1553,7 @@ https://daib-log.com/responsive/
   margin-bottom: 20px;
 }
 .p-single .p-single__list--ul li ul li, .p-single .p-single__list--ul li ol li {
-  list-style-type: circle;
+  list-style-type: none;
 }
 .p-single pre {
   margin-top: 30px;
