@@ -9,7 +9,7 @@
 					while( have_posts() ) :	// have_posts()は、have_posts() == trueの意味
 						the_post(); ?>		<!-- これが入ることで次の記事データへ移動する -->
 						<?php the_content(); ?>
-				<?php endwhile; else : ?>	// 投稿記事がない場合
+				<?php endwhile; else : ?>	<!-- 投稿記事がない場合 -->
 					<p>記事がありません。</p>
 				<?php endif; ?>
 			</section><!-- </.p-single> -->
