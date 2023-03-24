@@ -11,7 +11,7 @@
 	.c-iframe-wrapper{
 		width: 100%;
 		position: relative;
-		height: calc( 100% + 150px );	// -150pxした分、ここで足す
+		height: 100%;
 		overflow: hidden;	// 枠からはみ出た要素を非表示
 		// opacity: 0.6;       // 透過の設定
 		&::after {
@@ -29,7 +29,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100%;
+			height: calc( 100% + 150px );	// -150pxした分、ここで足す
 			margin-top: -150px;	// 左上のポップを非表示に
 		}
 	}

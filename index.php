@@ -7,18 +7,10 @@
 				<ul>
 					<li class="p-place__take-out">
 						<h2>Take Out</h2>
-						<!-- <hr class="c-border"></hr> -->
-
-
-
 						<div class="l-container__box">
-
-
 							<?php
 							$args = array(
 								'post__in' => array( 53, 23 ) );
-							// $query = new WP_Query( array( 'p' => 53 ) );
-							// $query = new WP_Query( array( 'post__in' => array( 53,23 ) ) );
 							// 条件を渡して記事を取得
 							$custom_posts = get_posts($args); ?>
 							<?php
@@ -48,16 +40,35 @@
 					</li>
 					<li class="p-place__eat-in">
 						<h2>Eat In</h2>
-						<!-- <hr class="c-border"></hr> -->
 						<div class="l-container__box">
-							<dl class="c-dl--level1 c-box">
-								<dt><h3 class="c-title--h3">小見出しが入ります</h3></dt>
-								<dd>テキストが入ります。テキストが入ります。</dd>
-							</dl>
-							<dl class="c-dl--level1 c-box">
-								<dt><h3 class="c-title--h3">小見出しが入ります</h3></dt>
-								<dd>テキストが入ります。テキストが入ります。</dd>
-							</dl>
+						<?php
+							$args = array(
+								'post__in' => array( 57, 82 ) );
+							// 条件を渡して記事を取得
+							$custom_posts = get_posts($args); ?>
+							<?php
+							foreach ( $custom_posts as $post ): setup_postdata($post); ?>
+								<a href="<?php the_permalink(); ?>">
+									<dl class="c-dl--level1 c-box">
+										<dt><?php the_title('<h3 class="c-title--h3">','</h3>'); ?></dt>
+										<!-- <dt class="c-box__title">小見出しが入ります</dt> -->
+										<dd>
+											<!-- pタグの出力 -->
+											<?php
+											if ( mb_strlen( $post->post_content, 'UTF-8' ) > 50 ) {
+											$content = mb_substr( strip_tags( $post->post_content, '<p>' ), 0, 50, 'UTF-8' );
+											echo $content . '…';
+											} else {
+											echo strip_tags( $post->post_content, '<p>' );
+											}
+											?>
+										</dd>
+									</dl>
+								</a>
+							<?php endforeach;
+							// クエリのリセット
+							wp_reset_query();
+							?>
 						</div>
 					</li>
 				</ul>
@@ -72,7 +83,6 @@
 						referrerpolicy="no-referrer-when-downgrade">
 					</iframe>
 				</div>
-				<!-- <div class="l-mask"></div> -->
 				<dl class="c-dl--level2">
 					<dt>
 						<h2 class="">当店へのアクセス</h2>
