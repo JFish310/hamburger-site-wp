@@ -272,6 +272,15 @@ function get_index() {
 
 
 
+
+
+**GitHub**
+[GitBashでjqコマンドを使用するための一番簡単な方法](https://qiita.com/tsumita7/items/2b7754989015e385de96)  
+[RSA SSH ホスト キーを更新しました](https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/)  
+
+
+
+
 ***
 質問  
 - 投稿記事は、「投稿のアイキャッチ画像（追加CSSにp-single__image--large）」、「h2の見出し」「段落」「続き」ブロックの前提でコーディング。それでいいのか。見出しと段落は、グループにしてあります。
