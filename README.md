@@ -245,7 +245,8 @@ function get_index() {
 [WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)  
 [【WordPress】記事本文を出力（表示）、または、取得する方法](https://deep-blog.jp/engineer/6718/)  
 [WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)  
-
+[ワードプレスでサイト内検索のヒット件数を表示するコード](https://kw-note.com/cms/how-to-get-number-of-results-from-query-posts-in-wordpress/)  
+[]
 
 
 
@@ -275,8 +276,9 @@ function get_index() {
 
 
 **GitHub**
+[We updated our RSA SSH host key(RSA SSH ホスト キーを更新しました)](https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/)  
 [GitBashでjqコマンドを使用するための一番簡単な方法](https://qiita.com/tsumita7/items/2b7754989015e385de96)  
-[RSA SSH ホスト キーを更新しました](https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/)  
+[既存の SSH キーの確認](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)  
 
 
 
