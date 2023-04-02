@@ -1115,7 +1115,7 @@ https://daib-log.com/responsive/
 .p-access .c-iframe-wrapper {
   width: 100%;
   position: relative;
-  height: calc(100% + 150px);
+  height: 100%;
   overflow: hidden;
 }
 .p-access .c-iframe-wrapper::after {
@@ -1133,7 +1133,7 @@ https://daib-log.com/responsive/
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% + 150px);
   margin-top: -150px;
 }
 .p-access::after {

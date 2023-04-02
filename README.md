@@ -245,7 +245,8 @@ function get_index() {
 [WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)  
 [【WordPress】記事本文を出力（表示）、または、取得する方法](https://deep-blog.jp/engineer/6718/)  
 [WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)  
-
+[ワードプレスでサイト内検索のヒット件数を表示するコード](https://kw-note.com/cms/how-to-get-number-of-results-from-query-posts-in-wordpress/)  
+[]
 
 
 
@@ -262,7 +263,33 @@ function get_index() {
 [【CSS】Google Mapの比率を保持しながらレスポンシブで埋め込む方法](https://web-dev.tech/front-end/css/embed-google-map-with-proportion/)  
 [アスペクト比計算ツール](https://aspect.arc-one.jp/)  
 
+**#17**2023/03/24  
+[特定のHTMLタグを残して文字数制限する場合](https://takami-design.jp/webtips/p281)  
+[WordPressで特定カテゴリの新着記事を表示する方法](https://site-manage.net/archives/1028)  
+[[wordpress] get_the_contentの中の段落タグやimgタグを除去する方法](https://blue-bear.jp/kb/wordpress-get_the_content%E3%81%AE%E4%B8%AD%E3%81%AE%E6%AE%B5%E8%90%BD%E3%82%BF%E3%82%B0%E3%82%84img%E3%82%BF%E3%82%B0%E3%82%92%E9%99%A4%E5%8E%BB%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/)  
+[HTMLタグを削除したいときに使えるPHP関数 strip_tags](https://komaricote.com/wordpress/php-strip_tags/)  
 
+
+
+
+
+
+
+**GitHub**
+[We updated our RSA SSH host key(RSA SSH ホスト キーを更新しました)](https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/)  
+[GitBashでjqコマンドを使用するための一番簡単な方法](https://qiita.com/tsumita7/items/2b7754989015e385de96)  
+[既存の SSH キーの確認](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)  
+[新しい SSH キーを生成して ssh-agent に追加する](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)  
+[SSH 接続をテストする](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)  
+[GitHub アカウントへの新しい SSH キーの追加](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)これは参考程度  
+[SSH キーのパスフレーズを使う](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)  
+[SSH接続を行うと何回も「Warning: the ECDSA host key for 〜」と表示される](https://blog.kujira-station.com/201509021840)  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
 
 
 ***
