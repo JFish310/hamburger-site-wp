@@ -231,6 +231,11 @@ function get_index() {
 [WordPress標準ギャラリーの最も簡単なカスタマイズ方法](https://fixcode.jp/wordpress/wp-gallery-custom/)  
 ※コピペでコードをfunctiosに置いてみたが、無反応だった。2023/03/20  
 
+[ギャラリーブロックで画像を同じサイズで並べる方法](https://motoki-design.co.jp/wordpress-customize/blog/gallery-block-arrange-same-size/)  
+
+
+
+
 **single.php内、メディアとテキストの装飾について**
 [width指定が効かない？Flexboxは子要素の横幅指定がポイント](https://www.alivecast.co.jp/staff-blog/shiraishi.yuuri/1159)  
 [flexboxでリキッドレイアウト（固定＋可変）にする方法](https://www.aizulab.com/blog/css-flexbox-liquid-layout/)  
@@ -270,8 +275,11 @@ function get_index() {
 [HTMLタグを削除したいときに使えるPHP関数 strip_tags](https://komaricote.com/wordpress/php-strip_tags/)  
 
 
-
-
+***
+[【WordPress】カテゴリーページの作り方](https://wp-manual.com/theme/theme-category/)  
+[「MT Custom Block Editor」というVisual Studio Codeの拡張機能を公開しました](https://blog.taaas.jp/)  
+[]()  
+***
 
 
 
@@ -284,11 +292,25 @@ function get_index() {
 [GitHub アカウントへの新しい SSH キーの追加](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)これは参考程度  
 [SSH キーのパスフレーズを使う](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)  
 [SSH接続を行うと何回も「Warning: the ECDSA host key for 〜」と表示される](https://blog.kujira-station.com/201509021840)  
+[「フィンガープリントとは？」今さら聞けない！基本の『キ』](https://www.videor.co.jp/digestplus/market/2021/02/41277.html)  
+[お前らのSSH Keysの作り方は間違っている](https://qiita.com/suthio/items/2760e4cff0e185fe2db9)  
+[【ssh】公開鍵認証するときのパスフレーズを省略する方法の紹介](https://fumidzuki.com/knowledge/3401/)  
+[ssh-agentを利用して、安全にSSH認証を行う](https://zenn.dev/naoki_mochizuki/articles/ce381be617cd312ffe7f)  
+[GitHubでssh接続する手順~公開鍵・秘密鍵の生成から~]()  
 []()  
 []()  
 []()  
 []()  
 []()  
+[]()  
+[]()  
+[]()  
+[]()  
+
+
+
+**gulp**
+[gulp-sassでDart Sassを使用する](https://cly7796.net/blog/css/use-dart-sass-with-gulp-sass/)  
 []()  
 
 
