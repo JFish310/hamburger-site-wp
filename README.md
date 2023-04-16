@@ -1,21 +1,26 @@
 # RaiseTech WP副業コース  
+
 ## 最終課題  ハンバーガーサイト  WordPress化  
 
 ### 履歴  
-2021年  
-	8/30    環境構築スタート(phpのインストール、Local・WordPressの更新など）  
-	9/8     構成考察  
-	9/9     コーディングスタート  
-	9/22    休止  
-	ここまで 累計　h m  
 
-|  2022年  |  
+#### 2021年  
+
+|  開始-終了  |  作業内容  |  時間  |
+| ---- | ---- | ---- |
+|  8/30 - 9/9  |  環境構築スタート(phpのインストール、Local・WordPressの更新など）  |  5h  |
+|  9/8  |  構成考察  |  3h  |
+|  9/9 - 9/22  |  コーディング  |  11h35m  |
+
+ここまで 累計 19h35m  
+
+#### 2022年  
 
 |  開始-終了  |  作業内容  |  時間  |
 | ---- | ---- | ---- |
 |  12/14(再開)  |  #1 タブ対応  |  40m  |
 
-|  2023年  |  
+#### 2023年  
 
 |  開始-終了  |  作業内容  |  時間  |
 | ---- | ---- | ---- |
@@ -38,17 +43,12 @@
 |  ReadMe, Github 他  |  ---  |  TD  |
 
 
-
-
 |  TH  |  TH  |  TH  |
 | ---- | ---- | ---- |
 |  TD  |  TD  |  TD  |
 |  TD  |  TD  |  TD  |
 
-
-
 （ここまで　　時間）  
-
 
 【累計】  
 構成・設計        hm  
@@ -59,9 +59,7 @@ jQuery           h
 リファクタリング  
 
 
-
-
-### ----学習参考サイトや、考察、メモ----  
+### ◆―――――――――― 学習参考サイトや、考察、メモ――――――――――◆  
 
 RaiseTech・WP副業コース、最初の課題のブログ  
 https://wp.yat-net.com/?p=5970#theme04  
@@ -77,12 +75,12 @@ https://qiita.com/ponsuke0531/items/7b33e7a48cb27c42fbdc
 **Font Awesome の読み込みはfunction.phpで。**  
 https://www.bootstrapcdn.com/  
 
-
 **function.php  wp_enqueue_style()での指定するところの色々**  
 [WordPress テーマを作るなら get_theme_file_uri と get_theme_file_path を使いましょう](https://nendeb.com/597)  
+
 - リセットCSS と 開発 CSS がある場合、開発CSSファイルを呼び出す側に array( reset ) と書くと、先にリセットCSSを読み込んでから開発CSSを読み込んでくれる
 
-Googleフォントの読み込みの時の書き方参照
+**Googleフォントの読み込みの時の書き方参照**
 wp_enqueue_styleがGoogle Fontsから１つしか読み込まない
 https://neetlance.com/post/enqueue-style-google-fonts/
 
@@ -100,7 +98,6 @@ wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/
 
 get_theme_file_uriの書き方  
 wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ), array(), '4.7.0' );  
-
 
 **カスタムメニュー**  
 [WordPress ナビゲーションメニュー（カスタムメニュー）](https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html)  
@@ -122,17 +119,16 @@ wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ),
 メニュー間の「｜」は、li+liでやるというサイトを見てヒントを得た。良かった。  
 [横並びメニューの区切り線を隣接セレクタを使ってスマートに実装する方法](https://wk-partners.co.jp/homepage/blog/hpseisaku/htmlcss/adjacent-sibling-combinator/)  
 
-
 **issueとプルリクを紐づけるには**  
 https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue  
 
 **ページネーション参考**  
+
 - WP-PageNaviカスタム方法  
 https://www.nxworld.net/wp-plugin-wp-pagenavi-custom-tag-and-class.html  
 https://deep-blog.jp/engineer/plugin-wp-pagenavi/  
 [WordPress：ナビゲーションプラグイン「WP-PageNavi」のタグやclassを任意のものに変更する方法](https://www.nxworld.net/wp-plugin-wp-pagenavi-custom-tag-and-class.html)  
 [5分で実装！WordPressでページネーションを作成する方法（プラグインor自作）](https://digitor.jp/textbook/wordpress-pagination-selfmade-plugin/#PHP)  
-
 
 - :hasについて  
 https://web-de-asobo.net/2022/10/19/css-has/  
@@ -161,6 +157,7 @@ https://itsakura.com/css-selector-combination
 
 - ループの使い方まとめ  
 [公式ドキュメント＞ループ](https://wpdocs.osdn.jp/%E3%83%AB%E3%83%BC%E3%83%97)
+
 ```
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <?php endwhile; else : ?>
@@ -210,6 +207,7 @@ function get_index() {
 	}
 }
 ```
+
 - 抜粋方法関係  
 [substrやmb_substrを使って文字列を簡単に切り出そう!](https://www.sejuku.net/blog/48076)  
 [wp trim words](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/wp_trim_words)  
@@ -235,13 +233,9 @@ function get_index() {
 
 [ギャラリーブロックで画像を同じサイズで並べる方法](https://motoki-design.co.jp/wordpress-customize/blog/gallery-block-arrange-same-size/)  
 
-
-
-
 **single.php内、メディアとテキストの装飾について**
 [width指定が効かない？Flexboxは子要素の横幅指定がポイント](https://www.alivecast.co.jp/staff-blog/shiraishi.yuuri/1159)  
 [flexboxでリキッドレイアウト（固定＋可変）にする方法](https://www.aizulab.com/blog/css-flexbox-liquid-layout/)  
-
 
 **search.php関係、正規表現**
 [テンプレートタグ/the excerpt](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/the_excerpt)  
@@ -255,14 +249,11 @@ function get_index() {
 [ワードプレスでサイト内検索のヒット件数を表示するコード](https://kw-note.com/cms/how-to-get-number-of-results-from-query-posts-in-wordpress/)  
 []
 
-
-
 [抜粋を表示する](http://wordpress.hitsuji.me/show-excerpt/#A0.B0.C1.D3.E0.F0)  
 [とほほの正規表現入門](https://www.tohoho-web.com/ex/regexp.html)  
 ★[PHPのstr_replaceとpreg_replace（正規表現）の使い方](https://fantastech.net/str-replace-preg-replace)  
 
 [Githubでブランチ保護設定した時の作業メモ](https://qiita.com/da-sugi/items/ba3cd83e64c689795c50)  
-
 
 [Googleマップを埋め込み、レスポンシブ対応させる方法](https://webcreatetips.com/coding/3481/)  
 [CSS：Google Maps埋め込み時に左の吹き出し（ポップ）を消す](https://monakanote.net/coding/css-googlemaps-20200624/)  
@@ -279,14 +270,10 @@ function get_index() {
 **#18 ソート順の変更**
 [Wordpressで投稿（記事）の表示順を変更する。プラグインあり・なしの２パターンです。](https://sologaku.com/wordpress/change-the-post-order/)
 
-
 ***
 [【WordPress】カテゴリーページの作り方](https://wp-manual.com/theme/theme-category/)  
 [「MT Custom Block Editor」というVisual Studio Codeの拡張機能を公開しました](https://blog.taaas.jp/)  
-[]()  
 ***
-
-
 
 **GitHub**
 [We updated our RSA SSH host key(RSA SSH ホスト キーを更新しました)](https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/)  
@@ -312,12 +299,8 @@ function get_index() {
 []()  
 []()  
 
-
-
 **gulp**
 [gulp-sassでDart Sassを使用する](https://cly7796.net/blog/css/use-dart-sass-with-gulp-sass/)  
-[]()  
-
 
 ***
 質問  
@@ -325,12 +308,8 @@ function get_index() {
 - TakeOutとEatInは固定ページ？
 - page.phpに、while文が必要なのか。
 
+### WordPress コーディングルール
 
-
-
-
-
-# WordPress　コーディングルール
 ~~https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standards/~~  
 https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standards/php/
 
@@ -344,8 +323,7 @@ https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standar
 - 色の16進数コード記述で省略が可能な場合は省略（ #ffffff → #fff ）
 - なるべくショートハンドで記述（プロパティの上書きを除く
 
-
-# 命名規則（FLOCSSに帰属）
+### 命名規則（FLOCSSに帰属）
 
 .block{}                    親要素  
 .block__element{}           blockに属する子要素  
@@ -358,7 +336,6 @@ layout-list
 など  
 
 **「_（アンダースコア）」1つでつなぐことは基本的に禁止**
-
 **原則、保守性を高めるため、単語は省略しない**
 
 よくある単語  
@@ -369,10 +346,8 @@ layout-list
 
 ただし、**開発時のルールに合わせることが大原則のため、この限りではない**
 
-
 参照URL https://jobtech.jp/html_css/4209/
 ***
-
 
 **余白の調整**  
 margin-bottom: 0;  
@@ -383,19 +358,21 @@ https://design-remarks.com/margin-top-or-bottom/
 ***
 
 **【font-family】について**  
-	font-family: 候補1,候補2,候補3,フォントの種類;  
-		「sans-serif」  ゴシック体系のフォント（MSゴシック、中ゴシック、Arialなど）  
-		「serif」       明朝体系のフォント（MS明朝、MS P明朝、Garamond、MS Georgia、Times New Romanなど）  
-		「cursive」     筆記体系のフォント（caflisch script、ex pontoなど）  
-		「fantasy」     装飾系のフォント（critter、studzなど）  
-		「monospace」   等幅系のフォント（Osaka-等幅、courier、Courier Newなど）  
-	※日本語テキストにcursiveを指定していると、希に正常に表示できない場合がある※  
-	英語フォントと日本語フォントの両方を指定する場合は、先に英語フォントを指定する。  
-	そうすることで、アルファベットには英語フォントが、日本語には日本語フォントが使用されるようになる。  
+font-family: 候補1,候補2,候補3,フォントの種類;  
+
+- 「sans-serif」  ゴシック体系のフォント（MSゴシック、中ゴシック、Arialなど）
+- 「serif」       明朝体系のフォント（MS明朝、MS P明朝、Garamond、MS Georgia、Times New Romanなど）
+- 「cursive」     筆記体系のフォント（caflisch script、ex pontoなど）
+- 「fantasy」     装飾系のフォント（critter、studzなど）
+- 「monospace」   等幅系のフォント（Osaka-等幅、courier、Courier Newなど）
+
+※日本語テキストにcursiveを指定していると、希に正常に表示できない場合がある※  
+英語フォントと日本語フォントの両方を指定する場合は、先に英語フォントを指定する。  
+そうすることで、アルファベットには英語フォントが、日本語には日本語フォントが使用されるようになる。  
 ***
 
+### Sass-階層説明
 
-# Sass-階層説明
 ```
 hamburger-site-wp
 ├─ css
