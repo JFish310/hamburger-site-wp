@@ -275,13 +275,13 @@ function get_index() {
 [「MT Custom Block Editor」というVisual Studio Codeの拡張機能を公開しました](https://blog.taaas.jp/)  
 ***
 
-**GitHub**
+**GitHub**  
 [We updated our RSA SSH host key(RSA SSH ホスト キーを更新しました)](https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/)  
 [GitBashでjqコマンドを使用するための一番簡単な方法](https://qiita.com/tsumita7/items/2b7754989015e385de96)  
 [既存の SSH キーの確認](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)  
 [新しい SSH キーを生成して ssh-agent に追加する](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)  
 [SSH 接続をテストする](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)  
-[GitHub アカウントへの新しい SSH キーの追加](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)これは参考程度  
+[GitHub アカウントへの新しい SSH キーの追加](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)	これは参考程度  
 [SSH キーのパスフレーズを使う](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)  
 [SSH接続を行うと何回も「Warning: the ECDSA host key for 〜」と表示される](https://blog.kujira-station.com/201509021840)  
 [「フィンガープリントとは？」今さら聞けない！基本の『キ』](https://www.videor.co.jp/digestplus/market/2021/02/41277.html)  
@@ -299,7 +299,7 @@ function get_index() {
 []()  
 []()  
 
-**gulp**
+**gulp**  
 [gulp-sassでDart Sassを使用する](https://cly7796.net/blog/css/use-dart-sass-with-gulp-sass/)  
 
 ***
