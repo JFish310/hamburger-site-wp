@@ -44,22 +44,6 @@
 	}
 	add_action( 'wp_enqueue_scripts', 'hamburgersite_script' );
 
-	// ウィジェット用
-	// function hamburgersite_widgets_init() {
-	// 	register_sidebar (
-	// 		array(
-	// 			'name'          => 'カテゴリーウィジェット',
-	// 			'id'            => 'category_widget',
-	// 			'description'   => 'カテゴリー用ウィジェットです',
-	// 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-	// 			'after_widget'  => '</div>',
-	// 			'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
-	// 			'after_title'   => "</h2>\n",
-	// 		)
-	// 	);
-	// }
-	// add_action( 'widgets_init', 'hamburgersite_widgets_init' );
-
 	// カスタムメニュー
 	function register_my_menus() { 
 		register_nav_menus( array( // 複数のナビゲーションメニューを登録する関数
@@ -96,54 +80,18 @@
 	}
 	add_filter( 'the_content_more_link', 'custom_content_more_link' );
 
-
-	// 特定のカテゴリのみ非表示にする
-	// function exclude_widget_categories($args){
-	// 	$exclude = array( 2, 58, 59 );
-	// 	$args["exclude"] = $exclude;
-	// 	return $args;
-	//   }
-	//   add_filter( 'widget_categories_args', 'exclude_widget_categories');
-
-	// // archive.phpに使用する、抜粋本文の文字数指定
-	// function new_excerpt_mblength( $length ) {
-	// 	return 50;
-	// }
-	// add_filter( 'excerpt_mblength', 'new_excerpt_mblength' );
-
-	// // archive.phpに使用する、投稿記事のh2タグ（小見出し）を取得
-	// function get_h_index() {
-	// 	// グローバル変数を使う為の宣言
-	// 	global $post;
-	// 	// マッチングで<h2>タグを取得する
-	// 	preg_match_all('/<h2>.+<\/h2>/u', $post->post_content, $matches);
-	// 	// 取得した<h>タグの個数をカウント
-	// 	$matches_count = count($matches[0]);
-	// 	if(empty($matches)){
-	// 		// <h>タグがない場合の出力
-	// 		echo '<span>Sorry no index</span>';
-	// 	}else{
-	// 		// <h>タグが存在する場合に<h>タグを出力
-	// 		for ($i = 0; $i < $matches_count; $i++){
-	// 			echo  $matches[0][$i];
-	// 		}
-	// 	}
-	// }
-	// // archive.phpに使用する、投稿記事のpタグ（最初の段落）を取得
-	// function get_p_index() {
-	// 	// グローバル変数を使う為の宣言
-	// 	global $post;
-	// 	// マッチングで<p>タグを取得する
-	// 	preg_match_all('/<p>.+<\/p>/u', $post->post_content, $matches);
-	// 	// 取得した<p>タグの個数をカウント
-	// 	$matches_count = count($matches[0]);
-	// 	if(empty($matches)){
-	// 		// <p>タグがない場合の出力
-	// 		echo '<span>Sorry no index</span>';
-	// 	}else{
-	// 		// <p>タグが存在する場合に<p>タグを出力
-	// 		for ($i = 0; $i < $matches_count; $i++){
-	// 			echo  $matches[0][$i];
-	// 		}
-	// 	}
-	// }
+	// 投稿の表示順を変更
+	function sortpost( $query ) {
+		// is_admin() -> ダッシュボードまたは管理画面の表示中かどうかをチェック //
+		// アクセス中の URL が管理画面に含まれるなら true を、フロントエンドのページなら false を返す真偽値型の関数 //
+		// is_main_query() -> 「メイン」クエリー（固定ページ、投稿、またはアーカイブ）とカスタム/サブクエリーを区別するために使われる //
+		// 管理画面かつサブクエリーだった場合はリターン
+		if( is_admin() || !$query -> is_main_query()) {
+			return;
+		}
+		// ASC:昇順, DESC:降順
+		$query -> set( 'order', 'ASC' );
+		// orderbyで何順に並べ変えるか指定
+		$query -> set( 'orderby', 'date' );
+	}
+	add_action( 'pre_get_posts', 'sortpost' );
