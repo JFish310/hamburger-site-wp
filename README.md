@@ -33,8 +33,10 @@
 |  3/15  |  #14 残りのメニューの投稿   |  1h15m  |
 |  3/16 - 3/17  |  #15 地図  |  4h35m  |
 |  3/18  |  ♯16 固定ページ（page.php）  |  TD  |
-|  TD  |  #17 Take Out, Eat In内、記事のピックアップ  |  TD  |
-|  TD  |  TD  |  TD  |
+|  3/23 - 3/24  |  #17 Take Out, Eat In内、記事のピックアップ  |  2h25m  |
+|  4/8 - 4/12  |  #18   |  1h  |
+|  ReadMe, Github 他  |  ---  |  TD  |
+
 
 
 
@@ -273,6 +275,9 @@ function get_index() {
 [WordPressで特定カテゴリの新着記事を表示する方法](https://site-manage.net/archives/1028)  
 [[wordpress] get_the_contentの中の段落タグやimgタグを除去する方法](https://blue-bear.jp/kb/wordpress-get_the_content%E3%81%AE%E4%B8%AD%E3%81%AE%E6%AE%B5%E8%90%BD%E3%82%BF%E3%82%B0%E3%82%84img%E3%82%BF%E3%82%B0%E3%82%92%E9%99%A4%E5%8E%BB%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/)  
 [HTMLタグを削除したいときに使えるPHP関数 strip_tags](https://komaricote.com/wordpress/php-strip_tags/)  
+
+**#18 ソート順の変更**
+[Wordpressで投稿（記事）の表示順を変更する。プラグインあり・なしの２パターンです。](https://sologaku.com/wordpress/change-the-post-order/)
 
 
 ***
