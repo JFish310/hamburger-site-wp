@@ -37,7 +37,7 @@
 |  3/2 - 3/14  |  #13 search.php（検索結果画面）  |  8h20m  |
 |  3/15  |  #14 残りのメニューの投稿   |  1h15m  |
 |  3/16 - 3/17  |  #15 地図  |  4h35m  |
-|  3/18  |  ♯16 固定ページ（page.php）  |  TD  |
+|  3/18  |  #16 固定ページ（page.php）  |  TD  |
 |  3/23 - 3/24  |  #17 Take Out, Eat In内、記事のピックアップ  |  2h25m  |
 |  4/8 - 4/12  |  #18   |  1h  |
 |  ReadMe, Github 他  |  ---  |  TD  |
@@ -275,6 +275,11 @@ function get_index() {
 [「MT Custom Block Editor」というVisual Studio Codeの拡張機能を公開しました](https://blog.taaas.jp/)  
 ***
 
+**jQuery**
+[【すぐに解決！】WordPressの「jQuery」の使い方とプラグイン導入方法－動かない方は必読](https://briarpatch.co.jp/wp-jquery)  
+[『Notice: wp_deregister_script が誤って呼び出されました。』の対策](https://oku-log.com/blog/wp-deregister-script/)  
+[WordPressでjQueryを読み込みするには？ エラーの原因も解説](https://www.conoha.jp/lets-wp/wp-jquery/)  
+
 **GitHub**  
 [We updated our RSA SSH host key(RSA SSH ホスト キーを更新しました)](https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/)  
 [GitBashでjqコマンドを使用するための一番簡単な方法](https://qiita.com/tsumita7/items/2b7754989015e385de96)  
@@ -288,11 +293,12 @@ function get_index() {
 [お前らのSSH Keysの作り方は間違っている](https://qiita.com/suthio/items/2760e4cff0e185fe2db9)  
 [【ssh】公開鍵認証するときのパスフレーズを省略する方法の紹介](https://fumidzuki.com/knowledge/3401/)  
 [ssh-agentを利用して、安全にSSH認証を行う](https://zenn.dev/naoki_mochizuki/articles/ce381be617cd312ffe7f)  
-[GitHubでssh接続する手順~公開鍵・秘密鍵の生成から~]()  
+[GitHubでssh接続する手順~公開鍵・秘密鍵の生成から~](https://qiita.com/shizuma/items/2b2f873a0034839e47ce)  
+[Pull RequestをIssueにリンクする](https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)  
 []()  
 []()  
 []()  
-[]()  
+
 []()  
 []()  
 []()  
