@@ -11,6 +11,7 @@
 					'menu_class'	=> 'p-gnavi__main-menu',
 					'container'		=> false,					// ulを囲う要素を指定。div or nav。なしの場合には false
 					'echo'			=> false,					//（真偽値） （オプション） メニューをHTML出力する(true)か、PHPの値で返す(false)か 初期値： true
+					'theme_location' => 'category_nav',						// テーマの中で使われる位置。ユーザーが選択できるように register_nav_menu() で登録されている必要がある。
 					)
 				)
 			);

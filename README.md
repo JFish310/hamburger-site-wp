@@ -40,6 +40,8 @@
 |  3/18  |  #16 固定ページ（page.php）  |  TD  |
 |  3/23 - 3/24  |  #17 Take Out, Eat In内、記事のピックアップ  |  2h25m  |
 |  4/8 - 4/12  |  #18   |  1h  |
+|  4/16 - 4/29  |  #19 テーマチェック前半  |  5h15m  |
+|  4/27 - 5/15  |  #20 テーマチェック後半  |  6h20m  |
 |  ReadMe, Github 他  |  ---  |  TD  |
 
 
@@ -391,6 +393,7 @@ hamburger-site-wp
 |  ├─ page
 |  └─ single
 ├─ js
+├─ languages
 ├─ sass
 |  ├─ foundation
 |  |  ├─ _base.scss
@@ -435,6 +438,7 @@ hamburger-site-wp
 ├─ header.php
 ├─ index.php
 ├─ page.php
+├─ screenshot.png
 ├─ search.php
 ├─ searchform.php
 ├─ sidebar.php

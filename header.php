@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?><!-- コメントに「返信」をクリックしたときに、すぐ下にコメント入力フォームが表示されるようになる -->
 	<?php wp_head(); ?>	<!-- WordPressのテーマに含める関数。admin_barや必要となるソースの出力などを行う。 -->
 </head>
 <body <?php body_class(); ?>><!-- ページによって装飾を変えたい時などテンプレートに自分でクラスを付けなくてもWordPressが付けてくれるので便利 -->

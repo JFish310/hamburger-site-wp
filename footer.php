@@ -8,11 +8,8 @@
 		?>
 		<p>
 			<small>Copyright: RaiseTech</small>
-			<!-- Copyright: RaiseTech -->
 		</p>
 	</footer>
-
-	<script src="/js/menu.js"></script>
 	<?php wp_footer(); ?>
 	</body>
 </html>

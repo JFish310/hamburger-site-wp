@@ -2,24 +2,26 @@
 // add_action('init', function () {
 	// テーマサポート
 	// add_theme_support( 'menus' );			// テーマにメニューという項目を機能をサポートすることを許可するという記述
-	register_nav_menus( [ // 複数のナビゲーションメニューを登録する関数
-		//'「メニューの位置」の識別子' => 'メニューの説明の文字列',
-		'category_nav' => 'カテゴリーナビゲーション',
-		'footer_nav' => 'フッターナビゲーション',
-	]);
 	add_theme_support( 'title-tag' );		// タイトルの出力
 	add_theme_support( 'post-thumbnails' );	// アイキャッチ画像を有効にする
+	add_theme_support( 'automatic-feed-links' );	// フィードリンク
+	add_theme_support( 'custom-header' );		// カスタムヘッダー画像有効化
+	add_theme_support( 'wp-block-styles' );		// ブロックエディタ用の基礎CSSの読み込み
+	add_theme_support( 'align-wide' );			// 全幅（ぜんぷく）と幅広（はばひろ）への利用
+	add_theme_support( 'responsive-embeds' );
+	add_theme_support( 'custom-logo', $args );
+	add_theme_support( 'custom-background', $args );
 // });
 
-	// // カスタムメニュー
-	// function register_my_menus() { 
-	// 	register_nav_menus( [ // 複数のナビゲーションメニューを登録する関数
-	// 		//'「メニューの位置」の識別子' => 'メニューの説明の文字列',
-	// 		'category_nav' => 'カテゴリーナビゲーション',
-	// 		'footer_nav' => 'フッターナビゲーション',
-	// 	]);
-	// }
-	// add_action( 'after_setup_theme', 'register_my_menus' );
+	// カスタムメニュー
+	function register_my_menus() {
+		register_nav_menus( [ // 複数のナビゲーションメニューを登録する関数
+			//'「メニューの位置」の識別子' => 'メニューの説明の文字列',
+			'category_nav' => 'カテゴリーナビゲーション',
+			'footer_nav' => 'フッターナビゲーション',
+		]);
+	}
+	add_action( 'after_setup_theme', 'register_my_menus' );
 
 	// タイトル出力
 	function hamburgersite_title( $title ) {
@@ -49,6 +51,9 @@
 		wp_enqueue_script( 'samplejs', get_theme_file_uri( '/js/menu.js' ), array(), '1.0.0', true );
 	}
 	add_action( 'wp_enqueue_scripts', 'hamburgersite_script' );
+
+	// テキストドメインの設定
+	load_theme_textdomain( 'hamburger-site-wp', get_template_directory() . '/languages' );
 
 	// ページネーション
 	function custom_wp_pagenavi( $html ) {
@@ -90,3 +95,21 @@
 		$query -> set( 'orderby', 'date' );
 	}
 	add_action( 'pre_get_posts', 'sortpost' );
+
+	// the_archive_title()で不要な文字列を消す
+	add_filter( 'get_the_archive_title', function ($title) {
+		if(is_category()){
+			$title = single_cat_title('',false); // カテゴリー：を消す
+		}elseif(is_tag()){
+			$title = single_tag_title('',false);  // タグ：を消す
+		}elseif(is_date()){
+			$title = get_the_time('Y年n月');  // 月：を消す
+		};
+		return $title;
+	});
+
+	// TinyMCE ビジュアルエディターへ関連付け
+	function wpdocs_theme_add_editor_styles() {
+		add_editor_style( 'custom-editor-style.css' );
+	}
+	add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
