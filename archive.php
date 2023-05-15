@@ -2,7 +2,7 @@
 		<main class="p-main">
 			<article id="top" class="p-first-view--archive">
 				<h1>Menu:
-					<span><?php wp_title(''); ?></span>	<!-- カテゴリー名取得 -->
+					<?php the_archive_title('<span>', '</span>'); ?>	<!-- カテゴリー名取得 -->
 				</h1>
 			</article><!-- /.p-main__first-view--archive -->
 			<section class="p-archive">

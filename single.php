@@ -1,7 +1,7 @@
 <?php get_header(); ?>  <!-- header.phpを読み込むテンプレートタグ（インクルードタグ） -->
 		<main class="p-main">
 			<article id="top" class="p-first-view--single">
-				<h1><?php wp_title(''); ?></h1>
+				<h1><?php echo wp_get_document_title(); ?></h1>
 			</article><!-- /.p-main__first-view--single -->
 			<section class="p-single">
 			<?php
@@ -9,6 +9,7 @@
 					while( have_posts() ) :	// have_posts()は、have_posts() == trueの意味
 						the_post(); ?>		<!-- これが入ることで次の記事データへ移動する -->
 						<?php the_content(); ?>
+						<?php wp_link_pages(); ?>
 				<?php endwhile; else : ?>	<!-- 投稿記事がない場合 -->
 					<p>記事がありません。</p>
 				<?php endif; ?>
