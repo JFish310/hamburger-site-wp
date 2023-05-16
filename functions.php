@@ -113,3 +113,18 @@
 		add_editor_style( 'custom-editor-style.css' );
 	}
 	add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+
+	// 投稿のみ（カスタム投稿は不可）検索させる処理
+	function search_pre_get_posts( $query ) {
+		//管理画面、メインクエリー以外では何もしない
+		if ( is_admin() || ! $query->is_main_query() ) {
+		return;
+		}
+		//サイト内検索でのみ動作
+		else if ( $query->is_search ){
+		//固定ページをサイト内検索から除外
+		$query->set( 'post_type', 'post' );
+		}
+		return $query;
+		}
+		add_action( 'pre_get_posts', 'search_pre_get_posts' );

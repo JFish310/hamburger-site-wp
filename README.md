@@ -42,6 +42,8 @@
 |  4/8 - 4/12  |  #18   |  1h  |
 |  4/16 - 4/29  |  #19 テーマチェック前半  |  5h15m  |
 |  4/27 - 5/15  |  #20 テーマチェック後半  |  6h20m  |
+|  5/16  |  #21 検索結果画面で固定ページの内容が大きくはみ出してしまう箇所の修正  |  20m  |
+|  5/16 - 5/  |  #22 JSファイルの動作確認  |  hm  |
 |  ReadMe, Github 他  |  ---  |  TD  |
 
 
@@ -297,7 +299,11 @@ function get_index() {
 [ssh-agentを利用して、安全にSSH認証を行う](https://zenn.dev/naoki_mochizuki/articles/ce381be617cd312ffe7f)  
 [GitHubでssh接続する手順~公開鍵・秘密鍵の生成から~](https://qiita.com/shizuma/items/2b2f873a0034839e47ce)  
 [Pull RequestをIssueにリンクする](https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)  
-[]()  
+
+**投稿記事のみを検索させる（固定ページは検索対象にしない処理**
+[WordPressサイト内検索で特定ページを結果から除外する](https://wakaru-web.com/wordpress/knowledge/exclude-searchresults/#toc14)  
+
+
 []()  
 []()  
 
