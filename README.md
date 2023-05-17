@@ -37,31 +37,22 @@
 |  3/2 - 3/14  |  #13 search.php（検索結果画面）  |  8h20m  |
 |  3/15  |  #14 残りのメニューの投稿   |  1h15m  |
 |  3/16 - 3/17  |  #15 地図  |  4h35m  |
-|  3/18  |  #16 固定ページ（page.php）  |  TD  |
+|  3/18  |  #16 固定ページ（page.php）  |  3h55m  |
 |  3/23 - 3/24  |  #17 Take Out, Eat In内、記事のピックアップ  |  2h25m  |
-|  4/8 - 4/12  |  #18   |  1h  |
+|  4/8 - 4/12  |  #18 カテゴリーページ　表示順の調整  |  1h  |
 |  4/16 - 4/29  |  #19 テーマチェック前半  |  5h15m  |
 |  4/27 - 5/15  |  #20 テーマチェック後半  |  6h20m  |
 |  5/16  |  #21 検索結果画面で固定ページの内容が大きくはみ出してしまう箇所の修正  |  20m  |
-|  5/16 - 5/  |  #22 JSファイルの動作確認  |  hm  |
+|  5/16  |  #22 JSファイルの動作確認  |  45m  |
 |  ReadMe, Github 他  |  ---  |  TD  |
 
-
-|  TH  |  TH  |  TH  |
-| ---- | ---- | ---- |
-|  TD  |  TD  |  TD  |
-|  TD  |  TD  |  TD  |
-
-（ここまで　　時間）  
+（#22 まで 102h40m ）  
 
 【累計】  
-構成・設計        hm  
-環境構築          h  
-マークアップ      hm  
-Sass             hm  
-jQuery           h  
-リファクタリング  
-
+構成・設計        3h  
+環境構築          5h  
+コーディング      h  
+リファクタリング  h  
 
 ### ◆―――――――――― 学習参考サイトや、考察、メモ――――――――――◆  
 
@@ -84,24 +75,22 @@ https://www.bootstrapcdn.com/
 
 - リセットCSS と 開発 CSS がある場合、開発CSSファイルを呼び出す側に array( reset ) と書くと、先にリセットCSSを読み込んでから開発CSSを読み込んでくれる
 
-**Googleフォントの読み込みの時の書き方参照**
-wp_enqueue_styleがGoogle Fontsから１つしか読み込まない
+**Googleフォントの読み込みの時の書き方参照**  
+wp_enqueue_styleがGoogle Fontsから１つしか読み込まない  
 https://neetlance.com/post/enqueue-style-google-fonts/
 
-ブログ1  
-wp_enqueue_style( 'fontawesome','https://use.fontawesome.com/releases/v5.2.0/css/all.css');  
-
-私  
-wp_enqueue_style( 'font-awesome-5','//use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '5.6.1' );  
-
-スライド  
-wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.7.0' );  
-
-忘れた  
-wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );  
-
-get_theme_file_uriの書き方  
-wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ), array(), '4.7.0' );  
+```
+// ブログ1
+wp_enqueue_style( 'fontawesome','https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+// 私
+wp_enqueue_style( 'font-awesome-5','//use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '5.6.1' );
+// スライド
+wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.7.0' );
+// 忘れた
+wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
+// get_theme_file_uriの書き方
+wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ), array(), '4.7.0' );
+```
 
 **カスタムメニュー**  
 [WordPress ナビゲーションメニュー（カスタムメニュー）](https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html)  
@@ -127,7 +116,6 @@ wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome.css' ),
 https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue  
 
 **ページネーション参考**  
-
 - WP-PageNaviカスタム方法  
 https://www.nxworld.net/wp-plugin-wp-pagenavi-custom-tag-and-class.html  
 https://deep-blog.jp/engineer/plugin-wp-pagenavi/  
@@ -222,12 +210,13 @@ function get_index() {
 [WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)  
 [WordPress ループで使うテンプレートタグや関数](https://www.webdesignleaves.com/pr/wp/wp_func_loop.html)  
 
-**single.php（投稿ページ）に関する記事**
+**single.php（投稿ページ）に関する記事**  
 [marginの相殺を回避するテクニック](https://coliss.com/articles/build-websites/operation/css/about-collapsing-margins.html)  
 > 空要素や親子要素で起きるマージンの相殺は、実際には避けることができません。これに対応する唯一の方法は、要素の間にボーダーなど何かを挿入することです。ほかの対応方法としては、要素のプロパティをブロックレベル以外（flex, gridなど）に変更します。  
+
 [WordPress ボタンブロックの使い方・ボタンの作り方を解説](https://webst8.com/blog/wordpress-button-block/)  
 
-**ギャラリーのCSS設定に関する記事**2023/03/02  
+**ギャラリーのCSS設定に関する記事** 2023/03/02  
 ここのCSSについては後回しにする  
 [画像サイズを「サムネイル」「中」「大」「フルサイズ」から選択または任意のサイズを指定する](https://www.javadrive.jp/wordpress/media/index8.html)  
 [gridレイアウトについて調べました【CSS/grid-template/auto-fit/auto-fill】](https://m-kenomemo.com/grid-template/)  
@@ -237,11 +226,11 @@ function get_index() {
 
 [ギャラリーブロックで画像を同じサイズで並べる方法](https://motoki-design.co.jp/wordpress-customize/blog/gallery-block-arrange-same-size/)  
 
-**single.php内、メディアとテキストの装飾について**
+**single.php内、メディアとテキストの装飾について**  
 [width指定が効かない？Flexboxは子要素の横幅指定がポイント](https://www.alivecast.co.jp/staff-blog/shiraishi.yuuri/1159)  
 [flexboxでリキッドレイアウト（固定＋可変）にする方法](https://www.aizulab.com/blog/css-flexbox-liquid-layout/)  
 
-**search.php関係、正規表現**
+**search.php関係、正規表現**  
 [テンプレートタグ/the excerpt](https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/the_excerpt)  
 [関数リファレンス/get the content](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/get_the_content)  
 
@@ -251,7 +240,6 @@ function get_index() {
 [【WordPress】記事本文を出力（表示）、または、取得する方法](https://deep-blog.jp/engineer/6718/)  
 [WordPressで投稿の本文のテキストだけを取得する方法](https://www-creators.com/archives/704)  
 [ワードプレスでサイト内検索のヒット件数を表示するコード](https://kw-note.com/cms/how-to-get-number-of-results-from-query-posts-in-wordpress/)  
-[]
 
 [抜粋を表示する](http://wordpress.hitsuji.me/show-excerpt/#A0.B0.C1.D3.E0.F0)  
 [とほほの正規表現入門](https://www.tohoho-web.com/ex/regexp.html)  
@@ -265,7 +253,7 @@ function get_index() {
 [【CSS】Google Mapの比率を保持しながらレスポンシブで埋め込む方法](https://web-dev.tech/front-end/css/embed-google-map-with-proportion/)  
 [アスペクト比計算ツール](https://aspect.arc-one.jp/)  
 
-**#17**2023/03/24  
+**#17 TakeOutとEatInの下部に記事を表示** 2023/03/24  
 [特定のHTMLタグを残して文字数制限する場合](https://takami-design.jp/webtips/p281)  
 [WordPressで特定カテゴリの新着記事を表示する方法](https://site-manage.net/archives/1028)  
 [[wordpress] get_the_contentの中の段落タグやimgタグを除去する方法](https://blue-bear.jp/kb/wordpress-get_the_content%E3%81%AE%E4%B8%AD%E3%81%AE%E6%AE%B5%E8%90%BD%E3%82%BF%E3%82%B0%E3%82%84img%E3%82%BF%E3%82%B0%E3%82%92%E9%99%A4%E5%8E%BB%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/)  
@@ -279,7 +267,7 @@ function get_index() {
 [「MT Custom Block Editor」というVisual Studio Codeの拡張機能を公開しました](https://blog.taaas.jp/)  
 ***
 
-**jQuery**
+**jQuery**  
 [【すぐに解決！】WordPressの「jQuery」の使い方とプラグイン導入方法－動かない方は必読](https://briarpatch.co.jp/wp-jquery)  
 [『Notice: wp_deregister_script が誤って呼び出されました。』の対策](https://oku-log.com/blog/wp-deregister-script/)  
 [WordPressでjQueryを読み込みするには？ エラーの原因も解説](https://www.conoha.jp/lets-wp/wp-jquery/)  
@@ -300,29 +288,20 @@ function get_index() {
 [GitHubでssh接続する手順~公開鍵・秘密鍵の生成から~](https://qiita.com/shizuma/items/2b2f873a0034839e47ce)  
 [Pull RequestをIssueにリンクする](https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)  
 
-**投稿記事のみを検索させる（固定ページは検索対象にしない処理**
+**投稿記事のみを検索させる（固定ページは検索対象にしない処理**  
 [WordPressサイト内検索で特定ページを結果から除外する](https://wakaru-web.com/wordpress/knowledge/exclude-searchresults/#toc14)  
 
-**WordPressでjQueryを読み込むとき（http://localhost:3000/で動かなかったときの対処**
+**WordPressでjQueryを読み込むとき（http://localhost:3000/で動かなかったときの対処）**  
 [WordPressのjQueryは設定しないと読み込まれない](https://ichikawa-webdesign.com/archives/4703)  
-
-
-[]()  
-
-[]()  
-[]()  
-[]()  
-[]()  
-[]()  
 
 **gulp**  
 [gulp-sassでDart Sassを使用する](https://cly7796.net/blog/css/use-dart-sass-with-gulp-sass/)  
-
 ***
-質問  
+**質問**  
 - 投稿記事は、「投稿のアイキャッチ画像（追加CSSにp-single__image--large）」、「h2の見出し」「段落」「続き」ブロックの前提でコーディング。それでいいのか。見出しと段落は、グループにしてあります。
 - TakeOutとEatInは固定ページ？
 - page.phpに、while文が必要なのか。
+***
 
 ### WordPress コーディングルール
 
@@ -338,6 +317,7 @@ https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standar
 - 特有の指定がない限り小文字で記述
 - 色の16進数コード記述で省略が可能な場合は省略（ #ffffff → #fff ）
 - なるべくショートハンドで記述（プロパティの上書きを除く
+***
 
 ### 命名規則（FLOCSSに帰属）
 
@@ -365,7 +345,8 @@ layout-list
 参照URL https://jobtech.jp/html_css/4209/
 ***
 
-**余白の調整**  
+### 余白の調整
+
 margin-bottom: 0;  
 margin-topで余白の調整をする。  
 ※要素の下に、何が来るかわからないから、下につく方が、上と調整する。  
@@ -373,7 +354,8 @@ margin-topで余白の調整をする。
 https://design-remarks.com/margin-top-or-bottom/  
 ***
 
-**【font-family】について**  
+### 【font-family】について
+
 font-family: 候補1,候補2,候補3,フォントの種類;  
 
 - 「sans-serif」  ゴシック体系のフォント（MSゴシック、中ゴシック、Arialなど）
@@ -401,8 +383,9 @@ hamburger-site-wp
 |  ├─ page
 |  └─ single
 ├─ js
+|  └─ menu.js
 ├─ languages
-├─ sass
+├─ scss
 |  ├─ foundation
 |  |  ├─ _base.scss
 |  |  ├─ _mixin.scss
@@ -431,25 +414,28 @@ hamburger-site-wp
 |  |  |  ├─ _place.scss
 |  |  |  ├─ _search.scss
 |  |  |  └─ _single.scss
-|  |  └─utility  
+|  |  └─utility
+|  |  |  └─ _margin.scss
 |  └─ style.scss
 ├─ 
 ├─ node_modules -- GitHub管理外
 ├─ .gitignore
-├─ gulp.js
+├─ gulpfile.js
 ├─ package-lock.json
 ├─ package.json
 ├─ 
 ├─ archive.php
 ├─ footer.php
-├─ function.php
+├─ functions.php
 ├─ header.php
 ├─ index.php
 ├─ page.php
+├─ readme.txt
 ├─ screenshot.png
 ├─ search.php
 ├─ searchform.php
 ├─ sidebar.php
 ├─ single.php
+├─ style.css
 └─ README.md
 ```

@@ -18,7 +18,6 @@
 								<a href="<?php the_permalink(); ?>">
 									<dl class="c-dl--level1 c-box">
 										<dt><?php the_title('<h3 class="c-title--h3">','</h3>'); ?></dt>
-										<!-- <dt class="c-box__title">小見出しが入ります</dt> -->
 										<dd>
 											<!-- pタグの出力 -->
 											<?php
@@ -51,7 +50,6 @@
 								<a href="<?php the_permalink(); ?>">
 									<dl class="c-dl--level1 c-box">
 										<dt><?php the_title('<h3 class="c-title--h3">','</h3>'); ?></dt>
-										<!-- <dt class="c-box__title">小見出しが入ります</dt> -->
 										<dd>
 											<!-- pタグの出力 -->
 											<?php

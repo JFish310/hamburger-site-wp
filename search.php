@@ -10,7 +10,6 @@
 					<dt><h2 class="">小見出しが入ります</h2></dt>
 					<dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。<!--テキストが入ります。テキストが入ります。--></dd>
 				</dl>
-				<!-- <ul class="c-layout-list"> -->
 				<ul class="c-layout-list--row">
 				<!-- ループ処理で、投稿記事の一覧を表示 -->
 				<?php
@@ -34,10 +33,7 @@
 										the_permalink();
 										echo '">詳しく見る</a>';
 									} else {
-										// echo get_the_content('詳しく!', false );
 										echo get_the_content( '詳しく見る' );
-										// echo mb_substr(strip_tags(apply_filters('the_content', $post->post_content)), 0, 90);
-										// echo the_content('詳しく見る');
 									} ?>
 								</figcaption>
 							</figure>

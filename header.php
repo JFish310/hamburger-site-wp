@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- <html lang="ja"> -->
 <html <?php language_attributes(); ?>> <!-- 言語設定を自動的に出力します-->
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex , nofollow"><!-- 検索にヒットさせない -->
 	<?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?><!-- コメントに「返信」をクリックしたときに、すぐ下にコメント入力フォームが表示されるようになる -->
 	<?php wp_head(); ?>	<!-- WordPressのテーマに含める関数。admin_barや必要となるソースの出力などを行う。 -->
 </head>
