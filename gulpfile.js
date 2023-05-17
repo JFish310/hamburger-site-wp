@@ -94,7 +94,7 @@ const browserSyncOption = {
 	proxy: {
 		target: options.domain
 	},
-	notify: true
+	notify: false	// 右上「Browsersync: connected」を非表示に
 }
 
 //---------------------------------------------------------

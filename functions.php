@@ -48,7 +48,7 @@
 		wp_enqueue_style( 'hamburger-site', get_theme_file_uri( '/css/style.css' ), array(), '1.0.0' );
 		wp_enqueue_style( 'style', get_theme_file_uri( '/style.css' ), array(), '1.0.0' );
 		// jQueryの読み込み
-		wp_enqueue_script( 'samplejs', get_theme_file_uri( '/js/menu.js' ), array(), '1.0.0', true );
+		wp_enqueue_script( 'menujs', get_theme_file_uri( '/js/menu.js' ), array('jquery'), '1.0.0', true );
 	}
 	add_action( 'wp_enqueue_scripts', 'hamburgersite_script' );
 

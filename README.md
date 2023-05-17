@@ -303,8 +303,10 @@ function get_index() {
 **投稿記事のみを検索させる（固定ページは検索対象にしない処理**
 [WordPressサイト内検索で特定ページを結果から除外する](https://wakaru-web.com/wordpress/knowledge/exclude-searchresults/#toc14)  
 
+**WordPressでjQueryを読み込むとき（http://localhost:3000/で動かなかったときの対処**
+[WordPressのjQueryは設定しないと読み込まれない](https://ichikawa-webdesign.com/archives/4703)  
 
-[]()  
+
 []()  
 
 []()  
