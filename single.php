@@ -1,7 +1,7 @@
 <?php get_header(); ?>  <!-- header.phpを読み込むテンプレートタグ（インクルードタグ） -->
 		<main class="p-main">
 			<article id="top" class="p-first-view--single">
-				<h1><?php echo wp_get_document_title(); ?></h1>
+				<?php echo the_title('<h1>', '</h1>'); ?>
 			</article><!-- /.p-main__first-view--single -->
 			<section class="p-single">
 			<?php
