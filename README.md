@@ -39,12 +39,22 @@
 |  3/16 - 3/17  |  #15 地図  |  4h35m  |
 |  3/18  |  #16 固定ページ（page.php）  |  3h55m  |
 |  3/23 - 3/24  |  #17 Take Out, Eat In内、記事のピックアップ  |  2h25m  |
-|  4/8 - 4/12  |  #18 カテゴリーページ　表示順の調整  |  1h  |
+|  4/8 - 4/12  |  #18 カテゴリーページ 表示順の調整  |  1h  |
 |  4/16 - 4/29  |  #19 テーマチェック前半  |  5h15m  |
 |  4/27 - 5/15  |  #20 テーマチェック後半  |  6h20m  |
 |  5/16  |  #21 検索結果画面で固定ページの内容が大きくはみ出してしまう箇所の修正  |  20m  |
 |  5/16  |  #22 JSファイルの動作確認  |  45m  |
-|  ReadMe, Github 他  |  ---  |  TD  |
+|  5/19 - 5/20  |  FBの修正  |  55m  |
+|  5/21 - 6/13  |  サーバーへデプロイ   |  10h40m  |
+|  6/2  |  #24 検索ボックスの修正  |  m  |
+|  6/2  |  #25 商品ページのメインビジュアルは、背景に修正  |  m  |
+|  6/2  |  #26 jQueryの修正  |  m  |
+|  6/2  |  #27 メニューを開いたままウィンドウサイズを広げたときに発生するバグ  |  m  |
+|  6/2  |  #28 コンテンツ幅の調整  |  m  |
+|  6/2  |  #29 Menu押下時、一番上に「Menu」「Search」の文字が表示される  |  m  |
+|  6/2  |  #30 記事ページの画像が、グレーアウトの層より上に出ている  |  m  |
+|  6/2  |  #31 ブロックエディタ「ギャラリー」の装飾  |  m  |
+|  ReadMe, Github 他  |  ---  |  5/16 0:30, 5/17 1:05, 6/14.24 30m, 6/27    |
 
 （#22 まで 102h40m ）  
 
@@ -265,12 +275,15 @@ function get_index() {
 ***
 [【WordPress】カテゴリーページの作り方](https://wp-manual.com/theme/theme-category/)  
 [「MT Custom Block Editor」というVisual Studio Codeの拡張機能を公開しました](https://blog.taaas.jp/)  
+[WordPress title タグの出力](https://www.webdesignleaves.com/pr/wp/wp_func_title_tag.html)  
+
 ***
 
 **jQuery**  
 [【すぐに解決！】WordPressの「jQuery」の使い方とプラグイン導入方法－動かない方は必読](https://briarpatch.co.jp/wp-jquery)  
 [『Notice: wp_deregister_script が誤って呼び出されました。』の対策](https://oku-log.com/blog/wp-deregister-script/)  
 [WordPressでjQueryを読み込みするには？ エラーの原因も解説](https://www.conoha.jp/lets-wp/wp-jquery/)  
+[【即分かる！】WordPressでjQueryを動かす方法－うまく動かない時の原因と解決方法！](https://briarpatch.co.jp/wp-jquery#toc3)  
 
 **GitHub**  
 [We updated our RSA SSH host key(RSA SSH ホスト キーを更新しました)](https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/)  
@@ -296,12 +309,46 @@ function get_index() {
 
 **gulp**  
 [gulp-sassでDart Sassを使用する](https://cly7796.net/blog/css/use-dart-sass-with-gulp-sass/)  
+
 ***
 **質問**  
 - 投稿記事は、「投稿のアイキャッチ画像（追加CSSにp-single__image--large）」、「h2の見出し」「段落」「続き」ブロックの前提でコーディング。それでいいのか。見出しと段落は、グループにしてあります。
 - TakeOutとEatInは固定ページ？
 - page.phpに、while文が必要なのか。
+
 ***
+**WP-CLIを導入しようとしたときに参考にしたサイト**  
+[エックスサーバー上のWordPressにwp-cliを導入する](https://scr.marketing-wizard.biz/wordpress/xserver-wp-cli-install)  
+[エックスサーバーにSSH接続する方法](https://scr.marketing-wizard.biz/infrastructure/xserver-howto-ssh)  
+[SSH設定](https://www.xserver.ne.jp/manual/man_server_ssh.php)  
+[SSHソフトの設定(Tera Term)](https://www.xserver.ne.jp/manual/man_server_ssh_connect_tera.php)  
+[WordPress『 WP-CLI 』#1 コマンドラインを使ってできること](https://knowledge.cpi.ad.jp/cms/wordpresswp-cli1/#:~:text=WP%2DCLI%20%E3%81%A8%E3%81%AF%E3%80%81WordPress,%E8%87%AA%E5%8B%95%E5%8C%96%E3%81%A7%E3%81%8D%E3%81%9F%E3%82%8A%E3%81%97%E3%81%BE%E3%81%99%E3%80%82)  
+[wp-cli](https://wp-cli.org/ja/)  
+[自分がよく使うWP-CLIまとめ](https://zenn.dev/hisho/articles/4a572fd7ae74947a9111)  
+
+***
+**All-in-One WP Migration**  
+[WordPressのバックアップや引っ越しが簡単にできるプラグイン「All-in-One WP Migration」はなるほど便利だった](https://blog.ko31.com/201802/all-in-one-wp-migration/)  
+[【2023年最新】All-in-One WP Migrationの使い方(移行/引っ越し)](https://blog-bootcamp.jp/start/wordpress-allinonewpmigration/)  
+[All-in-One WP Migration を使って WordPressを引っ越しする時の注意点とアップロードサイズを増やす方法](https://www.vektor-inc.co.jp/post/all-in-one-wp-migration-more-details/)  
+[All-in-One WP Migrationでインポートができない原因と対処法を解説](https://www.switchitmaker2.com/web-production/all-in-one-wp-migration-import/)  
+[]()  
+[]()  
+
+**エックスサーバー・FileZilla**
+[サブドメインに入れたワードプレスの削除方法～エックスサーバー編～](https://ami-shuf.com/wordpressdelete#MySQL)  
+[【保存版】WordPressで作ったサイトをローカル環境→本番環境アップする方法](https://esolab.co.jp/tech/wordpress-local-to-dev/)  
+[WordPress引越し：プラグインを使わないサーバー移行・データベース移行方法](https://rakkoma.com/knowledge/1051/)  
+[エックスサーバーでWordPressの最大アップロードファイルサイズを変更する方法](https://www.vektor-inc.co.jp/post/xserver-upload-max-filesize/)  
+[ワードプレスの削除の仕方※ワードプレスのインストールし直し方](https://wppart.yuzumaru.co.jp/%e3%83%af%e3%83%bc%e3%83%89%e3%83%97%e3%83%ac%e3%82%b9%e3%81%ae%e5%89%8a%e9%99%a4%e3%81%ae%e4%bb%95%e6%96%b9%e2%80%bb%e3%83%af%e3%83%bc%e3%83%89%e3%83%97%e3%83%ac%e3%82%b9%e3%81%ae%e3%82%a4%e3%83%b3/)  
+[Local By Flywheelから本番環境へ移行する際の注意点-既存の静的サイトからWordPressにリニューアルする場合](https://pala-ghe.com/local-by-flywheel-to-server-wordpress/)  
+[]()  
+
+
+**本番環境での不具合時の参照サイト**
+[WordPress移行したら画像が表示されない【対処方法まとめ】](https://macoblog.com/wp-ikou-gazou/#h-anker13)
+
+
 
 ### WordPress コーディングルール
 
