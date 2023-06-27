@@ -751,6 +751,7 @@ https://daib-log.com/responsive/
   }
 }
 .p-search input[type=search] {
+  -webkit-appearance: none;
   width: 72%;
   max-width: 546px;
   height: 46px;

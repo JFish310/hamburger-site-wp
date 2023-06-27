@@ -15,6 +15,7 @@
 	}
 	/* 検索--入力エリア-- */
 	input[type="search"]{
+		-webkit-appearance: none;	// iOSデバイス環境時、検索ボックスが角丸にならないように制御
 		width: 72%;
 		max-width: 546px;
 		height: 46px;

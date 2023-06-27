@@ -46,7 +46,7 @@
 |  5/16  |  #22 JSファイルの動作確認  |  45m  |
 |  5/19 - 5/20  |  FBの修正  |  55m  |
 |  5/21 - 6/13  |  サーバーへデプロイ   |  10h40m  |
-|  6/2  |  #24 検索ボックスの修正  |  m  |
+|  6/27  |  #24 検索ボックスの修正  |  1h30m  |
 |  6/2  |  #25 商品ページのメインビジュアルは、背景に修正  |  m  |
 |  6/2  |  #26 jQueryの修正  |  m  |
 |  6/2  |  #27 メニューを開いたままウィンドウサイズを広げたときに発生するバグ  |  m  |
@@ -335,7 +335,7 @@ function get_index() {
 []()  
 []()  
 
-**エックスサーバー・FileZilla**
+**エックスサーバー・FileZilla**  
 [サブドメインに入れたワードプレスの削除方法～エックスサーバー編～](https://ami-shuf.com/wordpressdelete#MySQL)  
 [【保存版】WordPressで作ったサイトをローカル環境→本番環境アップする方法](https://esolab.co.jp/tech/wordpress-local-to-dev/)  
 [WordPress引越し：プラグインを使わないサーバー移行・データベース移行方法](https://rakkoma.com/knowledge/1051/)  
@@ -345,10 +345,12 @@ function get_index() {
 []()  
 
 
-**本番環境での不具合時の参照サイト**
-[WordPress移行したら画像が表示されない【対処方法まとめ】](https://macoblog.com/wp-ikou-gazou/#h-anker13)
+**本番環境での不具合時の参照サイト**  
+[WordPress移行したら画像が表示されない【対処方法まとめ】](https://macoblog.com/wp-ikou-gazou/#h-anker13)  
 
-
+**#24 検索ボックスの修正**  
+[iPhoneで送信ボタンの角丸をなくす方法](https://www.design-memo.com/coding/webkit-appearance)  
+[]()  
 
 ### WordPress コーディングルール
 
