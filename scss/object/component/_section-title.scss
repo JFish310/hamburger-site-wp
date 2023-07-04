@@ -1,7 +1,50 @@
 @use "../../foundation/base";
+@use "../../foundation/variable";
+@use "../../foundation/mixin";
 
-.c-title--h3{
-	font-size: 2.2rem;
+.c-title{
 	font-family: "M+ 1m";
-	font-weight: 700;
+	font-weight: 700;	// bold
+	&--h1{				// single, pageのタイトルで使用
+		@extend .c-title;
+		font-size: 3.6rem;// フォントサイズの指定もしなくちゃいけないけど、cでタイトルをまとめたほうがいいかも？
+		color: variable.$color--text-sub;
+		display: flex;			/* 親要素に指定 */
+		align-items: center;	/* 垂直方向の指定 */
+		width: 100vw;	// 親要素の無視して画面いっぱいにする
+		height: 225px;
+		margin-right: calc(50% - 50vw);
+		margin-left: calc(50% - 50vw);
+		// 子要素の中身の幅が親要素の幅を維持
+		padding-right: calc(50vw - 50%);
+		padding-left: 26px;
+
+		@include mixin.breakpoint( breakpoint-medium ){
+			font-size: 6.0rem;
+			padding-left: 86px;
+		}
+		@include mixin.breakpoint( breakpoint-large ){
+			width: 80vw;		// メニューが表示されるので、画面幅の80%くらいに変更
+			margin-right: calc(50% - 40vw);
+			margin-left: calc(50% - 40vw);
+		}
+		/* 背景の設定 */
+		background-position: center;
+		background-size: cover;	/* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
+		@include mixin.breakpoint( breakpoint-medium ) {
+			height: 500px;
+		}
+		&--single{
+			@extend .c-title--h1;
+			background-image: url(../img/single/first-view.jpg);
+		}
+		&--page{
+			@extend .c-title--h1;
+			background-image: url(../img/page/first-view.jpg);
+		}
+	}
+	&--h3{
+		@extend .c-title;
+		font-size: 2.2rem;
+	}
 }
