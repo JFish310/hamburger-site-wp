@@ -1,10 +1,8 @@
 <?php get_header(); ?>  <!-- header.phpを読み込むテンプレートタグ（インクルードタグ） -->
 		<main class="p-main">
-			<article id="top" class="p-first-view--archive">
-				<h1>Search:
-					<span><?php echo get_search_query(); ?></span>
-				</h1>
-			</article><!-- /.p-main__first-view--archive -->
+			<h1 class="c-title--gray">Search:
+				<span><?php echo get_search_query(); ?></span>
+			</h1>
 			<section class="p-archive">
 				<dl class="c-dl--level3">
 					<dt><h2 class="">小見出しが入ります</h2></dt>

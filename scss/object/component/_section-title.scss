@@ -48,3 +48,50 @@
 		font-size: 2.2rem;
 	}
 }
+
+.c-title--gray{
+	color: variable.$color--text-sub;
+	font-size: 3.6rem;// フォントサイズの指定
+	padding-left: 37px;
+	width: 100%;
+	height:285px;
+	@include mixin.breakpoint( breakpoint-medium ){
+		font-size: 6.0rem;
+		padding-left: 86px;
+	}
+
+	display: flex;                  /* 親要素に指定 */
+	flex-direction: column;         /* 横並びに配置する */
+	justify-content: center;        /* 水平方向の指定 */
+	@include mixin.breakpoint( breakpoint-medium ){
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	@include mixin.breakpoint( breakpoint-large ) {
+		// height: 49vh;
+		height: 30vh;
+		// height: 239px;
+		min-height: 117px;          // PC最大化（自分の）の239pxの49%
+	}
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/archive/first-view--small.jpg);
+	background-size: cover;	// 上記の下に持ってこないと効かない
+	@include mixin.breakpoint( breakpoint-large ) {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/archive/first-view--large.jpg);
+		background-size: cover;	// 上記とワンセットで設定しなければならないらしい
+		background-position: center;
+	}
+
+	span{
+		display: block;
+		font-size: 1.6rem;
+		padding-top: 7px;
+		font-family: "M+ 1m";
+		font-weight: 700;       // bold
+		@include mixin.breakpoint( breakpoint-medium ){
+			display: inline-block;
+			margin-left: 20px;
+			vertical-align:middle;
+		}
+	}
+}
