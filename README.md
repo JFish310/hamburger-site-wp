@@ -51,7 +51,7 @@
 |  6/2  |  #26 jQueryの修正  |  m  |
 |  6/2  |  #27 メニューを開いたままウィンドウサイズを広げたときに発生するバグ  |  m  |
 |  6/2  |  #28 コンテンツ幅の調整  |  m  |
-|  7/  |  #29 Menu押下時、一番上に「Menu」「Search」の文字が表示される  |  m  |
+|  7/5 - 7/9  |  #29 Menu押下時、一番上に「Menu」「Search」の文字が表示される  |  1h25m  |
 |  6/2  |  #30 記事ページの画像が、グレーアウトの層より上に出ている  |  m  |
 |  6/2  |  #31 ブロックエディタ「ギャラリー」の装飾  |  m  |
 |  ReadMe, Github 他  |  ---  |  5/16 0:30, 5/17 1:05, 6/14.24 30m, 6/27    |
@@ -356,9 +356,9 @@ function get_index() {
 [【CSS】親要素を無視して子要素の幅をいっぱいに広げる方法](https://tecb.jp/blog/1517)  
 ★[CSSで親要素を無視して（突き抜ける、はみ出す）画面幅いっぱいに広げる方法](https://hirakublog.com/css-side-full-screen/)  
 
-
-
-
+**#29 Menu**
+[CSS｜背景画像の上に背景色を重ねる方法](https://cotodama.co/css_bg-img-color/)
+★[linear-gradientを使う方法](https://design-levelup.com/webdesign/html-css/%E8%83%8C%E6%99%AF%E7%94%BB%E5%83%8F%E3%81%AB%E9%80%8F%E9%81%8E%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%92%E9%87%8D%E3%81%AD%E3%82%8B%E6%96%B9%E6%B3%95/#i-4)
 
 ### WordPress コーディングルール
 
