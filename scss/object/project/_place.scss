@@ -46,18 +46,16 @@
 		background-position: center center;
 		background-size: cover;     /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
 		height: 642px;
-		// height: 100%;
-		max-width: 357px;
 		display: flex;              /* 親要素に指定 */
 		flex-direction: column;     /* 積み重なるように配置する */
 
 		/********* レスポンシブ *********/
 		@include mixin.breakpoint( breakpoint-medium ){
 			padding: 2%;
+			width: 44%;
 		}
 		@include mixin.breakpoint( breakpoint-large ){
 			// width: 500px;    // 625*0.8（自分のPCブラウザ最大化に合わせるための0.8）
-			width: 44%;
 			height: 957px;      // 1193*0.8（自分のPCブラウザ最大化に合わせるための0.8）
 			max-width: 625px;
 			max-height: 1196px;
@@ -66,7 +64,6 @@
 			// margin: auto auto 10px auto;    // 下寄せ、margin-bottomは10px
 			margin-top: auto;    // 下寄せ、margin-bottomは10px
 			width: 100%;
-
 			// c-dl--level間の余白
 			.c-dl--level1{
 				margin-top: 10px;
@@ -75,7 +72,6 @@
 			> :first-child {
 				margin-top: 0;
 			}
-
 			// 「小見出しが入ります」のboxのサイズ指定
 			.c-box{
 				width: 100%;
@@ -93,18 +89,17 @@
 			padding: 2%;
 			// ulをjustify-content: center;にしたので、余白調整
 			margin-left: 6%;
+			width: 44%;
 		}
 		background-image: url(../img/front/eat-in.jpg);
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;         /* 画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小 */
 		height: 642px;
-		max-width: 357px;
 		display: flex;              /* 親要素に指定 */
 		flex-direction: column;     /* 積み重なるように配置する */
 
 		@include mixin.breakpoint( breakpoint-large ){
-			width: 44%;
 			height: 957px;      // 1193*0.8（自分のPCブラウザ最大化に合わせるための0.8）
 			max-width: 625px;
 			max-height: 1196px;
@@ -112,8 +107,6 @@
 		.l-container__box{
 			margin-top: auto;    // 下寄せ、margin-bottomは10px
 			width: 100%;
-			// z-index: 2;
-
 			// c-dl--level間の余白
 			.c-dl--level1{
 				margin-top: 10px;
