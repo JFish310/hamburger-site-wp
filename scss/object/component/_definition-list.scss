@@ -10,6 +10,10 @@
 		margin-top: 15px;
 		line-height: 2.5rem;
 		font-family: "M+ 1m";
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3; /* 制限したい行数が3 */
+		overflow: hidden;
 	}
 }
 
