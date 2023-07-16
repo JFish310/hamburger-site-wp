@@ -221,6 +221,7 @@ cite {
   position: fixed;
   top: 0%;
   left: 100%;
+  transition: all 0.6s;
   background-color: #F2EDE9;
   height: 100%;
   padding-left: 46px;
