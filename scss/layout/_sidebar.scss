@@ -6,8 +6,9 @@
 .l-sidebar{
 	/* 画面外に配置 */
 	position: fixed;
-	top: 0%;            // 上寄せ
-	left: 100%;         // 右画面外に
+	top: 0%;				// 上寄せ
+	left: 100%;				// 右画面外に
+	transition: all 0.6s;	// メニューが開くときに右から左に現れるように動きをつける
 
 	background-color: variable.$color--background--menu-pc;
 	height: 100%;
@@ -25,15 +26,15 @@
 		}
 	}
 	@include mixin.breakpoint ( breakpoint-large ){
-		display: block;         // 初期値（リセット）
-		position: static;       // 初期値（リセット）
+		display: block;			// 初期値（リセット）
+		position: static;		// 初期値（リセット）
 		width: 100%;
 		padding-top: 82px;
 	}
 
 	/* _button.scssへ移動 */
 	.c-button--close{
-		margin: 0 0 0 auto;      // 右寄せ、右の余白の指定
+		margin: 0 0 0 auto;		// 右寄せ、右の余白の指定
 		@include mixin.breakpoint ( breakpoint-large ){
 			display: none;
 		}
