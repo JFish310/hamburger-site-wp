@@ -49,10 +49,10 @@
 |  6/27  |  #24 検索ボックスの修正  |  1h30m  |
 |  6/27 - 7/4  |  #25 商品ページのメインビジュアルは、背景に修正  |  4h20m  |
 |  7/  |  #26 jQueryの修正  |  m  |
-|  7/  |  #27 メニューを開いたままウィンドウサイズを広げたときに発生するバグ  |  m  |
+|  7/11 - 7/16  |  #27 メニューを開いたままウィンドウサイズを広げたときに発生するバグ  |  4h40m  |
 |  7/10  |  #28 コンテンツ幅の調整  |  1h15m  |
 |  7/5 - 7/9  |  #29 Menu押下時、一番上に「Menu」「Search」の文字が表示される  |  1h25m  |
-|  7/  |  #30 記事ページの画像が、グレーアウトの層より上に出ている  |  m  |
+|  7/16  |  #30 記事ページの画像が、グレーアウトの層より上に出ている  |  m  |
 |  7/  |  #31 ブロックエディタ「ギャラリー」の装飾  |  m  |
 |  7/  |  #32 M+ FONTS対応  |  m  |
 
@@ -353,7 +353,7 @@ function get_index() {
 **#24 検索ボックスの修正**  
 [iPhoneで送信ボタンの角丸をなくす方法](https://www.design-memo.com/coding/webkit-appearance)  
 
-**#25 **  
+**#25 商品ページのメインビジュアルは、背景に修正**  
 [【コピペで簡単】CSSで親要素を無視してブラウザ幅100%で表示させる！](https://rui-log.com/css-width100vw/)  
 [【CSS】親要素を無視して子要素の幅をいっぱいに広げる方法](https://tecb.jp/blog/1517)  
 ★[CSSで親要素を無視して（突き抜ける、はみ出す）画面幅いっぱいに広げる方法](https://hirakublog.com/css-side-full-screen/)  
@@ -361,6 +361,11 @@ function get_index() {
 **#29 Menu**
 [CSS｜背景画像の上に背景色を重ねる方法](https://cotodama.co/css_bg-img-color/)
 ★[linear-gradientを使う方法](https://design-levelup.com/webdesign/html-css/%E8%83%8C%E6%99%AF%E7%94%BB%E5%83%8F%E3%81%AB%E9%80%8F%E9%81%8E%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%92%E9%87%8D%E3%81%AD%E3%82%8B%E6%96%B9%E6%B3%95/#i-4)
+
+**#27 メニューを開いたままウィンドウサイズを広げたときに発生するバグ**
+[【jQuery】領域外のクリック時にメニューを閉じるようにする](https://qiita.com/yuikoito/items/ec672ca98015ed382d82)  
+[【jQuery】resize()で画面幅がリサイズ時の処理方法を解説](https://zero-plus.io/media/jquery-resize/)  
+★[jQuery 領域外をクリックした時の指定](https://codepen.io/seiko-takamori/pen/dymvxjM)  
 
 ### WordPress コーディングルール
 

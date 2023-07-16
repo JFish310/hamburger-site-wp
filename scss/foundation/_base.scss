@@ -1,4 +1,5 @@
 @use "./variable";
+@use "./mixin";
 
 html {
 	font-size: 62.5%;
@@ -16,7 +17,6 @@ body{
 	/* Menuボタン開閉 */
 	&.is-open{
 		position: fixed;    // 画面の固定
-		overflow: hidden;   // スクロールバーの非表示
 		// メニューが出てきたときの影
 		&::before{
 			content: "";

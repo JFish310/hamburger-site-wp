@@ -15,15 +15,14 @@
 
 	/* メニューボタン押下 */
 	&.is-open{
-		left: 13%;      // 左13%残す
-		width: 87%;     // 幅は87%
+		left: 13%;		// 左13%残す
+		width: 87%;		// 幅は87%
+		overflow-y: scroll;		// 縦スクロールの表示
 		/* 幅の変更 */
 		@include mixin.breakpoint ( breakpoint-medium ){
 			left: 56%;
 			width: 44%;
 		}
-		// padding-left: 46px;
-		overflow-y: scroll;     // 縦スクロールの表示
 	}
 	@include mixin.breakpoint ( breakpoint-large ){
 		display: block;         // 初期値（リセット）
