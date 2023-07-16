@@ -1,5 +1,44 @@
 @charset "UTF-8";
-/* variable */
+/* variable */ /*----------------------------------------------------------
+◆SmartPhone  : 320px〜540px
+	iPhone 12mini   : 5.4インチ、375 × 667
+	iPhone 12ProMax : 6.7インチ、428 × 926
+	※最小幅は320px（iPadminiのsplit viewもこの値）
+	※利用率が高いのは375pxだが320pxで表示崩れ（横スクロールなど）がないか確認することが確実。
+
+	max-width : 599px
+	min-width : 設定なし（実質599px以下）
+
+	ここでの変数、breakpoint-small
+
+◆Tablet      : 600px〜1024px
+	iPadAir 4 : 10.9インチ、820 × 1180
+	タブレットの最小サイズは  600px
+	最もシェア率の高いサイズが  768 × 1024。つまり横にすると幅は1024px
+
+	max-width : 1024px
+	min-width : 600px
+
+	ここでの変数、breakpoint-medium
+
+◆PC          : 1280px〜
+	PCのブレイクポイントはタブレット1024pxにプラス1px加えた1025px。
+	PCのブレイクポイントは1280px以下で設定が無難。
+
+	max-width : 設定なし（実質1025px以上）
+	min-width : 1025px
+
+	ここでの変数、breakpoint-large
+
+
+モバイルファーストなら、min-width
+PCファーストなら、max-width
+
+参照URL
+https://daib-log.com/responsive/
+2021.05
+----------------------------------------------------------*/
+/* モバイルファースト */
 html {
   font-size: 62.5%;
 }
@@ -14,7 +53,6 @@ body {
 }
 body.is-open {
   position: fixed;
-  overflow: hidden;
 }
 body.is-open::before {
   content: "";
@@ -94,46 +132,6 @@ cite {
   /* Above WP toolbar. */
 }
 
-/*----------------------------------------------------------
-◆SmartPhone  : 320px〜540px
-	iPhone 12mini   : 5.4インチ、375 × 667
-	iPhone 12ProMax : 6.7インチ、428 × 926
-	※最小幅は320px（iPadminiのsplit viewもこの値）
-	※利用率が高いのは375pxだが320pxで表示崩れ（横スクロールなど）がないか確認することが確実。
-
-	max-width : 599px
-	min-width : 設定なし（実質599px以下）
-
-	ここでの変数、breakpoint-small
-
-◆Tablet      : 600px〜1024px
-	iPadAir 4 : 10.9インチ、820 × 1180
-	タブレットの最小サイズは  600px
-	最もシェア率の高いサイズが  768 × 1024。つまり横にすると幅は1024px
-
-	max-width : 1024px
-	min-width : 600px
-
-	ここでの変数、breakpoint-medium
-
-◆PC          : 1280px〜
-	PCのブレイクポイントはタブレット1024pxにプラス1px加えた1025px。
-	PCのブレイクポイントは1280px以下で設定が無難。
-
-	max-width : 設定なし（実質1025px以上）
-	min-width : 1025px
-
-	ここでの変数、breakpoint-large
-
-
-モバイルファーストなら、min-width
-PCファーストなら、max-width
-
-参照URL
-https://daib-log.com/responsive/
-2021.05
-----------------------------------------------------------*/
-/* モバイルファースト */
 /* gridでheader、main（first-view、place、access）、sidebarのレイアウト指定 */
 .l-container {
   /* SP基準--tablet-- */
@@ -234,10 +232,10 @@ https://daib-log.com/responsive/
 .l-sidebar.is-open {
   left: 13%;
   width: 87%;
+  overflow-y: scroll;
   /* 幅の変更 */
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
-  overflow-y: scroll;
 }
 @media (min-width: 834px) {
   .l-sidebar.is-open {
