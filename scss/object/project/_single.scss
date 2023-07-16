@@ -53,6 +53,7 @@
 		}
 	}
 	&__image--large{
+		position: static;
 		// 上のブロックとの余白
 		margin-top: 30px;
 		@include mixin.breakpoint( breakpoint-medium ){

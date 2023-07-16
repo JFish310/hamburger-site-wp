@@ -1439,6 +1439,7 @@ cite {
   }
 }
 .p-single__image--large {
+  position: static;
   margin-top: 30px;
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
