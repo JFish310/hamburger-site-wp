@@ -38,7 +38,7 @@
 		border: 1px solid variable.$color--text-main;    // 枠線指定（太さ・スタイル・色）
 		border-radius: 0.5em;                   /* 角丸 */
 		cursor: pointer;
-		font-family: "M+ 1m";
+		font-family: 'M PLUS 1p', sans-serif;
 		font-weight: 700;
 		vertical-align: top;        // 入力フォームとボタンのズレ解消（念のためこちらでも設定）
 	}
