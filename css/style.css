@@ -46,7 +46,7 @@ html {
 body {
   font-size: 1.6rem;
   font-weight: 400;
-  font-family: "Roboto", "M+ 1m", sans-serif;
+  font-family: "Roboto", "M PLUS 1p", sans-serif;
   overflow-x: hidden;
   width: 100%;
   /* Menuボタン開閉 */
@@ -270,7 +270,7 @@ cite {
   background-image: url(../img/front/footer.png);
   background-repeat: repeat;
   color: #fff;
-  font-family: "M+ 1m";
+  font-family: "M PLUS 1p", sans-serif;
   display: flex; /* 親要素に指定 */
   flex-direction: column; /* 行の配置 */
   align-items: center; /* 垂直方向の指定 */
@@ -345,7 +345,7 @@ cite {
   align-items: center;
   width: 163px;
   height: 44px;
-  font-family: "M+ 1m";
+  font-family: "M PLUS 1p", sans-serif;
   background: #fff;
   color: #707070;
   border: none;
@@ -374,7 +374,7 @@ cite {
   align-items: center;
   width: 163px;
   height: 44px;
-  font-family: "M+ 1m";
+  font-family: "M PLUS 1p", sans-serif;
   background: #fff;
   color: #707070;
   border: none;
@@ -416,7 +416,7 @@ cite {
 .c-dl--level1 dd {
   margin-top: 15px;
   line-height: 2.5rem;
-  font-family: "M+ 1m";
+  font-family: "M PLUS 1p", sans-serif;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3; /* 制限したい行数が3 */
@@ -442,14 +442,14 @@ cite {
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 3.3rem;
-  font-family: "M+ 1m";
+  font-family: "M PLUS 1p", sans-serif;
 }
 
 /* p-archiveに使用 */
 .c-dl--level3 {
   width: 100%;
   color: #3C2A10;
-  font-family: "M+ 1m";
+  font-family: "M PLUS 1p", sans-serif;
 }
 .c-dl--level3 h2 {
   font-size: 2.8rem;
@@ -523,7 +523,7 @@ cite {
 }
 
 .c-title, .c-title--h3, .c-title--h1, .c-title--h1--page, .c-title--h1--single {
-  font-family: "M+ 1m";
+  font-family: "M PLUS 1p", sans-serif;
   font-weight: 700;
 }
 .c-title--h1, .c-title--h1--page, .c-title--h1--single {
@@ -668,7 +668,7 @@ cite {
   display: block;
   font-size: 1.6rem;
   padding-top: 7px;
-  font-family: "M+ 1m";
+  font-family: "M PLUS 1p", sans-serif;
   font-weight: 700;
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
@@ -714,7 +714,7 @@ cite {
   width: 336.11px;
   color: #fff;
   background-color: #3C2B1C;
-  font-family: "M+ 1m";
+  font-family: "M PLUS 1p", sans-serif;
   display: flex; /* 親要素に指定 */
   flex-direction: column; /* 積み重なるように配置する */
   /* レスポンシブ対応 */
@@ -847,7 +847,7 @@ cite {
 
 /* singleページ内で使用 */
 .p-card--single {
-  font-family: "M+ 1m";
+  font-family: "M PLUS 1p", sans-serif;
   width: 100%;
   display: flex; /* 親要素に指定 */
   flex-direction: row; /* 横並びに配置する */
@@ -928,7 +928,7 @@ cite {
   border: 1px solid #707070;
   border-radius: 0.5em; /* 角丸 */
   cursor: pointer;
-  font-family: "M+ 1m";
+  font-family: "M PLUS 1p", sans-serif;
   font-weight: 700;
   vertical-align: top;
 }
@@ -936,7 +936,7 @@ cite {
 .p-gnavi {
   background-color: #F2EDE9;
   color: #707070;
-  font-family: "M+ 1m";
+  font-family: "M PLUS 1p", sans-serif;
   margin-bottom: 527px;
 }
 .p-gnavi h2 {
@@ -1368,7 +1368,7 @@ cite {
   padding: 0 5% 70px 5%;
   /* SP基準--tablet-- */
   /* SP基準--PC-- */
-  font-family: "M+ 1m";
+  font-family: "M PLUS 1p", sans-serif;
   color: #3C2A10;
 }
 @media (min-width: 1025px) {

@@ -36,12 +36,15 @@
 
 	// スタイルシートを読み込むタグを出力
 	function hamburgersite_script() {
-		// M+ FONTSの読み込み
-		wp_enqueue_style( 'mplus1p', '//mplus-webfonts.sourceforge.jp/mplus_webfonts.css', array() );
 		// Font Awesome の読み込み
 		wp_enqueue_style( 'font-awesome-5', '//use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '5.6.1' );
-		// Googleフォントの読み込み css2?family=Roboto:wght@700&display=swap
-		wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:400,700|display=swap', false );
+		/* Googleフォントの読み込み ( M+ FONTS と Roboto )
+		M PLUS 1p : css2?family=M+PLUS+1p:wght@400;700&display=swap" : font-family: 'M PLUS 1p', sans-serif;
+		Roboto : family=Roboto:wght@400;700&display=swap" : font-family: 'Roboto', sans-serif;
+		<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> */
+		// wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@400;700&display=swap', false );
+		wp_enqueue_style( 'mplus1p', 'https://fonts.googleapis.com/css?family=M+PLUS+1p:400;700|display=swap', false );
+		wp_enqueue_style( 'roboto', 'https://fonts.googleapis.com/css?family=Roboto:400,700|display=swap', false );
 		// ResetCSS の読み込み
 		wp_enqueue_style( 'ress', get_theme_file_uri( '/css/ress.css' ), array(), '3.0.1' );
 		// css の読み込み   <link rel="stylesheet" href="css/style.css">

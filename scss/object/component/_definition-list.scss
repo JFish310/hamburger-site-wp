@@ -9,7 +9,7 @@
 	dd{
 		margin-top: 15px;
 		line-height: 2.5rem;
-		font-family: "M+ 1m";
+		font-family: 'M PLUS 1p', sans-serif;
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 3; /* 制限したい行数が3 */
@@ -32,7 +32,7 @@
 		font-size: 1.4rem;
 		font-weight: 700;       // bold
 		line-height: 3.3rem;
-		font-family: "M+ 1m";
+		font-family: 'M PLUS 1p', sans-serif;
 	}
 }
 
@@ -40,7 +40,7 @@
 .c-dl--level3{
 	width: 100%;        // 周りの余白は親のpaddingで調整するから、ここでは目一杯広げる
 	color: variable.$color--card-text;
-	font-family: "M+ 1m";
+	font-family: 'M PLUS 1p', sans-serif;
 	h2{
 		font-size: 2.8rem;
 		@include mixin.breakpoint( breakpoint-medium ){
