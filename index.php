@@ -1,8 +1,6 @@
 <?php get_header(); ?>  <!-- header.phpを読み込むテンプレートタグ（インクルードタグ） -->
 		<main class="p-main">
-			<article id="top" class="p-first-view">
-				<h2>ダミーサイト</h2>
-			</article><!-- /.p-main__first-view -->
+			<h2 class="c-title--main">ダミーサイト</h2>
 			<section class="p-place">
 				<ul>
 					<li class="p-place__take-out">
