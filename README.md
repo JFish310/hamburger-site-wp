@@ -53,8 +53,8 @@
 |  7/10  |  #28 コンテンツ幅の調整  |  1h15m  |
 |  7/5 - 7/9  |  #29 Menu押下時、一番上に「Menu」「Search」の文字が表示される  |  1h25m  |
 |  7/16  |  #30 記事ページの画像が、グレーアウトの層より上に出ている  |  15m  |
-|  7/  |  #31 ブロックエディタ「ギャラリー」の装飾  |  m  |
-|  7/17  |  #32 M+ FONTS対応  |  m  |
+|  7/17  |  #31 ブロックエディタ「ギャラリー」の装飾  |  2h20m  |
+|  7/17  |  #32 M+ FONTS対応  |  50m  |
 |  7/16 -7/17  |  #33 メインビジュアルの背景調整  |  50m  |
 
 |  ReadMe, Github 他  |  ---  |  5/16 0:30, 5/17 1:05, 6/14.24 30m, 6/27    |
@@ -335,8 +335,6 @@ function get_index() {
 [【2023年最新】All-in-One WP Migrationの使い方(移行/引っ越し)](https://blog-bootcamp.jp/start/wordpress-allinonewpmigration/)  
 [All-in-One WP Migration を使って WordPressを引っ越しする時の注意点とアップロードサイズを増やす方法](https://www.vektor-inc.co.jp/post/all-in-one-wp-migration-more-details/)  
 [All-in-One WP Migrationでインポートができない原因と対処法を解説](https://www.switchitmaker2.com/web-production/all-in-one-wp-migration-import/)  
-[]()  
-[]()  
 
 **エックスサーバー・FileZilla**  
 [サブドメインに入れたワードプレスの削除方法～エックスサーバー編～](https://ami-shuf.com/wordpressdelete#MySQL)  
@@ -345,7 +343,7 @@ function get_index() {
 [エックスサーバーでWordPressの最大アップロードファイルサイズを変更する方法](https://www.vektor-inc.co.jp/post/xserver-upload-max-filesize/)  
 [ワードプレスの削除の仕方※ワードプレスのインストールし直し方](https://wppart.yuzumaru.co.jp/%e3%83%af%e3%83%bc%e3%83%89%e3%83%97%e3%83%ac%e3%82%b9%e3%81%ae%e5%89%8a%e9%99%a4%e3%81%ae%e4%bb%95%e6%96%b9%e2%80%bb%e3%83%af%e3%83%bc%e3%83%89%e3%83%97%e3%83%ac%e3%82%b9%e3%81%ae%e3%82%a4%e3%83%b3/)  
 [Local By Flywheelから本番環境へ移行する際の注意点-既存の静的サイトからWordPressにリニューアルする場合](https://pala-ghe.com/local-by-flywheel-to-server-wordpress/)  
-[]()  
+[【WordPress本番環境への移行】ロリポップ FTPとFileZillaを使う方法](https://tegetegeblog.com/web/wordpress/492/)  
 
 
 **本番環境での不具合時の参照サイト**  
@@ -371,6 +369,13 @@ function get_index() {
 **#26 アニメーションの修正**
 [グローバルナビゲーション-クリックしたらナビが右から左に出現-](https://coco-factory.jp/ugokuweb/move01/5-1-14/)  
 
+**#32 M+ FONTS対応**
+[Google Fontsを複数指定して読み込む方法](https://masizime.com/blog/2019-12-28.html)  
+
+**#31 ブロックエディタ「ギャラリー」の装飾**
+「wordpress ギャラリー gap」で検索した  
+[ギャラリーを Instagram 風にカスタマイズするやり方 – WordPress](https://uonuma-js.com/css-grid-instagram-like-gallery/)  
+[]
 ### WordPress コーディングルール
 
 ~~https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standards/~~  
@@ -385,6 +390,7 @@ https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standar
 - 特有の指定がない限り小文字で記述
 - 色の16進数コード記述で省略が可能な場合は省略（ #ffffff → #fff ）
 - なるべくショートハンドで記述（プロパティの上書きを除く
+
 ***
 
 ### 命名規則（FLOCSSに帰属）

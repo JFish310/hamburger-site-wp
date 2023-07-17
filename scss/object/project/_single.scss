@@ -82,54 +82,46 @@
 			object-fit: contain;	// アスペクト比を維持したまま、要素のコンテンツボックスに収まるように拡大縮小される
 		}
 	}
-	// .is-layout-flex, .wp-block-gallery-3, .wp-block-gallery, .has-nested-images, .columns-default, .is-cropped{
-	// .is-layout-flex, .wp-block-gallery, .has-nested-images, .columns-default, .is-cropped{
 	.p-single__images{
 		// 上のブロックとの余白
 		margin-top: 30px;
 		@include mixin.breakpoint( breakpoint-medium ){
 			margin-top: 60px;
 		}
-
 		width: 100%;
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);  /* gridの設定(1列) */
-		// grid-template-rows: minmax(117px, 215px);
-		row-gap: 20px;                          /* 画像間の余白 */
-		justify-items: center;                  /* 中央寄せ */
-		@include mixin.breakpoint( breakpoint-medium ){
-			grid-template-columns: repeat(2, 1fr);  /* gridの設定(2列) */
-			gap: 20px 16px;                         /* 画像間の余白 縦方向 横方向 */
-		}
-		@include mixin.breakpoint( breakpoint-large ){
-			grid-template-columns: repeat(3, 1fr);  /* gridの設定(3列) */
-			gap: 20px 20px;                         /* 画像間の余白 縦方向 横方向 */
+		&.wp-block-gallery.wp-block-gallery-2 {
+			// width: 100%;
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);  /* gridの設定(1列) */
+			// grid-template-rows: minmax(117px, 215px);
+			row-gap: 20px;                          /* 画像間の余白 */
+			justify-items: center;                  /* 中央寄せ */
+			@include mixin.breakpoint( breakpoint-medium ){
+				grid-template-columns: repeat(2, 1fr);  /* gridの設定(2列) */
+				gap: 20px 16px;                         /* 画像間の余白 縦方向 横方向 */
+			}
+			@include mixin.breakpoint( breakpoint-large ){
+				grid-template-columns: repeat(3, 1fr);  /* gridの設定(3列) */
+				gap: 20px 20px;                         /* 画像間の余白 縦方向 横方向 */
+			}
 		}
 		&__card{
-			// <figure class="wp-block-image
-			//					 size-large
-			//					 p-single__images__card">
-			// <img decoding="async" loading="lazy" width="1024" height="873" data-id="134" src="//localhost:3000/wp-content/uploads/2023/01/burg_teriyaki-1024x873.jpg" alt="テリヤキバーガー" class="wp-image-134" srcset="//localhost:3000/wp-content/uploads/2023/01/burg_teriyaki-1024x873.jpg 1024w, //localhost:3000/wp-content/uploads/2023/01/burg_teriyaki-300x256.jpg 300w, //localhost:3000/wp-content/uploads/2023/01/burg_teriyaki-768x655.jpg 768w, //localhost:3000/wp-content/uploads/2023/01/burg_teriyaki-1536x1310.jpg 1536w,
-			 //localhost:3000/wp-content/uploads/2023/01/burg_teriyaki.jpg 1678w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
-			// .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image)
 			// 画像幅の指定
 			width: 100%;
-			// width: ;
-			// max-width: 349px;
-			// max-height: 215px;
-			// object-fit: cover;
-			// @include mixin.breakpoint( breakpoint-medium ){
-			// 	// width: 49%;     // 349/714px
-			// 	width: 100%;
-			// }
-			// @include mixin.breakpoint( breakpoint-large ){
-			// 	// width: 32%;     // 438/1353px
-			// 	max-width: 438px;
-			// }
-			img{
+			&.wp-block-image {
+				width: unset !important;
+				margin: 0 !important;
 				width: 100%;
 				max-width: 349px;
-				object-fit: cover;
+				@include mixin.breakpoint( breakpoint-medium ){
+					width: 49%;     // 349/714px
+					max-width: 100%;
+					// width: 100%;
+				}
+				@include mixin.breakpoint( breakpoint-large ){
+					width: 32%;     // 438/1353px
+					max-width: 438px;
+				}
 			}
 		}
 	}
