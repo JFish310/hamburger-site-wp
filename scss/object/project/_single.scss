@@ -111,16 +111,12 @@
 			&.wp-block-image {
 				width: unset !important;
 				margin: 0 !important;
-				width: 100%;
-				max-width: 349px;
+				max-width: 349px !important;
 				@include mixin.breakpoint( breakpoint-medium ){
-					width: 49%;     // 349/714px
-					max-width: 100%;
-					// width: 100%;
+					max-width: 100% !important;
 				}
 				@include mixin.breakpoint( breakpoint-large ){
-					width: 32%;     // 438/1353px
-					max-width: 438px;
+					max-width: 438px !important;
 				}
 			}
 		}
