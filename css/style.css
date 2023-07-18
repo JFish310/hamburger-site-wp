@@ -522,11 +522,11 @@ cite {
   }
 }
 
-.c-title, .c-title--h3, .c-title--h1, .c-title--h1--page, .c-title--h1--single {
+.c-title, .c-title--h3, .c-title--h1, .c-title--h1--page {
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 700;
 }
-.c-title--h1, .c-title--h1--page, .c-title--h1--single {
+.c-title--h1, .c-title--h1--page {
   font-size: 3.6rem;
   color: #fff;
   display: flex; /* 親要素に指定 */
@@ -548,24 +548,21 @@ cite {
   /* SP基準--PC-- */
 }
 @media (min-width: 834px) {
-  .c-title--h1, .c-title--h1--page, .c-title--h1--single {
+  .c-title--h1, .c-title--h1--page {
     font-size: 6rem;
     padding-left: 86px;
   }
 }
 @media (min-width: 1025px) {
-  .c-title--h1, .c-title--h1--page, .c-title--h1--single {
+  .c-title--h1, .c-title--h1--page {
     width: 82vw;
     margin-left: calc(51% - 42vw);
   }
 }
 @media (min-width: 834px) {
-  .c-title--h1, .c-title--h1--page, .c-title--h1--single {
+  .c-title--h1, .c-title--h1--page {
     height: 500px;
   }
-}
-.c-title--h1--single {
-  background-image: url(../img/single/first-view.jpg);
 }
 .c-title--h1--page {
   background-image: url(../img/page/first-view.jpg);
@@ -1375,6 +1372,9 @@ cite {
   .p-single {
     padding: 0 6% 179px 6%;
   }
+}
+.p-single .wp-block-post-featured-image {
+  display: none;
 }
 .p-single h2 {
   margin-top: 30px;

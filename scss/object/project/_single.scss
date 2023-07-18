@@ -12,6 +12,10 @@
 	font-family: 'M PLUS 1p', sans-serif;
 	color: variable.$color--text-single;
 
+	// アイキャッチは背景にし、imgとしては非表示にする
+	.wp-block-post-featured-image{
+		display: none;
+	}
 	h2{
 		margin-top: 30px;
 		font-size: 2.8rem;
