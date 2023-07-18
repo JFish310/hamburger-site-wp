@@ -34,10 +34,6 @@
 		@include mixin.breakpoint( breakpoint-medium ) {
 			height: 500px;
 		}
-		&--single{
-			@extend .c-title--h1;
-			background-image: url(../img/single/first-view.jpg);
-		}
 		&--page{
 			@extend .c-title--h1;
 			background-image: url(../img/page/first-view.jpg);

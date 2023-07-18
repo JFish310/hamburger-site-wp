@@ -56,6 +56,7 @@
 |  7/17  |  #31 ブロックエディタ「ギャラリー」の装飾  |  2h40m  |
 |  7/17  |  #32 M+ FONTS対応  |  50m  |
 |  7/16 -7/17  |  #33 メインビジュアルの背景調整  |  50m  |
+|  7/18  |  #34 M+ FONTSのウエイト700の反映・各ページメインビジュアルは各ページの画像を背景に修正  |  3h30m  |
 
 |  ReadMe, Github 他  |  ---  |  5/16 0:30, 5/17 1:05, 6/14.24 30m, 6/27    |
 
@@ -301,7 +302,7 @@ function get_index() {
 [お前らのSSH Keysの作り方は間違っている](https://qiita.com/suthio/items/2760e4cff0e185fe2db9)  
 [【ssh】公開鍵認証するときのパスフレーズを省略する方法の紹介](https://fumidzuki.com/knowledge/3401/)  
 [ssh-agentを利用して、安全にSSH認証を行う](https://zenn.dev/naoki_mochizuki/articles/ce381be617cd312ffe7f)  
-[GitHubでssh接続する手順~公開鍵・秘密鍵の生成から~](https://qiita.com/shizuma/items/2b2f873a0034839e47ce)  
+[GitHubでssh接続する手順～公開鍵・秘密鍵の生成から～](https://qiita.com/shizuma/items/2b2f873a0034839e47ce)  
 [Pull RequestをIssueにリンクする](https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)  
 
 **投稿記事のみを検索させる（固定ページは検索対象にしない処理**  
@@ -357,25 +358,25 @@ function get_index() {
 [【CSS】親要素を無視して子要素の幅をいっぱいに広げる方法](https://tecb.jp/blog/1517)  
 ★[CSSで親要素を無視して（突き抜ける、はみ出す）画面幅いっぱいに広げる方法](https://hirakublog.com/css-side-full-screen/)  
 
-**#29 Menu**
-[CSS｜背景画像の上に背景色を重ねる方法](https://cotodama.co/css_bg-img-color/)
-★[linear-gradientを使う方法](https://design-levelup.com/webdesign/html-css/%E8%83%8C%E6%99%AF%E7%94%BB%E5%83%8F%E3%81%AB%E9%80%8F%E9%81%8E%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%92%E9%87%8D%E3%81%AD%E3%82%8B%E6%96%B9%E6%B3%95/#i-4)
+**#29 Menu**  
+[CSS｜背景画像の上に背景色を重ねる方法](https://cotodama.co/css_bg-img-color/)  
+★[linear-gradientを使う方法](https://design-levelup.com/webdesign/html-css/%E8%83%8C%E6%99%AF%E7%94%BB%E5%83%8F%E3%81%AB%E9%80%8F%E9%81%8E%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%92%E9%87%8D%E3%81%AD%E3%82%8B%E6%96%B9%E6%B3%95/#i-4)  
 
-**#27 メニューを開いたままウィンドウサイズを広げたときに発生するバグ**
+**#27 メニューを開いたままウィンドウサイズを広げたときに発生するバグ**  
 [【jQuery】領域外のクリック時にメニューを閉じるようにする](https://qiita.com/yuikoito/items/ec672ca98015ed382d82)  
 [【jQuery】resize()で画面幅がリサイズ時の処理方法を解説](https://zero-plus.io/media/jquery-resize/)  
 ★[jQuery 領域外をクリックした時の指定](https://codepen.io/seiko-takamori/pen/dymvxjM)  
 
-**#26 アニメーションの修正**
+**#26 アニメーションの修正**  
 [グローバルナビゲーション-クリックしたらナビが右から左に出現-](https://coco-factory.jp/ugokuweb/move01/5-1-14/)  
 
-**#32 M+ FONTS対応**
+**#32 M+ FONTS対応**  
 [Google Fontsを複数指定して読み込む方法](https://masizime.com/blog/2019-12-28.html)  
 
-**#31 ブロックエディタ「ギャラリー」の装飾**
+**#31 ブロックエディタ「ギャラリー」の装飾**  
 「wordpress ギャラリー gap」で検索した  
 [ギャラリーを Instagram 風にカスタマイズするやり方 – WordPress](https://uonuma-js.com/css-grid-instagram-like-gallery/)  
-[]
+
 ### WordPress コーディングルール
 
 ~~https://ja.wordpress.org/team/handbook/coding-standards/wordpress-coding-standards/~~  
