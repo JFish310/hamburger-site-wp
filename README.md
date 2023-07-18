@@ -2,6 +2,9 @@
 
 ## 最終課題  ハンバーガーサイト  WordPress化  
 
+[ハンバーガーサイト](https://portfolio.jfish10.com/hamburgersite/)  
+最終課題提出の作品
+
 ### 履歴  
 
 #### 2021年  
@@ -58,11 +61,12 @@
 |  7/16 -7/17  |  #33 メインビジュアルの背景調整  |  50m  |
 |  7/18  |  #34 M+ FONTSのウエイト700の反映・各ページメインビジュアルは各ページの画像を背景に修正  |  3h30m  |
 
+後日計算する　　
 |  ReadMe, Github 他  |  ---  |  5/16 0:30, 5/17 1:05, 6/14.24 30m, 6/27    |
 
-（#22 まで 102h40m ）  
+（#34 まで 135h40m ）  
 
-【累計】  
+【累計】（後日記載）  
 構成・設計        3h  
 環境構築          5h  
 コーディング      h  
@@ -376,6 +380,13 @@ function get_index() {
 **#31 ブロックエディタ「ギャラリー」の装飾**  
 「wordpress ギャラリー gap」で検索した  
 [ギャラリーを Instagram 風にカスタマイズするやり方 – WordPress](https://uonuma-js.com/css-grid-instagram-like-gallery/)  
+
+**#34 各ページメインビジュアルは各ページの画像を背景に修正**  
+[WordPressでアイキャッチ画像を背景画像として表示する方法](https://www.giv.co.jp/member_tweet/1681/)  
+[【WordPressユーザー必見】条件分岐を使用して、アイキャッチ画像をヘッダー背景に設定する方法](https://proclass.jp/blog/?p=7464)  
+[]()  
+[WordPress ループで使うテンプレートタグや関数](https://www.webdesignleaves.com/pr/wp/wp_func_loop.html)  
+[【最低限】WordPressでよく使うPHPの書き方の基本！](https://wordpress-web.and-ha.com/php-basics-used-in-wordpress/)  
 
 ### WordPress コーディングルール
 
